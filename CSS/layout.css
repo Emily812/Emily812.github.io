@@ -1,0 +1,225 @@
+* {
+    box-sizing: border-box;
+    font-family: "微軟正黑體";
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    width: 100%;
+    background-color: #9FBACA;
+}
+
+header.blue .container {
+    /* background-color: rgb(155, 218, 248); */
+    background-color: #DCC0AA;
+}
+
+header.blue .where{    
+    
+    display: flex;
+    justify-content: space-around;
+}
+
+.word {
+    color: white;
+    font-size: 20px;
+}
+
+.show {
+    text-align: right;
+    /* show是bootstrap的一種屬性，當只有nav變成漢堡條時並點開他時，下面按鈕最終的呈現位置 */
+}
+
+@media(max-width: 992px) {
+    .word {
+        text-align: center;
+
+    }
+
+    /* 因為漢堡條只會在平板版以下才會出現，所以在這時去做修正，
+    修正原因，是因為bootstrap本身內建設定預設為左邊顯示內頁，所以將做此修正改預設 */
+}
+
+.logo {
+    width: 50px;
+    margin: auto;
+    position: relative;
+    /* padding: auto 20px; */
+}
+
+.logo #text {
+    color: white;
+}
+
+header.blue .container img {
+    width: 100%;
+
+    /* margin: 5px 20px; */
+
+}
+
+/* .buttonall {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+.btn {
+    color: white;
+    font-size: 20px;
+    padding: 0 20px;
+    font-family: "微軟正黑體";
+    ;
+
+} */
+.brown{
+    color: #5B2C0C !important;
+    }
+    /* 權重最高 顏色為棕色 */
+
+
+.word:hover {
+    /* height: 100px; */
+    background-color: #A06437;
+    transition: 2.5s;
+    color: white!important;
+
+}
+.blue {
+    /* background-color: rgb(155, 218, 248) !important; */
+    background-color: #DCC0AA !important;
+}
+
+
+.white {
+    color: white !important;
+}
+/* 權重最高 顏色為白色 */
+
+
+/* --------頁尾------------- */
+footer{
+    font-size: 16px;
+    color: white;
+    background-color: #5B2C0C;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+/* --------測試nav----------- */
+/* Navbar */
+
+
+.navbar {
+	background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) );
+	border: none;
+    border-radius: 0%;
+	margin-bottom: 0px;
+	padding: 1% 10%;
+	transition: 0.5s;
+}
+
+.navbar:hover {
+	background: rgba(51, 51, 51, 0.5);
+	border: none;
+    border-radius: 0%;
+	margin-bottom: 0px;
+	padding: 1% 10%;
+	transition: 0.5s;
+}
+
+.solid-navbar {
+	background: rgba(51, 51, 51, 0.5);
+	border: none;
+    border-radius: 0%;
+	margin-bottom: 0px;
+	padding: 1% 10%;
+	transition: 0.5s;
+}
+
+.navbar-brand > img {
+	max-height: 100%;
+}
+
+.navbar-brand {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+	background-color: white;
+	color: 404040;
+	transition: 0.3s;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: white;
+    background-color: #333333;
+}
+
+.navbar-default .navbar-nav > li > a, .navbar-default .navbar-brand {
+    color: white;
+}
+
+/* Navbar toggle button */
+
+
+.navbar-toggle {
+  border: none;
+  background: transparent !important;
+}
+.navbar-toggle:hover {
+  background: transparent !important;
+}
+.navbar-toggle .icon-bar {
+  width: 22px;
+  transition: all 0.2s;
+}
+.navbar-toggle .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+.navbar-toggle .middle-bar {
+  opacity: 0;
+}
+.navbar-toggle .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+.navbar-toggle.collapsed .top-bar {
+  transform: rotate(0);
+}
+.navbar-toggle.collapsed .middle-bar {
+  opacity: 1;
+}
+.navbar-toggle.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+
+/* Experience */
+
+#experience h3 {
+	padding-bottom: 5%;
+	margin: 0;
+	text-align: center;
+}
+
+.job-img {
+	height: 10em;
+	width: 10em;
+}
+
+
