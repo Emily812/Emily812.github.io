@@ -7,6 +7,9 @@ body {
     margin: 0;
     padding: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 nav {
     width: 100%;
@@ -118,108 +121,89 @@ footer{
 }
 
 
+.top{
+    width: 60px;
+    height: 60px;
+    /* background-color: rgba(126, 27, 27, 0.137); */
+    background-image: url(../img/up-01.png);
+    background-size:contain ;
+    background-repeat: no-repeat;
+    
+    position: fixed;
+    right: 30px;
+    bottom: 50px;
+    z-index: 1000
+}
+
+.top:hover{
+    width: 66px;
+    height: 66px;
+    background-image: url(../img/up-02.png);
+    background-size:contain ;
+    background-repeat: no-repeat;
+    
+    position: fixed;
+    right: 27px;
+    bottom: 47px;
+    z-index: 1000
+}
+
+@media(max-width:540px){
+    .top{
+        width: 40px;
+        height: 40px;
+        background-image: url(../img/up-01.png);
+      
+        
+        position: fixed;
+        right: 20px;
+        bottom: 35px;
+        
+    }
+    
+    .top:hover{
+        width: 44px;
+        height: 44px;
+        background-image: url(../img/up-02.png);
+        
+        
+        position: fixed;
+        right: 18px;
+        bottom: 33px;
+        z-index: 1000
+    } 
+}
+
+
+
+
+
 
 /* --------測試nav----------- */
-/* Navbar */
-
-
-.navbar {
-	background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) );
-	border: none;
-    border-radius: 0%;
-	margin-bottom: 0px;
-	padding: 1% 10%;
-	transition: 0.5s;
-}
-
-.navbar:hover {
-	background: rgba(51, 51, 51, 0.5);
-	border: none;
-    border-radius: 0%;
-	margin-bottom: 0px;
-	padding: 1% 10%;
-	transition: 0.5s;
-}
-
-.solid-navbar {
-	background: rgba(51, 51, 51, 0.5);
-	border: none;
-    border-radius: 0%;
-	margin-bottom: 0px;
-	padding: 1% 10%;
-	transition: 0.5s;
-}
-
-.navbar-brand > img {
-	max-height: 100%;
-}
-
-.navbar-brand {
-    margin: 0;
-    padding: 0;
-}
-
-.navbar-default .navbar-nav > li > a:hover {
-	background-color: white;
-	color: 404040;
-	transition: 0.3s;
-}
-
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-    color: white;
-    background-color: #333333;
-}
-
-.navbar-default .navbar-nav > li > a, .navbar-default .navbar-brand {
-    color: white;
-}
-
-/* Navbar toggle button */
-
-
-.navbar-toggle {
-  border: none;
-  background: transparent !important;
-}
-.navbar-toggle:hover {
-  background: transparent !important;
-}
-.navbar-toggle .icon-bar {
-  width: 22px;
-  transition: all 0.2s;
-}
-.navbar-toggle .top-bar {
-  transform: rotate(45deg);
-  transform-origin: 10% 10%;
-}
-.navbar-toggle .middle-bar {
-  opacity: 0;
-}
-.navbar-toggle .bottom-bar {
-  transform: rotate(-45deg);
-  transform-origin: 10% 90%;
-}
-.navbar-toggle.collapsed .top-bar {
-  transform: rotate(0);
-}
-.navbar-toggle.collapsed .middle-bar {
-  opacity: 1;
-}
-.navbar-toggle.collapsed .bottom-bar {
-  transform: rotate(0);
-}
-
-/* Experience */
-
-#experience h3 {
-	padding-bottom: 5%;
-	margin: 0;
-	text-align: center;
-}
-
-.job-img {
-	height: 10em;
-	width: 10em;
-}
-
+#toggle {
+    width: 28px;
+    height: 30px;
+    margin: 10px auto;
+  }
+  
+  #toggle div {
+    width: 100%;
+    height: 4px;
+    background: rgb(75, 64, 49);
+    margin: 4px auto;
+    transition: all 0.3s;
+    backface-visibility: hidden;
+  }
+  
+  #toggle.on .one {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  #toggle.on .two {
+    opacity: 0;
+  }
+  
+  #toggle.on .three {
+    transform: rotate(-45deg) translate(7px, -8px);
+  }
 
