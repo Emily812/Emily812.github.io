@@ -9,7 +9,7 @@
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
-    <link rel="stylesheet" href="./CSS/index copy.css">
+    <link rel="stylesheet" href="./CSS/index.css">
     <link rel="stylesheet" href="./CSS/layout.css">
 </head>
 
@@ -155,14 +155,26 @@
             <div class="container-fluid pa0">
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">
+                        <div id="swsl" class="swiper-slide">
                             <img src="./img/t2-1xxxxx.jpg" alt="">
+                            <div class="mask mask_op">
+                                <div class="mask_title">馬術競技場</div>
+                                <p>為競賽場地長達110公尺、寬70公尺，加上完善的週邊設施，是全國規模最大的馬術場地。</p>
+                            </div>
                         </div>
-                        <div class="swiper-slide">
+                        <div id="swsl" class="swiper-slide">
                             <img src="./img/t2-2xx.jpg" alt="">
+                            <div class="mask mask_op">
+                                <div class="mask_title">射箭 </div>
+                                <p>專業射箭場，適合親子遊玩。培養專注力、及肢體協調性等多項休閒運動。</p>
+                            </div>
                         </div>
-                        <div class="swiper-slide">
+                        <div id="swsl" class="swiper-slide">
                             <img src="./img/t2-3xx.jpg" alt="">
+                            <div class="mask mask_op">
+                                <div class="mask_title">騎馬</div>
+                                <p>除自由騎乘外，也有為初學者和小孩準備的牽乘活動，可以享受騎在馬背上的樂趣。</p>
+                            </div>
                         </div>
                     </div>
                     <!-- Add Pagination -->
@@ -307,7 +319,7 @@
                     <div id="t5_img" class="col-lg-4 col-12 mart30">
                         <img src="./img/news-2-1-02.jpg" alt="">
                         <a href="">
-                            <div class="more">更多內容
+                            <div class="more ">更多內容
                             </div>
                         </a>
                     </div>
@@ -317,7 +329,7 @@
                             <hr>
                             <span>2020台灣燈會在台中，后里馬場為第二大園區</span>
                             <a href="">
-                                <div class="more  mh7">更多內容</div>
+                                <div class="more mh7">更多內容</div>
                             </a>
                         </div>
                     </div>
@@ -355,10 +367,14 @@
 
 
                 </div>
-
-                <a href="" class="d-flex ">
-                    <div class="more news mh3">更多消息</div>
+                <a href="" class="d-flex">
+                    <div class="news  mh4" data-text="更多消息">
+                        <span>更多消息</span>
+                    </div>
                 </a>
+                <!-- <a href="" class="d-flex ">
+                    <div class="mh3 news ">更多消息</div>
+                </a> -->
 
             </div>
 
@@ -427,29 +443,45 @@
             'resizeDuration': 200,
             'wrapAround': true
         })
-
-
-    </script>
-    <script>
         // 測試
         $("#toggle").click(function () {
             $(this).toggleClass("on");
             $("#menu").slideToggle();
         });
-        var slidesPerView_Num = 3
+        var win = document.documentElement.clientWidth
 
-        window.onload = function () {
+        if (win < 540) {
+            var slidesPerView_Num = 1
+        }
+        else if (win < 720) {
+            var slidesPerView_Num = 2
+        }
+        else {
+            var slidesPerView_Num = 3
+        }
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: slidesPerView_Num,
+            spaceBetween: 0,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+
+        $(window).resize(function () {
             var win = document.documentElement.clientWidth
-
-
-            if (win < 540) {
-                var slidesPerView_Num = 1
-            }
-            else if (win < 720) {
-                var slidesPerView_Num = 2
-            }
-            else {
-                var slidesPerView_Num = 3
+            var swpoint = document.querySelector("#swiper-pagination")
+            switch (true) {
+                case (win > 721):
+                    var slidesPerView_Num = 3
+                    break
+                case (win < 720 && win > 540):
+                    var slidesPerView_Num = 2
+                    break
+                default:
+                    var slidesPerView_Num = 1
+                    break
             }
             var swiper = new Swiper('.swiper-container', {
                 slidesPerView: slidesPerView_Num,
@@ -460,31 +492,7 @@
                     clickable: true,
                 },
             });
-        }
-
-        window.onresize = function () {
-            var win = document.documentElement.clientWidth
-
-
-            if (win < 540) {
-                var slidesPerView_Num = 1
-            }
-            else if (win < 720) {
-                var slidesPerView_Num = 2
-            }
-            else {
-                var slidesPerView_Num = 3
-            }
-            var swiper = new Swiper('.swiper-container', {
-                slidesPerView: slidesPerView_Num,
-                spaceBetween: 0,
-                loop: true,
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                },
-            });
-        }
+        });
 
     </script>
 

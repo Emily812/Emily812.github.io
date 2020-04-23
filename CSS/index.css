@@ -132,29 +132,9 @@ section#t2 .title_text{
     
 }
 
-section#t2 .row img{
+section#t2  img{
     width: 100%;
    
-}
-
-section#t2 .row .picsize{
-    width: 100%;
-    /* height: 905px; */
-  height: 812px;
-    background-size: cover;
-    overflow: hidden;
-}
-
-section#t2 .row .t2-pic1{
-    background-image: url(../img/t2-1xxxxx.jpg);
-    /* background-attachment: fixed; */
-}
-section#t2 .row .t2-pic2{
-    background-image: url(../img/t2-2xx.jpg);
-}
-
-section#t2 .row .t2-pic3{
-    background-image: url(../img/t2-3xx.jpg);
 }
 
 /* .mask{
@@ -179,46 +159,58 @@ section#t2 .row .t2-pic3{
     padding-left: 0;
 }
 
-section#t2 .row .mask{
+.swiper-container {
+    overflow: hidden;
+    margin-top: 30px;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    position: relative;
-    top: 85%;
-    left: 0%;
-    transition: 0.5s;
-    color: white;
-    align-content: center 
+  }
+.swiper-slide {
 
-    
-}
-
-section#t2 .row .mask h2{
-    padding: 50px;
-    text-align: center;
-}
-
-section#t2 .row .mask p{
-    font-size: 24px;
-    padding: 0 50px;
-    text-align: center;
-    
-    
-}
-
-section#t2 .row .mask:hover{
-    top: 0PX;
-    color: white;
-    flex-wrap: wrap;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
-    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
     justify-content: center;
-    padding: 50px;
-    
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+#swsl{
+    overflow: hidden;
+    position: relative;
 }
-
-
-
+#swsl .mask{
+    width: 100%;
+    height: 100%;
+    color: white;
+    position: absolute;
+    top: 85% ;
+    transition: 0.5s;
+    display: flex;
+    flex-wrap: wrap;
+}
+#swsl .mask_op{
+    background-color: rgba(0, 0, 0, 0.65);
+}
+#swsl .mask .mask_title{
+    margin: calc(13% - 36px) auto ;
+    font-size: 36px;
+}
+#swsl .mask p{
+    font-size: 24px;
+}
+#swsl .mask:hover{
+    top: 0%;
+    align-content: center;
+    padding: 15px;
+}
 
 /* -------------section#t3-景點文化 ----------------*/
 
@@ -391,7 +383,6 @@ section#t5 .row .Card_text{
     padding: 10px;
     border: 1px black solid;
     font-size: 20px;
-    position: relative;
 }
 section#t5 .row .Card_text hr{
     background-color: black;
@@ -420,13 +411,10 @@ section#t5 .row .Card_text .more{
     border: solid 1px black;
      /* 標題上的more 更多內容 */
 }
-
 section#t5 .row .Card_text .more:hover{
     font-size: 14px;
     padding: 0 3px;
     border-radius: 3px;
-    background-color: black;
-    color: white;
     position: absolute;
     bottom: 10px;
     right: 5px;
@@ -440,7 +428,7 @@ section#t5 .row .Card_text .more:hover{
     
     transition: all 0.5s;
     border: 1px solid rgba(0,0,0,0.5);
-    position: relative; 
+    position: absolute;
     }
     
     .mh7 span{
@@ -449,7 +437,7 @@ section#t5 .row .Card_text .more:hover{
     position: absolute;
     width: 100%;
     height: 100%;   
-    }
+    } 
     .mh7:before{
     content: '';
     position: absolute;
@@ -459,28 +447,27 @@ section#t5 .row .Card_text .more:hover{
     height: 100%;
     z-index: 1;
     opacity: 0;
-    background-color: rgba(139, 136, 136, 0.644);
+    background-color: rgba(189, 151, 120, 0.192);
     transition: all 0.3s;
     
     }
     .mh7:hover::before{
     opacity: 1;
     width: 100%;
-    color: white;
+    color: rgb(255, 255, 255);
     }
 
 
 /* 更多消息格式 */
 section#t5 .news{
     font-size: 23px;
-    /* padding: 0 3px; */
     border-radius: 3px;
     background-color: #5B2C0C;
     color: white;
     
     letter-spacing: 2px;
     margin: auto;
-    padding: 6px 10px 6px 12px;
+     padding: 6px 10px 6px 12px; 
     
 }
 section#t5 a{
@@ -489,24 +476,24 @@ section#t5 a{
 
 
 /* 測試-更多消息特效-失敗 */
-.mh3 {
+.mh4 {
 	color: rgba(255,255,255,1);
-	-webkit-transition: all 0.5s;
-	-moz-transition: all 0.5s;
-	-o-transition: all 0.5s;
 	transition: all 0.5s;
 	position: relative;
 	border: 1px solid rgba(255,255,255,0.5);
 	overflow: hidden;
-}
+	}
 
+	.mh4 > span {
 
-.mh3:hover > span{
+	transition: all 0.3s;
+	}
+
+	.mh4:hover > span{
 	opacity: 0;
-	-webkit-transform: translate(0px,40px);
-	transform: translate(0px,40px);
-}
-.mh3::after{
+    transform: translate(0px,40px);
+	}
+	.mh4::after{
 	content: attr(data-text);
 	position: absolute;
 	width: 100%;
@@ -515,16 +502,16 @@ section#t5 a{
 	top: 0;
 	left: 0;
 	opacity: 0;
-	-webkit-transform: translate(-30%, 0);
-	transform: translate(-30%, 0);
+	transform: translate(-30%, -50%) rotate(-30deg);
+    letter-spacing: 2px;
 	transition: all 0.3s;   
-}
 
-.mh3:hover::after{
+	}
+	.mh4:hover::after{
 	opacity: 1;
-	-webkit-transform: translate(0, 0);
-	transform: translate(0, 0);
-}
+	transform: translate(12px, 0);
+	}
+	
 /* ---------------------------------------------- */
 
 .mart30{
