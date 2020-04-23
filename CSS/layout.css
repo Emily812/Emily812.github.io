@@ -132,7 +132,7 @@ footer{
     position: fixed;
     right: 30px;
     bottom: 50px;
-    z-index: 1000
+    z-index: 1000;
 }
 
 .top:hover{
@@ -145,7 +145,7 @@ footer{
     position: fixed;
     right: 27px;
     bottom: 47px;
-    z-index: 1000
+    z-index: 1000;
 }
 
 @media(max-width:540px){
@@ -170,7 +170,7 @@ footer{
         position: fixed;
         right: 18px;
         bottom: 33px;
-        z-index: 1000
+        z-index: 1000;
     } 
 }
 

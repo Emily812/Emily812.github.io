@@ -415,9 +415,9 @@
         本網站僅為學術用途，如侵權請來電09-12345678
     </footer>
 
-    <a href="#">
-        <div class="top "></div>
-    </a>
+
+    <div class="top"></div>
+
 
 
 
@@ -439,6 +439,9 @@
     </script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script>
+        $('.top').click(function () {
+            $('html,body').animate({ scrollTop: 0 }, 233);
+        });
         lightbox.option({
             'resizeDuration': 200,
             'wrapAround': true
