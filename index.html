@@ -178,7 +178,7 @@
                         </div>
                     </div>
                     <!-- Add Pagination -->
-                    <div class="swiper-pagination"></div>
+                    <div class="swiper-pagination " style="bottom: 0;top: unset; --swiper-theme-color: #E25959;background-color: rgb(250, 201, 161);height: 5px;"></div>
                 </div>
             </div>
             </div>
@@ -468,7 +468,7 @@
             loop: true,
             pagination: {
                 el: '.swiper-pagination',
-                clickable: true,
+                type: 'progressbar',
             },
         });
 
@@ -492,7 +492,7 @@
                 loop: true,
                 pagination: {
                     el: '.swiper-pagination',
-                    clickable: true,
+                    type: 'progressbar',
                 },
             });
         });
