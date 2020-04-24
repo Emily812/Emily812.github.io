@@ -26,9 +26,9 @@
                 </button> -->
 
                 <!-- 測試 -->
-                <div id="toggle" class="navbar-toggler"  data-toggle="collapse"
-                    data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation" style="padding: 0; border: 0;">
+                <div id="toggle" class="navbar-toggler" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"
+                    style="padding: 0; border: 0;">
                     <div class="one"></div>
                     <div class="two"></div>
                     <div class="three"></div>
@@ -175,7 +175,9 @@
                         </div>
                     </div>
                     <!-- Add Pagination -->
-                    <div class="swiper-pagination " style="bottom: 0;top: unset; --swiper-theme-color: #E25959;background-color: rgb(250, 201, 161);height: 5px;"></div>
+                    <div class="swiper-pagination "
+                        style="bottom: 0;top: unset; --swiper-theme-color: #E25959;background-color: rgb(250, 201, 161);height: 5px;">
+                    </div>
                 </div>
             </div>
             </div>
@@ -444,55 +446,86 @@
             'wrapAround': true
         })
         // 測試
-        $("#toggle").click(function () {
-            $(this).toggleClass("on");
-            $("#menu").slideToggle();
-        });
-        var win = document.documentElement.clientWidth
+        // $("#toggle").click(function () {
+        //     $(this).toggleClass("on");
+        //     $("#menu").slideToggle();
+        // });
+        // var win = document.documentElement.clientWidth
 
-        if (win < 540) {
-            var slidesPerView_Num = 1
-        }
-        else if (win < 720) {
-            var slidesPerView_Num = 2
-        }
-        else {
-            var slidesPerView_Num = 3
-        }
+        // if (win < 540) {
+        //     var slidesPerView_Num = 1
+        // }
+        // else if (win < 720) {
+        //     var slidesPerView_Num = 2
+        // }
+        // else {
+        //     var slidesPerView_Num = 3
+        // }
+        // var swiper = new Swiper('.swiper-container', {
+        //     slidesPerView: slidesPerView_Num,
+        //     spaceBetween: 0,
+        //     loop: true,
+        //     pagination: {
+        //         el: '.swiper-pagination',
+        //         type: 'progressbar',
+        //     },
+        // });
+
+        // $(window).resize(function () {
+        //     var win = document.documentElement.clientWidth
+        //     var swpoint = document.querySelector("#swiper-pagination")
+        //     switch (true) {
+        //         case (win > 721):
+        //             var slidesPerView_Num = 3
+        //             break
+        //         case (win < 720 && win > 540):
+        //             var slidesPerView_Num = 2
+        //             break
+        //         default:
+        //             var slidesPerView_Num = 1
+        //             break
+        //     }
+        //     var swiper = new Swiper('.swiper-container', {
+        //         slidesPerView: 1,
+        //         spaceBetween: 0,
+        //         loop: true,
+        //         breakpoints: {
+        //             540: {
+        //                 slidesPerView: 2,
+
+        //             },
+        //             960: {
+        //                 slidesPerView: 3,
+
+        //             },
+        //         },
+        //         pagination: {
+        //             el: '.swiper-pagination',
+        //             type: 'progressbar',
+        //         },
+        //     });
+        // });
+
         var swiper = new Swiper('.swiper-container', {
-            slidesPerView: slidesPerView_Num,
+            slidesPerView: 1,
             spaceBetween: 0,
             loop: true,
+            breakpoints: {
+                540: {
+                    slidesPerView: 2,
+
+                },
+                960: {
+                    slidesPerView: 3,
+                    loop: false,
+                },
+            },
             pagination: {
                 el: '.swiper-pagination',
                 type: 'progressbar',
             },
         });
 
-        $(window).resize(function () {
-            var win = document.documentElement.clientWidth
-            var swpoint = document.querySelector("#swiper-pagination")
-            switch (true) {
-                case (win > 721):
-                    var slidesPerView_Num = 3
-                    break
-                case (win < 720 && win > 540):
-                    var slidesPerView_Num = 2
-                    break
-                default:
-                    var slidesPerView_Num = 1
-                    break
-            }
-            var swiper = new Swiper('.swiper-container', {
-                slidesPerView: slidesPerView_Num,
-                spaceBetween: 0,
-                loop: true,
-                pagination: {
-                    el: '.swiper-pagination',
-                    type: 'progressbar',
-                },
-            });
-        });
 
     </script>
 
