@@ -1,3 +1,41 @@
+/* -------馬兒-特效------ */
+
+/* #about_us{
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.about_{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+} */
+.my_photo1 {
+    background-image: url("../img/horseicon-01.png");
+    top: 20%;
+    left: 5%;
+}
+.my_photo2 {
+    background-image: url("../img/horseicon-01.png");
+    top: 70%;
+    right: 5%;
+}
+.cow{
+    position: fixed;
+    background-repeat: no-repeat;
+    width: 15%;
+    height: 15%;
+    background-size: contain;
+    z-index: 999999;
+}
+section{
+    z-index: 5;
+}
+/* ------------------------------------ */
+
 .banner {
     position: relative;
     transform: translateY(-58.52);

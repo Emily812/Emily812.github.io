@@ -14,6 +14,9 @@
 </head>
 
 <body>
+
+
+
     <header class="blue">
         <nav class="blue navbar navbar-expand-lg navbar-light bg-light" style="padding: 0;">
             <div class="container w-100 where">
@@ -78,6 +81,7 @@
 
 
     </header>
+
 
     <!-- 內文區 -->
     <main>
@@ -384,6 +388,7 @@
 
 
         </section>
+
         <section id="t6">
             <div class="container pat30">
                 <!-- 最新消息 -->
@@ -409,6 +414,8 @@
                     </div>
                 </div>
         </section>
+
+
     </main>
     <footer>
         本網站僅為學術用途，如侵權請來電09-12345678
@@ -418,6 +425,11 @@
     <div class="top"></div>
 
 
+    <div id="about_us">
+        <div class="my_photo1 cow"></div>
+        <div class="my_photo2 cow"></div>
+        <div class="my_photo3 cow"></div>
+    </div>
 
 
 
@@ -446,10 +458,10 @@
             'wrapAround': true
         })
         // 測試
-        // $("#toggle").click(function () {
-        //     $(this).toggleClass("on");
-        //     $("#menu").slideToggle();
-        // });
+        $("#toggle").click(function () {
+            $(this).toggleClass("on");
+            $("#menu").slideToggle();
+        });
         // var win = document.documentElement.clientWidth
 
         // if (win < 540) {
@@ -527,6 +539,41 @@
         });
 
 
+    </script>
+
+    <script>
+        //------------------
+        //隨著滑鼠移動特效
+        //------------------
+
+        var my_photo1 = $('.cow')
+        console.log(my_photo1)
+        document.onmousemove = function (event) {
+            $.each(my_photo1, function (index, val) {
+                // console.log('index=', index);
+                var my_photo1_centerX = my_photo1[index].offsetLeft
+                my_photo1_centerX += 50
+                // console.log(my_photo1_centerX)
+                var my_photo1_centerY = my_photo1[index].offsetTop
+                my_photo1_centerY += 50
+                var offsetX;
+                var offsetY;
+
+
+                let nowPosiotionX = event.pageX;
+                let nowPosiotionY = event.pageY;
+                // console.log("X " + nowPosiotionX + "Y" + nowPosiotionY);
+
+
+                // 鼠標的距離 = 現在數標位置 - 小圖的中心座標
+                offsetX = nowPosiotionX - my_photo1_centerX
+                offsetY = nowPosiotionY - my_photo1_centerY
+
+                my_photo1[index].style.transform = `translate(${offsetX /= 50}px , ${offsetY /= 50}px)`
+
+
+            })
+        };
     </script>
 
 
