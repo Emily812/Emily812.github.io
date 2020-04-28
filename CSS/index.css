@@ -16,13 +16,13 @@
 .my_photo1 {
     background-image: url("../img/horseicon-01.png");
     top: 20%;
-    left: 5%;
+    left: 8%;
 }
-.my_photo2 {
+/* .my_photo2 {
     background-image: url("../img/horseicon-01.png");
     top: 70%;
     right: 5%;
-}
+} */
 .cow{
     position: fixed;
     background-repeat: no-repeat;
@@ -507,7 +507,7 @@ section#t5 .row .Card_text .more:hover{
     height: 100%;
     z-index: 1;
     opacity: 0;
-    background-color: rgba(189, 151, 120, 0.192);
+    background-color: rgba(253, 158, 104, 0.397);
     transition: all 0.3s;
     
     }
