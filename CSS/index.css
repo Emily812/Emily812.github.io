@@ -268,6 +268,23 @@ section#t3 .row img{
     
 
 }
+
+#map-iphone{
+    display: none;
+}
+
+@media(max-width:540px){
+    #map-iphone{
+        display: block;
+    }
+
+    #map-web{
+        display: none;
+    }
+}
+
+
+
 section#t3 .row a{
     width: 9%;
     position: absolute;
@@ -293,20 +310,20 @@ section#t3 .row .animate:hover{
     50% { transform: translate(0px, -20px) scale(1.2); }
      100% { transform: translate(0px, 0px)scale(1.2); }
 }
-section#t3 .row a:nth-child(2){
+section#t3 .row a:nth-child(3){
     top: 20%;
     right: 20%;
 }
-section#t3 .row a:nth-child(3){
+section#t3 .row a:nth-child(4){
     top: 47%;
     right: 45%;
-}section#t3 .row a:nth-child(4){
+}section#t3 .row a:nth-child(5){
     top: 76%;
     right: 40%;
-}section#t3 .row a:nth-child(5){
+}section#t3 .row a:nth-child(6){
     top: 68.5%;
     right: 58.5%;
-}section#t3 .row a:nth-child(6){
+}section#t3 .row a:nth-child(7){
     top: 60%;
     right: 78.5%;
 }
