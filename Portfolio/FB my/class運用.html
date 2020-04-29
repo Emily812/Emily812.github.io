@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box-250{
+            width: 250px;
+            height: 250px;
+        }
+        .box-500{
+            width: 500px;
+            height: 500px;
+        }
+
+        .box-r{
+            background-color: red;
+        }
+
+        .box-b{
+            background-color: blue;
+        }
+
+        .box-g{
+            background-color: green;
+        }
+
+        .box1{
+            float: left;
+        }
+
+        .box2{
+            float: right;
+            position: relative;
+        }
+
+        .item-abso0{
+            position: static;
+            right: 0px;
+            margin-right: 0px;
+        }
+
+       
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box-250 box-r"></div>
+        <div class="box-500 box-g"></div>
+        <div class="box-250 box-b"></div>
+        <div class="box-250 box-r"></div>
+
+    </div>
+    
+    <div class="box2">
+        <div class="box-500 box-b item-abso0"></div>
+        <div class="box-250 box-r item-abso" ></div>
+        <div class="box-250 box-g item-abso1"></div>
+        <div class="box-500 box-b item-abso2"></div>
+
+   </div>
+    
+
+</body>
+</html>

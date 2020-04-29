@@ -1,0 +1,747 @@
+.banner {
+    width: 100%;
+    height: calc(100vh - 90px);
+    /* background-color: burlywood; */
+    background-image: url(https://imgv.azureedge.net/wpupload/2019/08/wd08204-5504-0806-2019-001.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    
+
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    /* background-color: rgb(14, 171, 233); */
+    /* background-image: url(https://www.taiwan.net.tw/att/1/big_scenic_spots/pic_290_6.jpg); */
+    /* opacity: 0.7; */
+
+}
+
+.whitepic{
+    width: 100%;
+    height: 100%;
+    background-image: url(https://www.taiwan.net.tw/att/1/big_scenic_spots/pic_290_6.jpg);
+    opacity: 0.3;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.container {
+    /* width: 100%; */
+    /* max-width: 1140px; */
+    width: 1140px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(14, 22, 31);
+    padding-top: 20px;
+    
+    
+    
+}
+
+section#t1{
+    width: 100%;
+}
+
+.title0 {
+    width: 100%;
+    color: white;
+    font-size: 40px;
+    font-weight: 900;
+    font-family: 微軟正黑體;
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.cardall1 {
+    /* 人物介紹 */
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 60px;
+    opacity: 10;
+
+
+}
+
+.card {
+    /* margin: 20px; */
+    width: 200px;
+
+}
+
+#movie-egg{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 100px;
+}
+
+section#movie-egg .card{
+    width: 250px;
+} 
+
+section#movie-egg .card .cardtext{
+    width: 250px;
+    text-align: center;
+       margin: auto;
+       margin-top: 20px;
+}
+
+.margin-L-30px {
+    margin-left: 30px;
+}
+
+.cardpic {
+    background-position: center;
+    width: 200px;
+    height: 200px;
+
+}
+
+.cardpic1 {
+    background-position: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: solid 5px rgb(78, 78, 80);
+
+
+}
+
+.people1-pic {
+    /* background-image: url(https://cdn2.ettoday.net/images/913/d913380.jpg); */
+    background-image: url(../img/small1000.jpg);
+    background-size: cover;
+}
+
+.people2-pic {
+    /* background-image: url(https://cdn2.ettoday.net/images/4310/d4310849.jpg); */
+    background-image: url(../img/whiteboy.jpg);
+    background-size:cover;
+}
+
+
+.people3-pic {
+    /* background-image: url(https://img.moegirl.org/common/2/25/%E6%B1%A4%E5%A9%86%E5%A9%86.jpg); */
+    background-image: url(../img/popo.jpg);
+    background-size:cover;
+}
+
+.people4-pic {
+    /* background-image: url(https://5b0988e595225.cdn.sohucs.com/images/20190711/f7f7090834004e93b18bf4ef9e412153.jpeg); */
+    /* background-position: top; */
+    background-image: url(../img/nofaceboy.jpg);
+    background-size:cover;
+}
+
+.cardtext {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin-top: 20px;
+    letter-spacing: 5px;
+    padding: 30 0px;
+    font-family: 微軟正黑體;
+
+}
+
+section#story .cardgold .cardtext {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin-top: 20px;
+    letter-spacing: 5px;
+    padding-left:60px;
+    align-items: center;
+    font-family: 微軟正黑體;
+    text-align: justify;
+
+}
+
+.cardall2 {
+    width: 1140px;
+    height: 300px;
+    background-image: url(https://image.cache.storm.mg/styles/smg-800x533-fp/s3/media/image/2017/02/15/20170215-041600_U3260_M247883_6789.jpg?itok=kBdW8zhO);
+
+    /* background-size: cover;
+    background-attachment: fixed; */
+}
+
+
+section#t3{
+    width: 1140px;
+}
+
+.title-pic {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://cdn2.ettoday.net/images/4310/d4310846.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+
+}
+
+.banner1word {
+    width: 300px;
+    background-color: rgba(128, 128, 128, 0.651);
+    border-radius: 5px;
+
+    font-size: 50px;
+    font-weight: 900;
+    font-family: 微軟正黑體;
+
+    color: rgb(255, 255, 255);
+    letter-spacing: 15px;
+    padding-left: 15px;
+    text-align: center;
+
+
+}
+
+.storyt2-pic {
+    background-image: url(https://www.bomb01.com/upload/news/original/305e86d582320fdd6383fbc25d511d1b.jpg);
+    background-size: cover;
+}
+
+.story1-pic {
+    background-image: url(https://pic.pimg.tw/a2560rou/493f92992094c.jpg);
+    background-size: cover;
+}
+
+.story2-pic {
+    background-image: url(http://inews.gtimg.com/newsapp_match/0/9491472388/0);
+    background-size: cover;
+}
+
+.story3-pic {
+    background-image: url(https://static-ugc-media.hk01.com/5d3ffe34783b457b844e9cb8.jpeg);
+    background-size: cover;
+
+}
+
+
+.cardallgold {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 80px;
+    
+}
+
+.cardgold {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    
+
+
+}
+
+.cardgold .cardpic {
+    width: 100%;
+    height: 600px;
+    background-position: top;
+}
+
+/* .margin-R-0{
+    justify-content: unset;
+    
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    margin-right: 0px;
+} */
+
+.cardgold .cardtext {
+    width: 40%;
+    line-height: 60px;
+    letter-spacing: 5px;
+    font-family: 微軟正黑體;
+    
+}
+
+.cardshowpic {
+    background-position: center;
+    width: 400px;
+    height: 400px;
+    margin-right: 30px;
+    border-radius: 50%;
+    border: solid 5px rgb(63, 62, 62);
+}
+
+
+
+#t4-text{
+    font-size: 30px;
+    font-family: 微軟正黑體;
+    text-align: center;
+    padding-right: 30px;
+   
+    
+
+}
+
+
+.story4-pic {
+    /* background-image: url(https://im.marieclaire.com.tw/s805c452h100b0/assets/mc/201906/5D135132A7F291561547058.jpeg); */
+    background-image:url(../img/noforget.jpg) ;
+    background-size: cover;
+}
+
+.story5-pic {
+    /* background-image: url(https://pic4.zhimg.com/v2-d3db2b83efc4ca39abc319605d28ec8b_b.jpg); */
+    background-image: url(../img/eat\ fat.jpg);
+    background-size: cover;
+    display: flex;
+    order: 1;
+    margin-left: 30px;
+
+}
+
+
+.end-vedio {
+    width: 1000px;
+    height: 600px;
+
+
+}
+
+#Right {
+    width: 100%;
+}
+
+#Right.cardgold {
+    justify-content: flex-end;
+
+}
+
+/* .end-video{
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+   
+
+}
+
+#content section#t5 .video-container{
+    position:absolute;{
+    position:relative;
+    padding-bottom:56.25%;
+    padding-top:30px;
+    height:0;
+    overflow:hidden;
+}
+    
+     
+    
+#content section#t5 .video-container iframe{  
+    position:absolute;  
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+} */
+
+
+  
+
+@media(max-width:1280px){
+    /* --------框架----------- */
+    .content .container{
+        /* width: 1140px; */
+        width: 100%;
+        max-width: 1140px;
+    }
+ /* --------人物介紹----------- */
+    section#t1 .cardall1{
+        flex-wrap: wrap;
+    }
+
+    section#t1 .cardall1 .card{
+        
+        width: 50%;
+    }
+
+    
+/* -----人物拆解 圖片&文字介紹----- */
+   .content .container .card .cardpic{
+        width: 400px;
+        height: 400px;
+        margin: auto;
+        background-size: cover;
+        
+        padding-top: unset;
+    }
+
+   .content .container .card .cardtext{
+       width: 400px;
+       margin: auto;
+   }
+
+   section#t1 .cardall1{
+       display: flex;
+       justify-content: space-between;
+       padding: 30px 60px
+   }
+    section#cardall1 .card{
+        width:50%;
+
+    }
+
+/* ---------電影彩蛋----------- */
+
+    section#movie-egg {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 30px;
+    
+    }
+
+    section#movie-egg .card {
+        width:30%;
+    
+    }
+
+   
+    section#movie-egg .card .cardpic1{
+       width:300px;
+       height: 300px;
+       margin: auto;
+    }
+
+    section#movie-egg .card .cardtext{
+        width: 250px;
+       margin: auto;
+    }
+
+}
+
+@media(max-width:1140px){
+     /* --------框架----------- */
+     .content .container{
+        /* width: 800px; */
+        width: 100%;
+        max-width: 800px;
+    }
+ /* --------人物介紹----------- */
+    
+
+    section#t1 .cardall1 .card{
+        
+        width: 90%;
+    }
+
+    
+/* -----人物拆解 圖片&文字介紹----- */
+   .content .container .card .cardpic{
+        width: 600px;
+        height: 600px;
+        margin: auto;
+        background-size: cover;
+        
+        padding-top: unset;
+    }
+
+   .content .container .card .cardtext{
+       width: 450px;
+       margin: auto;
+   }
+
+   section#t1 .cardall1{
+       display: flex;
+       justify-content: center;
+       
+       padding: 30px 60px;
+       
+   }
+    section#t1 .cardall1 .card{
+        width:100%;
+        margin-bottom: 50px;
+        
+
+    
+
+    }
+
+    /* ----------電影劇情------------ */
+
+    .title-pic {
+        background-position: center;
+        
+    }
+
+    section.cardallgold .cardgold{
+        justify-content: unset;
+        flex-direction: column;
+    }
+
+    .cardgold .cardpic {
+        width: 100%;
+        height: 600px;
+        background-position: top;
+    }
+
+    .cardgold .cardtext {
+        width: 100%;
+        line-height: 60px;
+        letter-spacing: 5px;
+    }
+    
+
+
+    /*----------- 電影彩蛋----------- */
+    section#t3{
+        /* width: 800px; */
+        width: 100%;
+        max-width: 800px;
+    }
+ 
+    /* section#movie-egg .card{
+        width: 500;
+    }
+     */
+    /* ---------電影彩蛋----------- */
+
+    section#movie-egg {
+        display: flex;
+        justify-content: center;
+        padding: 50px 30px 0px 30px;
+        flex-wrap: wrap;
+    
+    }
+
+    section#movie-egg .card {
+        width:100%;
+        margin-bottom: 50px;
+    
+    }
+
+   
+    section#movie-egg .card .cardpic1{
+       width:550px;
+       height: 550px;
+       margin: auto;
+    }
+
+    section#movie-egg .card .cardtext{
+        width: 450px;
+       margin: auto;
+    }
+
+    /* 電影金句 */
+    section.cardallgold #Right{
+        padding: 0 auto;
+    
+        
+    }
+
+    section.cardallgold #Right #t4-pic{
+     
+        display: flex;
+        order: unset;
+
+        
+    }
+
+    section.cardallgold #Right #t4-text{
+        display: flex;
+        order: unset;
+    }
+
+    .cardshowpic{
+        width: 600px;
+        height: 600px;
+        margin: 0 auto;
+    }
+
+    
+    /* 電影預告 */
+    section#t5 iframe {
+        width:800px ;
+        height:600px; 
+    }
+
+    #t4-text{
+        width: unset;
+        display: unset;
+    }
+
+    
+
+}
+
+@media(max-width:800px){
+
+    /* --------框架----------- */
+    .content .container{
+        /* width: 375px; */
+        width: 100%;
+    }
+ /* --------人物介紹----------- */
+    
+
+    section#t1 .cardall1 .card{
+        
+        width: 100%;
+    }
+
+    /* -----人物拆解 圖片&文字介紹----- */
+   .content .container .card .cardpic{
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    background-size: cover;
+    
+    padding-top: unset;}
+
+
+    .content .container .card .cardtext{
+    width: 300px;
+    margin: auto;
+    }
+
+    section#t1 .cardall1{
+    display: flex;
+    justify-content: center;
+    
+    padding: 30px 30px;
+    
+    }
+    section#t1 .cardall1 .card{
+        width:100%;
+        margin-bottom: 50px;
+        
+
+
+
+    }
+
+    /* ----------電影劇情------------ */
+
+    .title-pic {
+        background-position: center;
+    }
+
+    section#story.cardallgold{
+        padding: unset;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    section#story.cardallgold .cardgold{
+        justify-content: center;
+        flex-direction: column;
+        padding: unset;
+        padding: 5px 20px;
+
+    }
+
+    section#story.cardallgold .cardgold .cardpic {
+        width: 100%;
+        height: 300px;
+        background-position: top;
+    }
+
+    .cardgold .cardtext {
+        width: 100%;
+        line-height: 60px;
+        letter-spacing: 5px;
+    }
+
+
+
+    /*----------- 電影彩蛋----------- */
+    section#t3{
+        /* width: 375px; */
+        width: 100%;
+    }
+
+    /* section#movie-egg .card{
+        width: 500;
+    }
+    */
+    /* ---------電影彩蛋----------- */
+
+    section#movie-egg {
+        display: flex;
+        justify-content: center;
+        padding: 50px 30px 0px 30px;
+        flex-wrap: wrap;
+
+    }
+
+    section#movie-egg .card {
+        width:100%;
+        margin-bottom: 50px;
+
+    }
+
+
+    section#movie-egg .card .cardpic1{
+        width:300px;
+        height: 300px;
+        margin: auto;
+    }
+
+    section#movie-egg .card .cardtext{
+        width: 300px;
+        margin: auto;
+    }
+
+     /* 電影金句 */
+     section.cardallgold #Right{
+        padding: 0 auto;
+    
+        
+    }
+
+    section.cardallgold #Right #t4-pic{
+        display: flex;
+        order: unset;
+
+        
+    }
+
+    section.cardallgold #Right #t4-text{
+        display: flex;
+        order: unset;
+    }
+
+    .cardshowpic{
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+        
+        border-left: unset;
+        border-right: unset;
+        border: unset;
+        /* /* border-top:solid 10px white; */
+        border:solid 5px rgb(63,62,62)
+        
+
+    }
+
+/* 電影預告 */
+    section#t5 iframe {
+        width:375px ;
+        height:250px; 
+    }
+
+        
+
+
+
+}

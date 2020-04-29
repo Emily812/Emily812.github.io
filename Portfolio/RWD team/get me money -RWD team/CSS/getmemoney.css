@@ -1,0 +1,140 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "微軟正黑體";
+}
+
+.banner {
+  position: relative;
+}
+
+.banner-word {
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  bottom: 25%;
+  left: 100px;
+}
+
+.banner-word span {
+  font-size: 48px;
+  color: #00FFF8;
+}
+
+.title-1 {
+  padding: 50px;
+  text-align: center;
+}
+
+.title-1 p {
+  font-size: 24px;
+}
+
+.card-header {
+  background-color: #595A5B;
+}
+
+.card {
+  background-color: #f0f2f3;
+}
+
+.card h2 {
+  text-align: center;
+  text-decoration: none;
+}
+
+.card button {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.card button:visited {
+  text-decoration: none;
+}
+
+.card button:active {
+  text-decoration: none;
+}
+
+.card .btn-link:hover {
+  color: #00FFF8;
+  text-decoration: none;
+}
+
+.card .btn-link:focus {
+  color: #00FFF8;
+  text-decoration: none;
+}
+
+.card span {
+  color: #f8cc53;
+}
+
+.card .collapse .card-body {
+  text-align: center;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.card .collapsing {
+  text-align: center;
+}
+
+.card .collapsed {
+  text-align: center;
+}
+
+.line {
+  margin-top: 80px;
+  width: 100%;
+  height: 5px;
+  background-color: black;
+}
+
+.getmoney-pic {
+  background-image: url(../img/usewhere.jpg);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+#manager_row {
+  margin: 20px 0 0 0;
+  padding-bottom: 30px;
+}
+
+#manager {
+  width: 100%;
+  border: 5px #464646 solid;
+}
+
+#manager_text {
+  padding: 20px;
+  background-color: #464646;
+  color: white;
+  line-height: 30px;
+}
+
+#manager_text p {
+  padding: 44px 0;
+  font-size: 25px;
+  margin: 0;
+}
+
+@media (max-width: 1200px) {
+  #manager_text p {
+    padding: 29.5px 0;
+    font-size: 20px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 960px) {
+  #manager {
+    margin: 0 0 30px 0;
+  }
+}
+/*# sourceMappingURL=getmemoney.css.map */
