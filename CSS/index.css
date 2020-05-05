@@ -53,7 +53,7 @@ section{
 /* banner 下方后里馬場的文字 */
 .base {
     width: 600px;
-    padding:25px 0;
+    padding:10px 0;
     position: absolute;
     bottom: 0px;
 
@@ -92,17 +92,22 @@ section#t1 .container {
     padding: 10px 0px 40px 0px;
 } */
 .title{
-    margin: 0 auto;
-    width: 50%;
+    
+    margin: 0px auto 0px auto;
+    width: 40%;
     min-width: 280px;
-    border: solid 2px #5B2C0C;
+    border: solid 2.4px #A06437;
 }
 .pat30{
     padding-top:30px ;
 }
 
+.t1_padd{
+    padding: 40px 0px;
+}
+
 .pab50{
-    padding-bottom: 50px;
+    padding-bottom: 80px;
 }
 .title_text{
     color: #5B2C0C;
@@ -116,28 +121,33 @@ section#t1 .container {
 
 section#t1 .row .col-md-7 img {
     width: 100%;
+    border: solid 4px #B7673C;
 
 }
 
-.part {
+/* .part {
     display: flex;
     padding: 50px 0px;
 
-}
+} */
 
-.aaa {
+/* .aaa {
     display: flex;
     align-items: center;
-}
+} */
 
 .t1-text {
-    color: black;
+    color: rgb(24, 24, 24);
     font-size: 28px;
 
     padding: 30px 5px;
 }
-.pat30 {
-    padding-top: 30px;
+.pat70 {
+    padding-top: 60px;
+}
+
+.t1_padd_{
+    padding: 60px 0px;
 }
 
 @media(max-width:960px){
@@ -343,6 +353,12 @@ section#t4 .title_text{
     color:white;
 }
 
+section#t4 .t1-text{
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
 
 /* 票價資訊 */
 section#t4 .container .t4-t {
@@ -370,9 +386,10 @@ section#t4 .container .t4-t {
 section#t4 .container.hug{
     /* width: 1140px; */
     /* height:600px; */
-    border: solid 2px white;
+    border: solid 6px white;
     border-radius: 20px;
-    padding: 20px 50px;
+    padding: 20px 100px;
+    text-align: center;
     
 }
 
@@ -392,7 +409,7 @@ section#t4 .container.hug .row .col-12{
 
 /* 票價資訊中每個活動的標題格式設定*/
 section#t4 .container .t1-text .t4-t2{
-    
+    margin-top: unset;
     color: #604D46;
     /* font-size: 18px; */
     font-family: "微軟正黑體";
@@ -412,6 +429,66 @@ section#t4 .container .t1-text .t4-c2{
     text-align: center;
     color: white;
     
+}
+@media(max-width:540px){
+    section#t4 .mab60{
+        width: 100%;
+        margin: 30px 0px !important ;
+        
+    }
+
+    section#t4 .t1-text{
+        color: white;
+        margin-top: 30px;
+        margin-bottom: 60px;
+        font-size: 24px;
+        text-align: center;
+
+        /* width: 100%;
+        height: 300px;
+        display: flex;
+        flex-flow: wrap;
+        align-content: center;
+        justify-content: center; */
+    }
+
+    section#t4 .container.hug{
+        
+        border: solid 6px white;
+        border-radius: 20px;
+        padding: 20px 10px;
+        text-align: center;
+        
+    }
+    section#t4 .container .t1-text{
+    
+        display:inline-block;
+        margin: unset;
+        padding:5px 5px;
+        
+       
+    }
+
+    section#t4 .container .t1-text .t4-t2{
+    
+        font-size: 26px;
+        letter-spacing: unset;
+
+        width: unset;
+        
+        display: flex;
+        padding-left: unset;
+        padding:1px 10px;
+       
+    }
+    
+    section#t4 .container .t1-text .t4-c2{
+        font-size: 16px;
+        text-align: center;
+        color: white;
+        
+    }
+
 }
 
 
