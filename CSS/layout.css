@@ -1,210 +1,107 @@
+@charset "UTF-8";
 * {
-    box-sizing: border-box;
-    font-family: "微軟正黑體";
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-}
-html{
-    scroll-behavior: smooth;
+  margin: 0px;
+  padding: 0px;
+  font-family: "微軟正黑體";
 }
 
-nav {
-    width: 100%;
-    background-color: #9FBACA;
+.navbar {
+  padding: 0 8px 0 0;
+  position: fixed;
+  z-index: 9999999;
+  width: 100%;
 }
 
-header.blue .container {
-    /* background-color: rgb(155, 218, 248); */
-    background-color: #DCC0AA;
+nav #toggle {
+  width: 28px;
+  height: 30px;
+  margin: 10px auto;
+  float: right;
+  margin-right: 15px;
+  display: none;
 }
 
-header.blue .where{    
-    
-    display: flex;
-    justify-content: space-around;
+nav #toggle div {
+  width: 100%;
+  height: 5px;
+  background: white;
+  margin: 4px auto;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
-.word {
-    color: white;
-    font-size: 20px;
-    font-weight: 600;
+nav #toggle.on .one {
+  -webkit-transform: rotate(45deg) translate(5px, 5px);
+          transform: rotate(45deg) translate(5px, 5px);
 }
 
-.show {
-    text-align: right;
-    /* show是bootstrap的一種屬性，當只有nav變成漢堡條時並點開他時，下面按鈕最終的呈現位置 */
+nav #toggle.on .two {
+  opacity: 0;
 }
 
-@media(max-width: 992px) {
-    .word {
-        text-align: center;
-
-    }
-
-    /* 因為漢堡條只會在平板版以下才會出現，所以在這時去做修正，
-    修正原因，是因為bootstrap本身內建設定預設為左邊顯示內頁，所以將做此修正改預設 */
+nav #toggle.on .three {
+  -webkit-transform: rotate(-45deg) translate(7px, -8px);
+          transform: rotate(-45deg) translate(7px, -8px);
 }
 
-.logo {
-    width: 50px;
-    margin: auto;
-    position: relative;
-    /* padding: auto 20px; */
-}
-
-.logo #text {
-    color: white;
-}
-
-header.blue .container img {
-    width: 100%;
-
-    /* margin: 5px 20px; */
-
-}
-
-/* .buttonall {
-    width: 80%;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-
-
-}
-
-.btn {
-    color: white;
-    font-size: 20px;
-    padding: 0 20px;
-    font-family: "微軟正黑體";
-    ;
-
-} */
-.brown{
-    color: #5B2C0C !important;
-    }
-    /* 權重最高 顏色為棕色 */
-
-
-.word:hover {
-    /* height: 100px; */
-    background-color: #A06437;
-    transition: 2.5s;
-    color: white!important;
-
-}
-.blue {
-    /* background-color: rgb(155, 218, 248) !important; */
-    background-color: #DCC0AA !important;
-}
-
-
-.white {
-    color: white !important;
-}
-/* 權重最高 顏色為白色 */
-
-
-/* --------頁尾------------- */
-footer{
-    font-size: 16px;
-    color: white;
-    background-color: #5B2C0C;
-    padding: 20px;
-    width: 100%;
-    text-align: center;
-    margin-top: 20px;
-}
-
-
-.top{
-    width: 60px;
-    height: 60px;
-    /* background-color: rgba(126, 27, 27, 0.137); */
-    background-image: url(../img/up-01.png);
-    background-size:contain ;
-    background-repeat: no-repeat;
-    
-    position: fixed;
-    right: 30px;
-    bottom: 50px;
-    z-index: 1000;
-}
-
-.top:hover{
-    width: 66px;
-    height: 66px;
-    background-image: url(../img/up-02.png);
-    background-size:contain ;
-    background-repeat: no-repeat;
-    
-    position: fixed;
-    right: 27px;
-    bottom: 47px;
-    z-index: 1000;
-}
-
-@media(max-width:540px){
-    .top{
-        width: 40px;
-        height: 40px;
-        background-image: url(../img/up-01.png);
-      
-        
-        position: fixed;
-        right: 20px;
-        bottom: 35px;
-        
-    }
-    
-    .top:hover{
-        width: 44px;
-        height: 44px;
-        background-image: url(../img/up-02.png);
-        
-        
-        position: fixed;
-        right: 18px;
-        bottom: 33px;
-        z-index: 1000;
-    } 
-}
-
-
-
-
-
-
-/* --------測試nav----------- */
-#toggle {
-    width: 28px;
-    height: 30px;
-    margin: 10px auto;
+@media (max-width: 992px) {
+  nav #toggle {
+    display: block;
   }
-  
-  #toggle div {
-    width: 100%;
-    height: 4px;
-    background: rgb(75, 64, 49);
-    margin: 4px auto;
-    transition: all 0.3s;
-    backface-visibility: hidden;
-  }
-  
-  #toggle.on .one {
-    transform: rotate(45deg) translate(3px, 5px);
-  }
-  
-  #toggle.on .two {
-    opacity: 0;
-  }
-  
-  #toggle.on .three {
-    transform: rotate(-45deg) translate(7px, -8px);
-  }
+}
 
+nav .navbar-nav a {
+  font-size: 25px;
+}
+
+nav .navbar-nav {
+  margin: auto;
+}
+
+nav .navbar-nav li.nav-item {
+  margin: 0 25px 0px 25px;
+}
+
+nav .navbar-nav li.nav-item a {
+  font-size: 30px;
+  color: white;
+}
+
+nav .navbar-nav li.nav-item a p {
+  color: white;
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+  margin: 0 0 0 auto;
+  font-size: 30px;
+  text-decoration: none;
+  position: relative;
+  border-bottom: solid 2px #ffbf0e;
+}
+
+nav .navbar-nav li.nav-item a p:hover {
+  color: #ffbf0e;
+  border-bottom: none;
+}
+
+nav .navbar-nav li.nav-item a p:after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0%;
+  width: 0;
+  border-bottom: 2px solid #ffbf0e;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+nav .navbar-nav li.nav-item a p:hover:after {
+  width: 100%;
+}
+/*# sourceMappingURL=layout.css.map */
