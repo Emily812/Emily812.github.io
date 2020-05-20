@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            position: relative;
+            width: 100%;
+            height: 1000px;
+            background-color: rgb(160, 159, 159);
+            margin: 0px;
+        }
+
+        .boxhead {
+            width: 100%;
+            height: 43px;
+            padding: 0.364px;
+        }
+
+        #boxh-L {
+            width: 50%;
+            height: 43px;
+            float: left;
+
+
+        }
+
+        input {
+            width: 340px;
+            height: 25px;
+            border-radius: 4px;
+            margin-top: 7px;
+            margin-left:10px ;
+            /* position: absolute; */
+            /* top: 9px;
+            left: 50px;   */
+
+        }
+
+        #logoicon {
+            width: 25px;
+            height: 25px;
+            border-radius: 10%;
+            background-image: url("./img/FBlogo.jpg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            line-height: 25px;
+            margin: 7px 0;
+            float: left;
+            text-decoration: none;
+        }
+
+
+
+
+        .text {
+            position: relative;
+            top: 8px;
+            left: 10px;
+            margin: 7px 0;
+        }
+
+
+
+        .boxh-R {
+            width: 50%;
+            height: 43px;
+            float: left;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .boxhead-R-group {
+            width: 300px;
+            height: 35px;
+            margin: 4px auto;
+
+        }
+
+        #Username {
+            width: 100px;
+            height: 35px;
+            float: left;
+            color: white;
+            text-align: center;
+            line-height: 35px;
+            border-right: solid 1px #172845;
+
+        }
+
+        #Userindex {
+            width: 80px;
+            height: 35px;
+            float: left;
+            color: white;
+            text-align: center;
+            line-height: 35px;
+            border-right: solid 1px #172845;
+            text-decoration: none;
+        }
+
+        #make {
+            width: 80px;
+            height: 35px;
+            float: left;
+            color: white;
+            text-align: center;
+            line-height: 35px;
+            border-right: solid 1px #172845;
+            text-decoration: none;
+        }
+
+
+        .background-gray {
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            width: 100%;
+            height: 10000px;
+            background-color: gray;
+        }
+
+
+        /* .boxmid大頭貼+跟封面照片及關於我按鈕加總 */
+        .boxmid {
+            width: 851px;
+            height: 358px;
+            margin: 0px auto;
+            position: relative;
+        }
+
+        /* .boxm-top 是封面照片 */
+        .boxm-top {
+            width: 851px;
+            height: 315px;
+            position: relative;
+        }
+
+        .mypic-s {
+            width: 28px;
+            height: 28px;
+            background-color: white;
+            background-image: url("./img/pic.jpg");
+            background-size: 28px;
+            border: 1px solid #000;
+            border-radius: 50%;
+            line-height: 25px;
+            float: left;
+            position: relative;
+            top: 5px;
+        }
+
+        .mypic-s-boxname {
+            width: 50px;
+            height: 35px;
+            color: white;
+            float: left;
+            text-align: center;
+            line-height: 35px;
+            margin-left: 7px;
+            text-decoration: none;
+
+
+        }
+
+        .banner-name {
+            position: absolute;
+            color: rgb(233, 229, 229);
+            font-size: x-large;
+            font-weight: 900;
+            left: 200px;
+            top: 280px;
+
+        }
+
+        /* #boxm-top-button是按鈕 更新資料 */
+        #boxm-top-button1 {
+            background-color: rgb(255, 255, 255);
+            width: 100px;
+            height: 30px;
+            border: solid 1px black;
+            position: absolute;
+            right: 250px;
+            bottom: 20px;
+            text-align: center;
+            line-height: 30px;
+            text-decoration: none;
+
+        }
+
+        #boxm-top-button23 {
+            width: 202px;
+            height: 30px;
+            border: solid 1px rgb(14, 13, 13);
+            box-sizing: border-box;
+            position: absolute;
+            right: 15px;
+            bottom: 20px;
+
+        }
+
+        /* #boxm-top-button是按鈕 活動紀錄 */
+        #boxm-top-button2 {
+            background-color: rgb(255, 255, 255);
+            width: 150px;
+            height: 27.5px;
+            float: left;
+            text-align: center;
+            line-height: 30px;
+            border-right: solid 1px gray;
+            text-decoration: none;
+
+        }
+
+
+        /* #boxm-top-button3是按鈕中活動紀錄 旁邊更多... */
+        #boxm-top-button3 {
+            background-color: rgb(255, 255, 255);
+            width: 50px;
+            height: 27.5px;
+            float: left;
+            text-align: center;
+            line-height: 20px;
+            text-decoration: none;
+
+
+        }
+
+        .boxm-bot {
+            width: 851px;
+            height: 43px;
+            position: relative;
+        }
+
+        .boxm-botword {
+            width: 649px;
+            height: 43px;
+            position: absolute;
+            left: 220px;
+            color: #3F61A7;
+        }
+
+
+        .boxm-circle {
+            width: 170px;
+            height: 170px;
+            background-image: url("./img/pic.jpg");
+            background-size: 170px;
+            border: solid 4px rgb(240, 239, 239);
+            border-radius: 100%;
+            position: absolute;
+            top: 170px;
+            left: 20px;
+
+        }
+
+        .floatL {
+            float: left;
+        }
+
+        .floatR {
+            float: right;
+        }
+
+        .boxm-b1 {
+            width: 112px;
+            height: 43px;
+            line-height: 43px;
+            text-align: center;
+            border-left: solid 1px gray;
+            border-right: solid 1px gray;
+            text-decoration: none;
+        }
+
+        .boxm-b2 {
+            width: 66px;
+            height: 43px;
+            line-height: 43px;
+            text-align: center;
+            border-right: solid 1px gray;
+            text-decoration: none;
+        }
+
+
+        .boxm-b3 {
+            width: 66px;
+            height: 43px;
+            line-height: 43px;
+            ;
+            text-align: center;
+            border-right: solid 1px gray;
+            text-decoration: none;
+        }
+
+        .boxm-b4 {
+            width: 67px;
+            height: 43px;
+            line-height: 43px;
+            text-align: center;
+            border-right: solid 1px gray;
+            text-decoration: none;
+        }
+
+        .boxm-b5 {
+            width: 87px;
+            height: 43px;
+            line-height: 43px;
+            text-align: center;
+            border-right: solid 1px gray;
+            text-decoration: none;
+        }
+
+        .boxm-b6 {
+            width: 86px;
+            height: 43px;
+            line-height: 43px;
+            text-align: center;
+            border-right: solid 1px gray;
+            text-decoration: none;
+
+        }
+
+        .color-blue1 {
+            background-color: #3F61A7;
+        }
+
+        .color-blue2 {
+            background-color: #172845;
+        }
+
+        .color-white {
+            background-color: white;
+        }
+
+        .color-red {
+            background-color: rgb(255, 203, 203);
+        }
+
+        .color-brown {
+            background-color: brown;
+
+        }
+
+        .bule {
+            width: 900px;
+            height: 43px;
+            background-color: chartreuse;
+            margin: 0px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxhead color-blue1">
+        <div class="bule">
+            <div id="boxh-L" class="boxh-L color-blue1 ">
+                <!-- <div id="logoicon"></div> -->
+                <a href id="logoicon"></a>
+                <input type="text">
+
+            </div>
+            <div id="boxh-R" class="boxh-R color-blue1">
+                <div class="boxhead-R-group">
+                    <div id="Username">
+                        <div class="mypic-s"></div>
+                        <!-- <div class="mypic-s-boxname">邱鈺婷</div> -->
+                        <a href class="mypic-s-boxname">邱鈺婷</a>
+
+                    </div>
+                    <!-- <div id="Userindex">首頁</div> -->
+                    <a href id="Userindex">首頁</a>
+                    <!-- <div id="make">建立</div> -->
+                    <a href id="make">建立</a>
+                    <div id="icon1"></div>
+                    <div id="icon2"></div>
+                    <div id="icon3"></div>
+                    <div id="icon4"></div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="background-gray">
+        <div class="boxmid color-brown">
+            <div class="boxm-top color-red"><img src="./img/banner.jpg" width="851px" height="358px">
+                <div class="banner-name">邱鈺婷</div>
+                <!-- <div id="boxm-top-button1">更新資訊</div> -->
+                <a href id="boxm-top-button1">更新資訊</a>
+                <div id="boxm-top-button23">
+                    <!-- <div id="boxm-top-button2">活動紀錄</div> -->
+                    <a href id="boxm-top-button2">活動紀錄</a>
+                    <!-- <div id="boxm-top-button3">...</div> -->
+                    <a href id="boxm-top-button3">...</a>
+
+                </div>
+            </div>
+
+            <div class="boxm-bot color-white">
+                <div class="boxm-botword ">
+                    <!-- <div class="boxm-b1 floatL">動態時報▼</div>
+                    <div class="boxm-b2 floatL">關於</div>
+                    <div class="boxm-b3 floatL">朋友</div>
+                    <div class="boxm-b4 floatL">相簿</div>
+                    <div class="boxm-b5 floatL">典藏</div>
+                    <div class="boxm-b6 floatL">更多▼</div> -->
+                    <a href class="boxm-b1 floatL">動態時報▼</a>
+                    <a href class="boxm-b2 floatL">關於</a>
+                    <a href class="boxm-b3 floatL">朋友</a>
+                    <a href class="boxm-b4 floatL">相簿</a>
+                    <a href class="boxm-b5 floatL">典藏</a>
+                    <a href class="boxm-b6 floatL">更多▼</a>
+
+                </div>
+
+
+            </div>
+            <div class="boxm-circle color-white">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

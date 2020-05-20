@@ -1,0 +1,93 @@
+// -------顏色-------
+$color1 : #567AA8;
+$color2 : #494949;
+$color3 : #D7E7F9;
+$color-white:white;
+$color-white07:rgba(255, 255, 255, 0.445);
+
+$color-black:black;
+
+// -------尺寸---------
+$size-40:40px;
+$size-36:36px;
+$size-20:20px;
+
+// -----照片-----------
+
+
+
+// -------屬性--------
+
+// ----背景圖-------------
+/* 背景色-關於我們 */
+#call_me{
+    background-color: $color-black;
+}
+.bg-pic{
+    // background-color: red($color: #000000);
+    background-image: url(../img/background-w7-07.jpg);
+    background-size: cover;
+
+}
+
+
+.title{
+padding: 5px 0;
+text-align: center; 
+// background-color: $color1;
+font-size: $size-40;
+color:$color-white;
+}
+
+
+
+input{
+    width: 100%;
+    
+}
+#i-size{
+    height: 200px; 
+}
+
+input.send{
+    width: 100px;
+    background-color: $color2;
+    color: $color-white;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.line{
+    width: 1px;
+    height: 596px;
+    background-color: $color-black;
+}
+
+h5 .pic-call{
+    background-image: url(../img/icon-call.png);
+    background-size:cover ;
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin: 0px;
+    
+}
+
+h5 .pic-email{
+    background-image: url(../img/icon-email.png);
+    background-size:cover ;
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin: 0px;
+}
+
+h5 .pic-addres{
+    background-image: url(../img/icon-address.png);
+    background-size:cover ;
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin: 0px;
+}

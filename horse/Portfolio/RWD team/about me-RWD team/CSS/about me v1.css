@@ -1,0 +1,203 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* 背景色-關於我們 */
+.title {
+  padding: 25px;
+  margin: 0 !important;
+  text-align: center;
+  background-color: #567AA8;
+  font-size: 40px;
+  color: black;
+  position: absolute;
+  bottom: -20%;
+  left: 0%;
+}
+
+@media (max-width: 960px) {
+  .title {
+    font-size: 36px;
+  }
+}
+
+.mat-120 {
+  margin-top: 120px;
+}
+
+section#about_me .container {
+  padding-bottom: 150px;
+}
+
+.card {
+  width: 100%;
+  height: 385px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+.card .card-line {
+  width: 100%;
+  height: 100%;
+  border: solid 3px black;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 60px;
+}
+
+.pic-pos-l0 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.pic-1-wrap {
+  overflow: hidden;
+  position: absolute;
+  top: 50px;
+}
+
+.pic-1-wrap #pic-1 {
+  width: 100%;
+}
+
+.dflex-dir {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.in {
+  display: none;
+}
+
+.out {
+  display: block;
+}
+
+#ab-1 {
+  width: 100%;
+  height: 100%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+#ab-1 .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-top: 150px;
+}
+
+#ab-1 .pic-1-wrap {
+  position: absolute;
+  top: 50px;
+}
+
+#ab-2 {
+  padding: 200px 0px 200px 0px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#ab-2 .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-top: 50px;
+}
+
+#ab-2 .pic-pos-r0 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#ab-2 .pic-1-wrap {
+  position: absolute;
+  top: 150px;
+}
+
+#ab-3 .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-top: 50px;
+}
+
+#ab-3 .pic-1-wrap {
+  position: absolute;
+  top: -50px;
+}
+
+@media (max-width: 992px) {
+  .card {
+    position: unset;
+  }
+  .pic-pos-l0 {
+    position: unset;
+  }
+}
+
+#maranger-inf .container img {
+  background-size: cover;
+  margin-top: 30px;
+  border: solid 10px #494949;
+}
+
+#maranger-inf .container .row #pic {
+  position: relative;
+}
+
+#maranger-inf .container .mask {
+  width: calc(100% - 30px);
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.575);
+  color: white;
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+}
+
+#maranger-inf .container .mag-text {
+  margin-top: 30px;
+  background-color: #494949;
+  color: white;
+  font-size: 20px;
+  padding: 62px 50px 63px 50px;
+  text-align: justify;
+}
+/*# sourceMappingURL=about me v1.css.map */

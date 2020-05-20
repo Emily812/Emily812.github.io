@@ -1,0 +1,163 @@
+
+*{
+box-sizing: border-box;
+font-family: "微軟正黑體";
+}
+
+.banner{
+    // width: 100%;
+    // height: 90vh;
+    // background-image: url(../img/background-w7-07.jpg);
+    // background-size: cover;
+    // background-position: center;
+    // align-items: center;
+    // display: flex;
+    
+position: relative;
+
+    
+
+}
+.banner-word{
+    font-size: 30px ;
+    color: white;
+    position: absolute;
+    bottom: 25%;
+    left: 100px;
+
+    span{
+        font-size: 48px ;
+        color: #00FFF8;
+
+    }
+}
+
+// -----#getmemoney-捐款方式--------
+
+.title-1{
+
+    padding: 50px;
+    text-align: center;
+
+    p{
+        font-size: 24px;
+    }
+}
+
+.card-header {
+background-color: #595A5B;
+
+}
+.card{
+    background-color:rgb(240, 242, 243); 
+    h2{ 
+    text-align: center;
+    text-decoration: none;
+    }
+    button{
+        color: white;
+        font-size: 24px;
+        text-decoration: none;
+        
+    }
+    button:visited{
+        
+        text-decoration: none;
+        
+    }
+
+    button:active{
+        
+        text-decoration: none;
+        
+    }
+    .btn-link:hover {
+        color:#00FFF8;
+        text-decoration: none;
+         ;
+    
+    }
+
+    .btn-link:focus{
+        // color: #f8cc53;
+        color: #00FFF8;
+        text-decoration: none;
+    }
+    span{
+        color: #f8cc53;
+    }
+    // span:hover{
+    //     color: rgb(93, 120, 240);
+    // }
+
+    // 內文格式變更
+    .collapse {
+        
+        // margin: auto 30px;
+        // transition: 0.4s;
+        .card-body{
+            text-align: center;
+            // padding:30px 80px;
+            transition: 0.4s;
+        }
+    }
+    .collapsing{
+        // transition: 0.4s;
+        // padding:30px 80px;
+        text-align: center;
+    }
+
+    .collapsed{
+        // transition: 0.4s;
+        // padding:30px 80px;
+        text-align: center;
+    }
+
+}
+
+// 捐款經費運用於
+.line{
+    margin-top: 80px;
+    width: 100%;
+    height: 5px;
+    background-color: black;
+}
+.getmoney-pic{
+    background-image: url(../img/usewhere.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+#manager_row{
+    margin:20px 0 0 0 ;
+    padding-bottom:30px ;
+}
+#manager{
+    width: 100%;
+    border: 5px rgb(70, 70, 70) solid;
+}
+#manager_text{
+    padding: 20px;
+    background-color: rgb(70, 70, 70);
+    color: white;
+    line-height: 30px;
+}
+#manager_text p{
+    padding: 44px 0;
+    font-size: 25px;
+    margin: 0;
+}
+@media(max-width:1200px){
+#manager_text p{
+    padding: 29.5px 0;
+    font-size: 20px;
+    margin: 0;
+}
+}
+@media(max-width: 960px){
+    #manager{
+    margin: 0 0 30px 0;
+}
+}
