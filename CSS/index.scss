@@ -4,6 +4,22 @@
     margin: 30px 0px 0px 0px;
 }
 
+.delepad{
+    padding-left: 0px;
+    padding-right: 0px;
+
+}
+
+
+*{
+   
+    box-sizing: border-box;
+}
+body{
+    margin:0px;
+    padding: 0px;
+    font-family: "微軟正黑體"
+}
 
 
 
@@ -144,7 +160,7 @@ section#aboutme {
         }
 
     }
-    #me-text p::before {
+    #me-text>p::before {
         content: '我';
         font-size: 36px;
     }
@@ -156,7 +172,7 @@ section#aboutme {
         display: block;
         position: relative;
         
-        a{ 
+        // a{ 
             
             .A_inbox{
                 font-size: 24px;
@@ -197,14 +213,14 @@ section#aboutme {
                 width: 100%;
             }
 
-        }
+        // }
     }
 
     .Phone_window{
         display: none;
         margin: 0 auto;
         position: relative;
-        a{ 
+        // a{ 
             text-decoration: none;
             .A_inbox{
                 // width: 220px;
@@ -245,7 +261,7 @@ section#aboutme {
                 width: 100%;
            }
     
-        }
+        // }
     }
     // .full-mask{
     //     height: 100vh;
@@ -303,6 +319,106 @@ section#aboutme {
 }
 
 
+// -------------基本資料-跳出視窗--------------------
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 70px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+  
+/* Modal Content */
+.modal-content {
+    background-color: #000000d5;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%;
+    height: 85vh;
+
+  
+
+    .hug{
+        width: 50%;
+        margin:  auto;
+        
+        color: white;
+        line-height: 48px;
+        font-size: 24px;
+    }
+}
+  
+/* The Close Button */
+.close {
+    color: #ffffff;
+    float: right;
+    font-size: 60px;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+
+}
+  
+.close:hover,
+.close:focus {
+    color: rgb(206, 32, 32);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+//   手機板
+/* Modal Content */
+.modal-contentp {
+    background-color: #000000d2;
+    margin: auto;
+    padding: 15px;
+    border: 1px solid #888;
+    width: 80%;
+    height: 85vh;
+
+    .hug{
+        width: 90%;
+        height: 100%;
+        margin:  auto;
+        
+        color: white;
+        line-height: 34px;
+        font-size: 18px;
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+   
+}
+
+/* The Close Button */
+.closep {
+    color: #fdfdfd;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+}
+  
+.closep:hover,
+.closep:focus {
+    color: rgb(206, 32, 32);
+    text-decoration: none;
+    cursor: pointer;
+}
 
 // -------------作品集 #Portfolio--------------------
 section#Portfolio {
@@ -366,7 +482,8 @@ section#Portfolio {
                     align-content: center;
                     // opacity: 0;
                     transition: 0.3s;
-                    
+                    margin: auto;
+
                     overflow:hidden;
                     flex-wrap: wrap;
                     // 是為了隱藏在圖片放大時超出的部分，
@@ -458,9 +575,10 @@ section#Portfolio-ps{
 
     @media (max-width:576px) {
         h2{
-            font-size: 28px;
-        padding: 50px 0px 0px 0px;
-        margin: auto;
+            font-size: 36px;
+        padding: 50px 0px 0px 50px;
+        margin: auto ;
+        margin-bottom: 30px;
         }
     }
     
@@ -474,12 +592,12 @@ section#Portfolio-ps{
                 width: 100%;
                 display:flex;
                 align-items: center;
-                
+                padding-left: 0px;
                 
                 
             }
             .pspic1{
-                min-height: 350px;
+                min-height: 300px;
                 max-height: 750px;
                 background-image: url(../img/PS-pic1.jpg);
                 background-position: center ;
@@ -573,7 +691,7 @@ section#Portfolio-ps{
             padding-left: 0px;
             .pic{
                 width: 100%;
-                min-height:350px;
+                min-height:300px;
                 max-height: 750px;
                 
 
@@ -660,7 +778,7 @@ section#Portfolio-ps{
                 
             }
             .pspic3{
-                // min-height: 350px;
+                min-height: 300px;
                 max-height: 750px;
                 background-image: url(../img/PS-pic3.jpg);
                 // background-position: center ;
@@ -880,10 +998,12 @@ section#Portfolio-AI{
 
 // -------------(html/css/js)作品集 #Portfolio--------------------
 section#Portfolio-web{
+    background-color: rgb(74, 71, 71);
     h2{
         padding: 100px 200px 0px 200px;
         font-size: 56px;
-        ;
+        font-size: 64px;
+        margin-bottom: 50px;
     }
 
     @media (max-width:576px) {
@@ -893,7 +1013,7 @@ section#Portfolio-web{
         margin: auto;
         }
     }
-//  --------網站-展示圖2(個專)-------------
+//  --------網站-展示圖1(個專)-------------
     .row{
         padding: 0px 80px;
         .pic{
@@ -904,6 +1024,7 @@ section#Portfolio-web{
             background-image: url(../img/web-pic1.jpg);
             background-size: cover;
             background-repeat: no-repeat;
+            
         }
 
         .text{
@@ -911,22 +1032,34 @@ section#Portfolio-web{
             align-content: center;
             flex-wrap: wrap;
             h3{
-                text-indent: -9999px
+                color: white;
+                padding: 50px 0px 0px 50px;
+                font-size: 36px;
+                font-weight:600;
+                // text-indent: -9999px
             }
             p{
+                color: white;
+                padding: 0px 0px;
                 font-size: 24px;
     
             }
             .QRcode{
-                width: 100%;
-                text-align: end;
+                display: flex;
+                justify-content: flex-end;
+                .pic{
+                    width: 195px;
+                    height: 195px;
+                    background-image: url(../img/horse-QRcode.png);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    
+                }
+                
            
             }
         }
         @media (max-width:991px) {
-            .row{
-                padding: 0px 5px;
-            }
             .webpic1{
                 
                 background-size: cover;
@@ -934,18 +1067,22 @@ section#Portfolio-web{
             .text{
                
                 h3{
-                    text-indent: -9999px
+                    padding: 30px 0px 0px 20px;
+                    font-size: 36px;
+                    font-weight: 600;
+                    // text-indent: -9999px
                 }
                 p{
                     font-size: 24px;
-        
+                    padding: 10px 20px;
                 }
                 .QRcode{
-                    width: 100%;
+                    // width: 100%;
                     text-align: end;
                
                 }
             }
+            
 
         }
     }
@@ -966,6 +1103,7 @@ section#Portfolio-web{
             background-image: url(../img/web-pic2.jpg);
             background-size: cover;
             background-repeat: repeat;
+            margin-top: 50px;
         }
 
         .text{
@@ -992,6 +1130,11 @@ section#Portfolio-web{
             }
         }
     }
-   
+    @media (max-width:991px) {
+        .row{  
+             padding: 0px 5px;
+             
+         }
+     }
 
 }

@@ -3,6 +3,22 @@
   margin: 30px 0px 0px 0px;
 }
 
+.delepad {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "微軟正黑體";
+}
+
 .banner {
   width: 100%;
   height: 100vh;
@@ -113,7 +129,7 @@ section#aboutme #me-text p {
   white-space: normal;
 }
 
-section#aboutme #me-text p::before {
+section#aboutme #me-text > p::before {
   content: '我';
   font-size: 36px;
 }
@@ -123,7 +139,7 @@ section#aboutme .PC_window {
   position: relative;
 }
 
-section#aboutme .PC_window a .A_inbox {
+section#aboutme .PC_window .A_inbox {
   font-size: 24px;
   width: 130px;
   display: -webkit-box;
@@ -137,7 +153,7 @@ section#aboutme .PC_window a .A_inbox {
   color: black;
 }
 
-section#aboutme .PC_window a .A_inbox .arrow {
+section#aboutme .PC_window .A_inbox .arrow {
   width: 16px;
   height: 16px;
   background-image: url(../img/arrow.jpg);
@@ -145,7 +161,7 @@ section#aboutme .PC_window a .A_inbox .arrow {
   margin-top: 15px;
 }
 
-section#aboutme .PC_window a .A_inbox::after {
+section#aboutme .PC_window .A_inbox::after {
   content: '';
   position: absolute;
   bottom: -2px;
@@ -157,7 +173,7 @@ section#aboutme .PC_window a .A_inbox::after {
   transition: 1s;
 }
 
-section#aboutme .PC_window a .A_inbox:hover:after {
+section#aboutme .PC_window .A_inbox:hover:after {
   width: 100%;
 }
 
@@ -165,13 +181,10 @@ section#aboutme .Phone_window {
   display: none;
   margin: 0 auto;
   position: relative;
-}
-
-section#aboutme .Phone_window a {
   text-decoration: none;
 }
 
-section#aboutme .Phone_window a .A_inbox {
+section#aboutme .Phone_window .A_inbox {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -185,7 +198,7 @@ section#aboutme .Phone_window a .A_inbox {
   color: black;
 }
 
-section#aboutme .Phone_window a .A_inbox .arrow {
+section#aboutme .Phone_window .A_inbox .arrow {
   width: 20px;
   height: 20px;
   background-image: url(../img/arrow.jpg);
@@ -193,7 +206,7 @@ section#aboutme .Phone_window a .A_inbox .arrow {
   margin-top: 15px;
 }
 
-section#aboutme .Phone_window a .A_inbox::after {
+section#aboutme .Phone_window .A_inbox::after {
   content: '';
   position: absolute;
   bottom: -2px;
@@ -205,7 +218,7 @@ section#aboutme .Phone_window a .A_inbox::after {
   transition: 1s;
 }
 
-section#aboutme .Phone_window a .A_inbox:hover:after {
+section#aboutme .Phone_window .A_inbox:hover:after {
   width: 100%;
 }
 
@@ -234,6 +247,129 @@ section#aboutme .Phone_window a .A_inbox:hover:after {
   section#aboutme .Phone_window {
     display: block;
   }
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 70px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #000000d5;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 90%;
+  height: 85vh;
+}
+
+.modal-content .hug {
+  width: 50%;
+  margin: auto;
+  color: white;
+  line-height: 48px;
+  font-size: 24px;
+}
+
+/* The Close Button */
+.close {
+  color: #ffffff;
+  float: right;
+  font-size: 60px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.close:hover,
+.close:focus {
+  color: #ce2020;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Modal Content */
+.modal-contentp {
+  background-color: #000000d2;
+  margin: auto;
+  padding: 15px;
+  border: 1px solid #888;
+  width: 80%;
+  height: 85vh;
+}
+
+.modal-contentp .hug {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  color: white;
+  line-height: 34px;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* The Close Button */
+.closep {
+  color: #fdfdfd;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.closep:hover,
+.closep:focus {
+  color: #ce2020;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 section#Portfolio .Portfolio-title {
@@ -310,6 +446,7 @@ section#Portfolio #Portfolio-all .container .hug .mask {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+  margin: auto;
   overflow: hidden;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
@@ -375,9 +512,10 @@ section#Portfolio-ps h2 {
 
 @media (max-width: 576px) {
   section#Portfolio-ps h2 {
-    font-size: 28px;
-    padding: 50px 0px 0px 0px;
+    font-size: 36px;
+    padding: 50px 0px 0px 50px;
     margin: auto;
+    margin-bottom: 30px;
   }
 }
 
@@ -391,10 +529,11 @@ section#Portfolio-ps .container-fluid .row .pic {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-left: 0px;
 }
 
 section#Portfolio-ps .container-fluid .row .pspic1 {
-  min-height: 350px;
+  min-height: 300px;
   max-height: 750px;
   background-image: url(../img/PS-pic1.jpg);
   background-position: center;
@@ -468,7 +607,7 @@ section#Portfolio-ps .container-fluid .row {
 
 section#Portfolio-ps .container-fluid .row .pic {
   width: 100%;
-  min-height: 350px;
+  min-height: 300px;
   max-height: 750px;
 }
 
@@ -531,6 +670,7 @@ section#Portfolio-ps .container-fluid .row .pic {
 }
 
 section#Portfolio-ps .container-fluid .row .pspic3 {
+  min-height: 300px;
   max-height: 750px;
   background-image: url(../img/PS-pic3.jpg);
   background-size: cover;
@@ -622,9 +762,15 @@ section#Portfolio-AI .swiper-slide img {
   width: 100%;
 }
 
+section#Portfolio-web {
+  background-color: #4a4747;
+}
+
 section#Portfolio-web h2 {
   padding: 100px 200px 0px 200px;
   font-size: 56px;
+  font-size: 64px;
+  margin-bottom: 50px;
 }
 
 @media (max-width: 576px) {
@@ -664,33 +810,51 @@ section#Portfolio-web .row .text {
 }
 
 section#Portfolio-web .row .text h3 {
-  text-indent: -9999px;
+  color: white;
+  padding: 50px 0px 0px 50px;
+  font-size: 36px;
+  font-weight: 600;
 }
 
 section#Portfolio-web .row .text p {
+  color: white;
+  padding: 0px 0px;
   font-size: 24px;
 }
 
 section#Portfolio-web .row .text .QRcode {
-  width: 100%;
-  text-align: end;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+section#Portfolio-web .row .text .QRcode .pic {
+  width: 195px;
+  height: 195px;
+  background-image: url(../img/horse-QRcode.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media (max-width: 991px) {
-  section#Portfolio-web .row .row {
-    padding: 0px 5px;
-  }
   section#Portfolio-web .row .webpic1 {
     background-size: cover;
   }
   section#Portfolio-web .row .text h3 {
-    text-indent: -9999px;
+    padding: 30px 0px 0px 20px;
+    font-size: 36px;
+    font-weight: 600;
   }
   section#Portfolio-web .row .text p {
     font-size: 24px;
+    padding: 10px 20px;
   }
   section#Portfolio-web .row .text .QRcode {
-    width: 100%;
     text-align: end;
   }
 }
@@ -713,6 +877,7 @@ section#Portfolio-web .row .webpic2 {
   background-image: url(../img/web-pic2.jpg);
   background-size: cover;
   background-repeat: repeat;
+  margin-top: 50px;
 }
 
 section#Portfolio-web .row .text {
@@ -741,6 +906,12 @@ section#Portfolio-web .row .text .QRcode {
   section#Portfolio-web .row .webpic1 {
     background-size: contain;
     background-position: center;
+  }
+}
+
+@media (max-width: 991px) {
+  section#Portfolio-web .row {
+    padding: 0px 5px;
   }
 }
 /*# sourceMappingURL=index.css.map */

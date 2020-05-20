@@ -80,13 +80,34 @@
                             程式語言的撰寫及前端系統相關的知識外，也了解到技能永遠是學不盡的，唯有利用妥善的時間分配，及自主的學習態度積極進修， 以達到最大的收穫。 也為自己在職場及人生價值上努力。
                         </p>
                         <div class="PC_window">
-                            <a href="">
-                                <div class="A_inbox">
-                                    基本資料<div class="arrow"></div>
-                                    <!-- <img src="./img/arrow.jpg" alt=""> -->
+
+                            <div id="myBtn" class="A_inbox">
+                                基本資料<div class="arrow"></div>
+                                <!-- <img src="./img/arrow.jpg" alt=""> -->
+
+                            </div>
+
+                            <div id="myModal" class="modal">
+
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                    <span class="close">&times;</span>
+                                    <div class="hug">
+                                        <p>姓名：邱鈺婷</p>
+                                        <p>手機：0928-543905</p>
+                                        <p>電話：(04)25605077</p>
+                                        <p>地址：台中市后里區和興路６０巷５６號</p>
+                                        <p>郵件：qwe123750000@gmail.com</p>
+                                        <br>
+                                        <h4>
+                                            教育程度
+                                        </h4>
+                                        <p>僑光科技大學 行銷與流通管理系 2012/9 - 2016/6</p>
+                                    </div>
 
                                 </div>
-                            </a>
+
+                            </div>
                         </div>
 
                     </div>
@@ -94,13 +115,46 @@
                 </div>
                 <div class="row">
                     <div class="Phone_window">
-                        <a href="">
-                            <div class="A_inbox">
-                                基本資料<div class="arrow"></div>
+                        <!-- <a href=""> -->
+                        <div id="myBtnp" class="A_inbox">
+                            基本資料<div class="arrow"></div>
+                        </div>
+                        <!-- </a> -->
+                        <div id="myModalp" class="modal">
+
+                            <!-- Modal content -->
+                            <div class="modal-contentp">
+                                <span class="closep">&times;</span>
+                                <div class="hug">
+                                    <p>姓名：邱鈺婷</p>
+                                    <p>手機：0928-543905</p>
+                                    <p>電話：(04)25605077</p>
+                                    <p>地址：台中市后里區和興路６０巷５６號</p>
+                                    <p>郵件：qwe123750000@gmail.com</p>
+                                    <br>
+                                    <h4>
+                                        教育程度
+                                    </h4>
+                                    <p>僑光科技大學 行銷與流通管理系 2012/9 - 2016/6</p>
+                                </div>
                             </div>
-                        </a>
+
+                        </div>
                     </div>
                 </div>
+
+                <!-- Trigger/Open The Modal -->
+                <!-- <button id="myBtn">基本資料</button>
+                <div id="myModal" class="modal"> -->
+
+                <!-- Modal content -->
+                <!-- <div class="modal-content">
+                      <span class="close">&times;</span>
+                      <p>Some text in the Modal..</p>
+                    </div>
+                  
+                </div> -->
+
             </div>
 
         </section>
@@ -111,7 +165,7 @@
                     <h1>Portfolio</h1>
                 </div>
 
-                <div class="container">
+                <div class="container ">
                     <!-- PS設計 -->
                     <div class="row">
                         <div id="" class="col-12 col-lg-12">
@@ -152,7 +206,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>  
+                    </div>
                 </div>
             </div>
             <section id="Portfolio-ps">
@@ -162,8 +216,8 @@
                         <h2>PS-Design</h2>
                     </div>
                     <div class="row ">
-                        <div class="pic pspic1 col-md-12 col-lg-6">
-
+                        <div class="col-md-12 col-lg-6 delepad">
+                            <div class="pic pspic1 "></div>
                             <!-- <img src="./img/PS-pic1.jpg" alt=""> -->
                         </div>
                         <div id="PS-text1" class="ps-text col-md-12 col-lg-5 offset-lg-1">
@@ -178,7 +232,8 @@
 
                     </div>
                     <div class="row ">
-                        <div class="pic pspic2 col-md-12 col-lg-6 offset-lg-1">
+                        <div class="col-md-12 col-lg-6 offset-lg-1 delepad">
+                            <div class="pic pspic2 "></div>
                             <!-- <img src="./img/PS-pic2.jpg" alt=""> -->
                         </div>
                         <div id="PS-text2" class="ps-text col-md-12 col-lg-5">
@@ -194,7 +249,7 @@
                     </div>
 
                     <div class="row ">
-                        <div class="pic pspic3 col-md-12 col-lg-6">
+                        <div class="pic pspic3 col-md-12 col-lg-6 delepad">
                             <!-- <img src="./img/PS-pic3.jpg" alt=""> -->
                         </div>
                         <div id="PS-text3" class="ps-text col-md-12 col-lg-5 offset-lg-1">
@@ -221,7 +276,7 @@
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide pic apic-01">
-                                 <img src="./img/AI-01.jpg" alt=""></div>
+                                <img src="./img/AI-01.jpg" alt=""></div>
                             <div class="swiper-slide pic apic-02">
                                 <img src="./img/AI-02.jpg" alt=""></div>
                             <div class="swiper-slide pic apic-03">
@@ -254,11 +309,12 @@
                         </div>
                         <div class=" col-md-12 col-lg-5">
                             <div class="text">
-                                <h3> 后里馬場-網站</h3>
-                                <p>設計理念</p>
+                                <h3> 后里馬場</h3>
+                                <!-- <p>設計理念</p> -->
                                 <p>這是一個大人、小孩的共同回憶，至今卻沒有一個專屬的網站來介紹它。所以在設計選用較為活潑的顏色，也添加許多互動的小設計，在瀏覽網頁的過程，不顯得枯燥無趣。</p>
                                 <div class="QRcode">
-                                    <img src="./img/horse-QRcode.png" alt="后里馬場">
+                                    <div class="pic"></div>
+                                    <!-- <img src="./img/horse-QRcode.png" alt="后里馬場"> -->
                                 </div>
                             </div>
                         </div>
@@ -270,8 +326,8 @@
                         </div>
                         <div class=" col-md-12 col-lg-12">
                             <div class="text">
-                                <h3> 中華鯨豚協會-網站</h3>
-                                <p>設計理念</p>
+                                <h3> 中華鯨豚協會</h3>
+                                <!-- <p>設計理念</p> -->
                                 <p>在設計上，採用一致的設計風格，並以形象網站為出發點，讓使用可以快速的瀏覽資訊外，也向大眾展示鯨豚與生態維護的重要性。</p>
                                 <div class="QRcode">
                                     <img src="./img/horse-QRcode.png" alt="中華鯨豚協會">
@@ -347,32 +403,92 @@
         }) 
     </script>
 
-<script>
-    // AI 投放圖片
-    var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 1,
-      spaceBetween: 10,
-      // init: false,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      breakpoints: {
-        640: {
-          slidesPerView: 2,
-          spaceBetween: 20,
-        },
-        992: {
-          slidesPerView: 2,
-          spaceBetween: 40,
-        },
-        1280: {
-          slidesPerView: 3,
-          spaceBetween: 50,
-        },
-      }
-    });
-  </script>
+    <script>
+        // ----關於我 -基本資料(按鈕)-電腦版------ 
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+
+        // ----------關於我 -基本資料(按鈕) -手機板------- 
+        // Get the modal
+        var modalp = document.getElementById("myModalp");
+
+        // Get the button that opens the modal
+        var btnp = document.getElementById("myBtnp");
+
+        // Get the <span> element that closes the modal
+        var spanp = document.getElementsByClassName("closep")[0];
+
+        // When the user clicks the button, open the modal 
+        btnp.onclick = function () {
+            modalp.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        spanp.onclick = function () {
+            modalp.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modalp) {
+                modalp.style.display = "none";
+            }
+        }
+
+    </script>
+
+
+
+    <script>
+        // AI 投放圖片
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            // init: false,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                992: {
+                    slidesPerView: 2,
+                    spaceBetween: 40,
+                },
+                1280: {
+                    slidesPerView: 3,
+                    spaceBetween: 50,
+                },
+            }
+        });
+    </script>
 </body>
 
 </html>
