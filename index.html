@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.compat.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./style/index.css">
     <link rel="stylesheet" href="./style/layout.css">
 
@@ -29,19 +32,19 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item ">
-                            <a class="nav-link" href="">
+                            <a class="nav-link" href="#aboutme">
                                 <p>關於我</p>
                             </a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link " href="">
+                            <a class="nav-link " href="#Portfolio">
                                 <p>作品集</p>
                             </a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link " href="">
+                            <a class="nav-link " href="#workexperiece">
                                 <p>工作經驗</p>
                             </a>
                         </li>
@@ -57,18 +60,31 @@
                 </div>
             </nav>
         </aside>
-        <div class="banner">
+        <!-- <div class="banner ml9">
             <h2>Hello,</h2>
-            <h1>I'm Yu-Ting</h1>
+            <h1 class="animated slideInUp">I'm Yu-Ting</h1>
+        </div> -->
+        <div class="banner">
+
+            <h2>Hello,</h2>
+            <h1 class="ml9">
+                <span class="text-wrapper">
+                    <span class="letters">I'm Yu-Ting</span>
+                </span>
+            </h1>
+
         </div>
+
     </header>
 
     <main>
+
         <section id="aboutme">
-            <div class="abme-title">
+
+            <div id="pallax" class="abme-title ">
                 <h1>About me</h1>
             </div>
-
+            <div class="pallax"></div>
             <div class="container">
                 <div class="row ">
                     <div id="me-pic" class="col-sm-12 col-lg-5">
@@ -209,18 +225,19 @@
                     </div>
                 </div>
             </div>
-            <section id="Portfolio-ps">
+            <section id="Portfolio-ps" class="">
 
                 <div class="container-fluid">
-                    <div class="row">
+                    <div class="row ">
                         <h2>PS-Design</h2>
                     </div>
                     <div class="row ">
-                        <div class="col-md-12 col-lg-6 delepad">
-                            <div class="pic pspic1 "></div>
+                        <div class="pic pspic1 col-md-12 col-lg-6 delepad" data-aos="fade-right">
+                            <!-- <div class="pic pspic1 "></div> -->
                             <!-- <img src="./img/PS-pic1.jpg" alt=""> -->
                         </div>
-                        <div id="PS-text1" class="ps-text col-md-12 col-lg-5 offset-lg-1">
+                        <div id="PS-text1" class="ps-text col-md-12 col-lg-5 offset-lg-1" data-aos="fade-up"
+                            data-aos-anchor-placement="top-center">
                             <div class="line"> </div>
                             <p>2020.2.7 <br><br>
                                 在場大雪的夜晚<br>
@@ -232,11 +249,12 @@
 
                     </div>
                     <div class="row ">
-                        <div class="col-md-12 col-lg-6 offset-lg-1 delepad">
-                            <div class="pic pspic2 "></div>
+                        <div class="pic pspic2 col-md-12 col-lg-6 offset-lg-1 delepad" data-aos="fade-left">
+                            <!-- <div class="pic pspic2 "></div> -->
                             <!-- <img src="./img/PS-pic2.jpg" alt=""> -->
                         </div>
-                        <div id="PS-text2" class="ps-text col-md-12 col-lg-5">
+                        <div id="PS-text2" class="ps-text col-md-12 col-lg-5" data-aos="fade-up"
+                            data-aos-anchor-placement="top-center">
                             <div class="line"> </div>
                             <p>2020.2.16 <br><br>
                                 一場夢境<br>
@@ -249,10 +267,11 @@
                     </div>
 
                     <div class="row ">
-                        <div class="pic pspic3 col-md-12 col-lg-6 delepad">
+                        <div class="pic pspic3 col-md-12 col-lg-6 delepad" data-aos="fade-right">
                             <!-- <img src="./img/PS-pic3.jpg" alt=""> -->
                         </div>
-                        <div id="PS-text3" class="ps-text col-md-12 col-lg-5 offset-lg-1">
+                        <div id="PS-text3" class="ps-text col-md-12 col-lg-5 offset-lg-1" data-aos="fade-up"
+                            data-aos-anchor-placement="top-center">
                             <div class="line"> </div>
                             <p>2020.2.28 <br><br>
                                 B612星球上，<br>
@@ -268,7 +287,7 @@
 
             </section>
             <section id="Portfolio-AI">
-                <div class="container-fluid">
+                <div class="container-fluid bgc-ai ">
                     <div class="row">
                         <h2>AI-Design</h2>
                     </div>
@@ -298,7 +317,7 @@
                 </div>
             </section>
             <section id="Portfolio-web">
-                <div class="container-fluid">
+                <div class="container-fluid bgc-web">
                     <div class="row">
                         <h2>Frontend Engineer</h2>
                     </div>
@@ -313,7 +332,7 @@
                                 <!-- <p>設計理念</p> -->
                                 <p>這是一個大人、小孩的共同回憶，至今卻沒有一個專屬的網站來介紹它。所以在設計選用較為活潑的顏色，也添加許多互動的小設計，在瀏覽網頁的過程，不顯得枯燥無趣。</p>
                                 <div class="QRcode">
-                                    <div class="pic"></div>
+                                    <div class="pic horseQR"></div>
                                     <!-- <img src="./img/horse-QRcode.png" alt="后里馬場"> -->
                                 </div>
                             </div>
@@ -329,8 +348,12 @@
                                 <h3> 中華鯨豚協會</h3>
                                 <!-- <p>設計理念</p> -->
                                 <p>在設計上，採用一致的設計風格，並以形象網站為出發點，讓使用可以快速的瀏覽資訊外，也向大眾展示鯨豚與生態維護的重要性。</p>
-                                <div class="QRcode">
+                                <!-- <div class="QRcode">
                                     <img src="./img/horse-QRcode.png" alt="中華鯨豚協會">
+                                </div> -->
+                                <div class="QRcode">
+                                    <div class="pic teamQR"></div>
+                                    <!-- <img src="./img/horse-QRcode.png" alt="后里馬場"> -->
                                 </div>
                             </div>
                         </div>
@@ -338,6 +361,320 @@
                 </div>
             </section>
         </section>
+        <!-- <section id="workexperiece">
+                <div class="all ">
+                    <div  class="title ">work experience</div>
+                    <div class="text">
+                        <div class="work1">
+                            <p>2016年09月-2017年06月</p>
+                            <p>新加坡無印良品</p>
+                            <p>門市人員</p>			
+                        </div>
+                        <div class="work1">
+                            <p>2017年10月-2018年03月</p>
+                            <p>強登運動用品</p>
+                            <p>電商專員</p>			
+                        </div>
+                        <div class="work1">
+                            <p>2018年04月-2018年12月</p>
+                            <p>新加坡無印良品</p>
+                            <p>門市人員</p>			
+                        </div>
+                        <div class="work1">
+                            <p>2016年09月-2017年06月</p>
+                            <p>台灣引興股份有限公司</p>
+                            <p>業務助理</p>			
+                        </div>
+                        <div class="work1">
+                            <p>2019年04月-2019年07月</p>
+                            <p>力新國際文教股份有限公司</p>
+                            <p>業務專員</p>			
+                        </div>
+                        <div class="work1">
+                            <p>2020年02月-2020年05月</p>
+                            <p>民眾技藝補習班(數位方塊)</p>
+                            <p>前端程式開發</p>			
+                        </div>
+                       
+
+                    </div>
+                    <div class="title section">workexperiece</div>
+                </div>
+
+            </section> -->
+
+        <section id="workexperiece">
+            <div class="title ">work experience</div>
+            <div class="wrapper">
+                <div class="card">
+                    <input type="checkbox" id="card1" class="more" aria-hidden="true">
+                    <div class="content">
+                        <div class="front WEcard1">
+                            <div class="inner">
+                                <h2>新加坡-無印良品MUJI</h2>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <label for="card1" class="button" aria-hidden="true">
+                                    Details
+                                </label>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner">
+
+                                <div class="description">
+                                    <p>
+                                        大四到新加坡實習，在語言溝通障礙及不懂當地人文及生活環境下，學習自己獨立自主，並提升自己的國際觀</p>
+                                    <ul>
+                                        <li>櫃檯銷售服務</li>
+                                        <li>顧客諮詢服務</li>
+                                        <li>了解進貨及存貨數量</li>
+                                        <li>商品擺設及如何吸引消費目光</li>
+                                        <li>環境衛生管理、商品品質管理、商品促銷</li>
+                                    </ul>
+                                </div>
+                                <div class="location">2016年09月-2017年06月</div>
+                                <div class="price">門市人員</div>
+                                <label for="card1" class="button return" aria-hidden="true">◀
+                                    <i class="fas fa-arrow-left"></i>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <input type="checkbox" id="card2" class="more">
+                    <div class="content">
+                        <div class="front WEcard2">
+                            <div class="inner">
+                                <h2>強登運動用品</h2>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <label for="card2" class="button" aria-hidden="true">
+                                    Details
+                                </label>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner">
+                                <div class="description">
+                                    <p>
+                                        從零開始學習，設計、修圖、banner等設計，至後端電商的經營，包裝出貨由獨立完成。</p>
+                                    <ul>
+                                        <li>商品抓圖、修圖上架、製作banner</li>
+                                        <li>解決顧客問題</li>
+                                        <li>撿貨、包貨，與平台業者做聯繫</li>
+                                        <li>定期舉辦相關商品促銷活動</li>
+                                        <li>獨力完成平台系統維護</li>
+                                    </ul>
+                                </div>
+                                <div class="location">2017年10月-2018年03月</div>
+                                <div class="price">電子商務專員</div>
+                                <label for="card2" class="button return" aria-hidden="true">▶
+                                    <i class="fas fa-arrow-left"></i>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <input type="checkbox" id="card3" class="more">
+                    <div class="content">
+                        <div class="front WEcard3">
+                            <div class="inner">
+                                <h2>台灣引興股份有限公司</h2>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <label for="card3" class="button" aria-hidden="true">
+                                    Details
+                                </label>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner">
+
+                                <div class="description">
+                                    <p>「瞻前顧後」於在職中給我最大的啟發。訂單到客戶端的處理，每件事皆環環相扣。</p>
+                                    <ul>
+                                        <li>協助業務人員完成銷售業務之行政後勤工作進出貨事宜</li>
+                                        <li>客戶端之溝通事宜</li>
+                                        <li>ERP系統處理客戶訂單資訊</li>
+                                        <li>銷售出口的文件作業流程</li>
+                                        <li>收發客戶信件</li>
+                                    </ul>
+                                </div>
+                                <div class="location">2018年04月-2018年12月</div>
+                                <div class="price">業務助理</div>
+                                <label for="card3" class="button return" aria-hidden="true">▶
+                                    <i class="fas fa-arrow-left"></i>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <input type="checkbox" id="card4" class="more">
+                    <div class="content">
+                        <div class="front WEcard4">
+                            <div class="inner">
+                                <h2>力新國際文教股份有限公司</h2>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <label for="card4" class="button" aria-hidden="true">
+                                    Details
+                                </label>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner">
+
+                                <div class="description">
+                                    <p>熟悉產品及理解顧客的需求是最為基本重要的。曾在入職的兩個禮拜內，獨立成交創造業績。</p>
+                                    <ul>
+                                        <li>至全台各地展點、賣場做銷售</li>
+                                        <li>陌生顧客開發</li>
+                                        <li>銷售商品</li>
+                                        <li>顧客售後服務</li>
+
+                                    </ul>
+                                </div>
+                                <div class="location">2019年04月-2019年07月</div>
+                                <div class="price">業務專員</div>
+                                <label for="card4" class="button return" aria-hidden="true">▶
+                                    <i class="fas fa-arrow-left"></i>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <input type="checkbox" id="card5" class="more">
+                    <div class="content">
+                        <div class="front WEcard5">
+                            <div class="inner">
+                                <h2>民眾技藝
+                                    補習班</h2>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <label for="card5" class="button" aria-hidden="true">
+                                    Details
+                                </label>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner">
+
+
+                                <div class="description">
+                                    <p>經政府課程陪訓3個月中，不僅學習到以下軟體及程式操作，更多的是獨立解決問題及團隊合作及溝通重要性的能力。</p>
+                                    <ul>
+                                        <li>設計軟體: Adobe Photoshop / Adobe Illustraor </li>
+                                        <li>程式軟體：HTML5 / CSS3 (SCSS) / JaveScript(jquery)</li>
+
+
+                                    </ul>
+                                </div>
+                                <div class="location">2020年02月-2020年05月</div>
+                                <div class="price">前端程式開發課程</div>
+                                <label for="card5" class="button return" aria-hidden="true">▶
+                                    <i class="fas fa-arrow-left"></i>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="professionalskill">
+            <div class="title ">professional skill</div>
+            <h1>
+                Be bold, make your choice.<br><br>
+                <!-- 一切的選擇都在於你 -->
+            </h1>
+            
+            <div class="tabs">
+              <div class="tab-2">
+                <label for="tab2-1">程式語言</label>
+                <input id="tab2-1" name="tabs-two" type="radio" checked="checked">
+                <div>
+                  <!-- <h4>程式語言</h4> -->
+                  <p>HTML / <br>
+                    CSS /  <br>
+                    Javascript </p>
+                </div>
+              </div>
+              <div class="tab-2">
+                <label for="tab2-2">設計軟體</label>
+                <input id="tab2-2" name="tabs-two" type="radio">
+                <div>
+                  <!-- <h4>Tab Two</h4> -->
+                  <p>Adobe Photoship / <br>
+                    Adobe Illustrator</p>
+                </div>
+              </div>
+              <div class="tab-2">
+                <label for="tab2-3">文書軟體</label>
+                <input id="tab2-3" name="tabs-two" type="radio">
+                <div>
+                  <!-- <h4>3</h4> -->
+                  <p>Word / <br>
+                    Excel /<br>
+                    PowerPoint</p>
+                </div>
+              </div>
+              <div class="tab-2">
+                <label for="tab2-4">專業證照</label>
+                <input id="tab2-4" name="tabs-two" type="radio">
+                <div>
+                  <!-- <h4>4</h4> -->
+                  <p>乙級-電腦軟體應用技術士<br>
+                    丙級會計事務技術士 <br>
+                    丙級門市服務技術士<br>
+                    TQC-OA –網頁設計 <br>
+                    TQC-OA –Excel <br>
+                    TQC-OA –Word </p>
+                </div>
+              </div>
+              <div class="tab-2">
+                <label for="tab2-5">google 證書</label>
+                <input id="tab2-5" name="tabs-two" type="radio">
+                <div>
+                  <!-- <h4>555</h4> -->
+                  <p>基礎數位行銷基礎知識認證</p>
+                </div>
+              </div>
+             
+            </div>
+        </section>
+        </section>
+        <!-- </section> -->
     </main>
     <footer>
 
@@ -353,6 +690,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script>
         $("#toggle").click(function () {
             $(this).toggleClass("on");
@@ -364,6 +705,22 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.js"
         integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.extensions.min.js"></script>
+
+    <script>
+        // ---頁面視窗-fullpage--特效-----
+        new fullpage('.fullpage', {
+            navigation: true,
+            responsiveWidth: 700,
+            anchors: ['home', 'about-us', 'contact'],
+            parallax: true,
+            onLeave: function (origin, destination, direction) {
+                console.log("Leaving section" + origin.index);
+            },
+        });
+
+
+    </script>
     <script>
         // ------標題-關於我-特效-----------
         $(document).ready(function () {
@@ -489,6 +846,31 @@
             }
         });
     </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script>
+        //   測試banner特效
+        // Wrap every letter in a span
+        var textWrapper = document.querySelector('.ml9 .letters');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+        anime.timeline({ loop: true })
+            .add({
+                targets: '.ml9 .letter',
+                scale: [0, 1],
+                duration: 1500,
+                elasticity: 600,
+                delay: (el, i) => 60 * (i + 1)
+            }).add({
+                targets: '.ml9',
+                opacity: 0,
+                duration: 400,
+                easing: "easeOutExpo",
+                delay: 1000
+            }); 
+    </script>
+
+
 </body>
 
 </html>

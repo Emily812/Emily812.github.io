@@ -9,6 +9,11 @@ body{
     font-family: "微軟正黑體"
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+
 .navbar {
     padding: 0 8px 0 0;
     position: fixed ;
@@ -16,7 +21,7 @@ body{
     width: 100%;
     
 }
-nav{
+
     
 //---------  漢堡條----------
     #toggle {
@@ -154,4 +159,3 @@ nav{
     }
  
 
-}
