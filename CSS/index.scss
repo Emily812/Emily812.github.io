@@ -124,7 +124,7 @@ section#aboutme {
         height: 100vh;
         transition:1s;
         // background-attachment: fixed;
-
+    }
         h1{
             height: 100%;
             font-size: 100px;
@@ -134,7 +134,7 @@ section#aboutme {
             align-items: center;
             background-attachment: fixed;
         }
-    }
+   
 
 
 }
@@ -312,11 +312,11 @@ section#aboutme {
 
 @media(max-width:720px){
     section#aboutme {
-        .abme-title{
+        
             h1{ 
             font-size: 48px;
             }
-        }
+        
     
         #me-pic{
         
@@ -472,7 +472,7 @@ section#Portfolio {
         width: 100%;
         height: 100vh;
         transition:1s;
-
+    }
         h1{
             height: 100%;
             font-size: 100px;
@@ -481,17 +481,17 @@ section#Portfolio {
             justify-content: center;
             align-items: center;
         }
-    }
+    
 
 
 }
 @media(max-width:720px){
     section#Portfolio {
-        .Portfolio-title{
+        
             h1{ 
             font-size: 48px;
             }
-        }
+        
     
        
     } 
@@ -1033,6 +1033,14 @@ section#Portfolio-AI{
             }
         }
     }
+    // @media (max-width:576px) {
+    //     .bgc-ai{
+    //         margin-top: 0px;
+    //         // background-color: rgb(247, 133, 133);
+    //         background-color: rgb(233, 183, 183);
+    //         padding-bottom: 0px;
+    //     }
+    // }
     // swiper 圖片
     .swiper-container {
         width: 100%;
@@ -1071,111 +1079,19 @@ section#Portfolio-AI{
         }
     }
 
-    
-    
-    // .swiper-pagination-bullet-active{
-    //     background-color: rgb(70, 6, 6)
-       
-       
-    // }
-     
-    // .pic{
-    //     width:450px;
-    //     // padding-top: 60.31%;
-    //     max-height:640px;
-    //     min-height: 700px;
-    //     // min-height:50vh;
-    //     // height: 0;
-    //     // padding-bottom: 100%;
-    //     background-size: contain;
-    //     background-repeat: no-repeat;
-    // }
+}  
+@media (max-width:576px) {
+    section#Portfolio-AI{
+        padding-bottom: 0px;
+        .bgc-ai{
+            margin-top: 0px;
+            // background-color: rgb(247, 133, 133);
+            background-color: rgb(233, 183, 183);
+            padding-bottom: 50px;
+        }
+    }
+}
 
-    // .apic-01{
-        
-    //     background-image: url(../img/AI-01.jpg);
-    // }
-    // .apic-02{
-    //     background-image: url(../img/AI-02.jpg);
-    // }
-    // .apic-03{
-    //     background-image: url(../img/AI-03.jpg);
-    // }
-    // .apic-04{
-    //     background-image: url(../img/AI-04.jpg);
-    // }
-    // .apic-05{
-    //     background-image: url(../img/AI-05.jpg);
-    // }
-    // .apic-06{
-    //     background-image: url(../img/AI-06.jpg);
-    // }
-    // .apic-07{
-    //     background-image: url(../img/AI-07.jpg);
-    // }
-    // .apic-08{
-    //     background-image: url(../img/AI-08.jpg);
-    // }
-    // @media (max-width:1279px) {
-    //     .pic{
-    //         // width: 100%;
-    //         // height: 900px;
-    //         min-height: 700px;
-    //         // background-image: url(../img/AI-02.jpg);
-    //         // background-size: contain;
-    //         // background-repeat: no-repeat;
-    //     }
-    // }
-
-    // @media (max-width:1919px) {
-    //     .pic{
-    //         // min-width:100%;
-    //         // min-height: 550px;
-    //         // max-height: 55vh;
-    //         height: auto;
-    //         min-height: 650px;
-            
-    //         // background-image: url(../img/AI-02.jpg);
-    //         // background-size: contain;
-    //         // background-repeat: no-repeat;
-    //     }
-    // }
-    
-   
-    // @media (max-width:991px) {
-    //     .pic{
-    //         // width: 100%;
-    //         // max-height: 40vh;
-    //         min-height: 450px;
-    //         // height:83vh;
-    //         // background-image: url(../img/AI-01.jpg);
-    //         // background-size: contain;
-    //     }
-    // }
-    // @media (max-width:767px) {
-    //     .pic{
-    //         // width: 100%;
-    //         // max-height: 400px;
-    //         min-height: 450px;
-    //         // height:83vh;
-    //         // background-image: url(../img/AI-01.jpg);
-    //         // background-size: contain;
-    //     }
-    // }
-    // @media (max-width:320px) {
-    //     .pic{
-    //         // width: 100%;
-    //         max-height: 400px;
-    //         min-height: 450px;
-    //         // padding-top: 70.31%;
-    //         // background-image: url(../img/AI-01.jpg);
-    //         // background-size: contain;
-    //     }
-    // }
-
-
-
-}   
 
 // -------------(html/css/js)作品集 #Portfolio--------------------
 section#Portfolio-web{
@@ -1369,19 +1285,19 @@ section#Portfolio-web{
         display: flex;
         justify-content: center;
         align-items: center;
-        h1{
-            font-size: 64px;
-            color: rgb(240, 198, 198);
-        }
+        
+    }
+    h1{
+        font-size: 64px;
+        color: rgb(240, 198, 198);
     }
     @media (max-width:576px) {
-        .title{
+        
           
             h1{
             font-size: 30px;
             }
         
-        }
         
     }
     // .text{
@@ -1684,6 +1600,7 @@ section#professionalskill{
         display: flex;
         justify-content: center;
         align-items: center;
+    }
         h1 {
             font-size: 64px;
             line-height: 0.8em;
@@ -1691,7 +1608,7 @@ section#professionalskill{
             padding: 10px;
         }
         
-    }
+    
    
     @media (max-width:576px) {
         .title{
