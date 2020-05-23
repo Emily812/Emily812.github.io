@@ -1062,8 +1062,6 @@ section#Portfolio-web .row .text .QRcode .teamQR {
   width: 100%;
   height: 100vh;
   background-color: #3a3a3a;
-  font-size: 64px;
-  color: #f0c6c6;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1078,9 +1076,14 @@ section#Portfolio-web .row .text .QRcode .teamQR {
           align-items: center;
 }
 
+#workexperiece .title h1 {
+  font-size: 64px;
+  color: #f0c6c6;
+}
+
 @media (max-width: 576px) {
-  #workexperiece .title {
-    font-size: 36px;
+  #workexperiece .title h1 {
+    font-size: 30px;
   }
 }
 
@@ -1421,7 +1424,6 @@ section#professionalskill .title {
   width: 100%;
   height: 100vh;
   background-color: #3a3a3a;
-  font-size: 64px;
   color: #f0c6c6;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1435,6 +1437,13 @@ section#professionalskill .title {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+section#professionalskill .title h1 {
+  font-size: 64px;
+  line-height: 0.8em;
+  color: #f0c6c6;
+  padding: 10px;
 }
 
 @media (max-width: 576px) {
@@ -1456,13 +1465,9 @@ section#professionalskill .title {
         -ms-flex-align: center;
             align-items: center;
   }
-}
-
-section#professionalskill h1 {
-  font-size: 40px;
-  line-height: 0.8em;
-  color: rgba(255, 255, 255, 0.2);
-  padding: 10px;
+  section#professionalskill .title h1 {
+    font-size: 30px;
+  }
 }
 
 section#professionalskill p {
