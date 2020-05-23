@@ -50,7 +50,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link " href="">
+                            <a class="nav-link " href="#professionalskill">
                                 <p>專業技能</p>
                             </a>
                         </li>
@@ -150,7 +150,7 @@
                                     <p>姓名：邱鈺婷</p>
                                     <p>生日：84年08月12日</p>
                                     <!-- <p>手機：0928-543905</p> -->
-                                  
+
                                     <p>郵件：qwe123750000@gmail.com</p>
                                     <br>
                                     <h4>
@@ -623,59 +623,59 @@
                 Be bold, make your choice.<br><br>
                 <!-- 一切的選擇都在於你 -->
             </h1>
-            
+
             <div class="tabs">
-              <div class="tab-2">
-                <label for="tab2-1">程式語言</label>
-                <input id="tab2-1" name="tabs-two" type="radio" checked="checked">
-                <div>
-                  <!-- <h4>程式語言</h4> -->
-                  <p>HTML / <br>
-                    CSS /  <br>
-                    Javascript </p>
+                <div class="tab-2">
+                    <label for="tab2-1">程式語言</label>
+                    <input id="tab2-1" name="tabs-two" type="radio" checked="checked">
+                    <div>
+                        <!-- <h4>程式語言</h4> -->
+                        <p>HTML / <br>
+                            CSS / <br>
+                            Javascript </p>
+                    </div>
                 </div>
-              </div>
-              <div class="tab-2">
-                <label for="tab2-2">設計軟體</label>
-                <input id="tab2-2" name="tabs-two" type="radio">
-                <div>
-                  <!-- <h4>Tab Two</h4> -->
-                  <p>Adobe Photoship / <br>
-                    Adobe Illustrator</p>
+                <div class="tab-2">
+                    <label for="tab2-2">設計軟體</label>
+                    <input id="tab2-2" name="tabs-two" type="radio">
+                    <div>
+                        <!-- <h4>Tab Two</h4> -->
+                        <p>Adobe Photoship / <br>
+                            Adobe Illustrator</p>
+                    </div>
                 </div>
-              </div>
-              <div class="tab-2">
-                <label for="tab2-3">文書軟體</label>
-                <input id="tab2-3" name="tabs-two" type="radio">
-                <div>
-                  <!-- <h4>3</h4> -->
-                  <p>Word / <br>
-                    Excel /<br>
-                    PowerPoint</p>
+                <div class="tab-2">
+                    <label for="tab2-3">文書軟體</label>
+                    <input id="tab2-3" name="tabs-two" type="radio">
+                    <div>
+                        <!-- <h4>3</h4> -->
+                        <p>Word / <br>
+                            Excel /<br>
+                            PowerPoint</p>
+                    </div>
                 </div>
-              </div>
-              <div class="tab-2">
-                <label for="tab2-4">專業證照</label>
-                <input id="tab2-4" name="tabs-two" type="radio">
-                <div>
-                  <!-- <h4>4</h4> -->
-                  <p>乙級-電腦軟體應用技術士<br>
-                    丙級會計事務技術士 <br>
-                    丙級門市服務技術士<br>
-                    TQC-OA –網頁設計 <br>
-                    TQC-OA –Excel <br>
-                    TQC-OA –Word </p>
+                <div class="tab-2">
+                    <label for="tab2-4">專業證照</label>
+                    <input id="tab2-4" name="tabs-two" type="radio">
+                    <div>
+                        <!-- <h4>4</h4> -->
+                        <p>乙級-電腦軟體應用技術士<br>
+                            丙級會計事務技術士 <br>
+                            丙級門市服務技術士<br>
+                            TQC-OA –網頁設計 <br>
+                            TQC-OA –Excel <br>
+                            TQC-OA –Word </p>
+                    </div>
                 </div>
-              </div>
-              <div class="tab-2">
-                <label for="tab2-5">google 證書</label>
-                <input id="tab2-5" name="tabs-two" type="radio">
-                <div>
-                  <!-- <h4>555</h4> -->
-                  <p>基礎數位行銷基礎知識認證</p>
+                <div class="tab-2">
+                    <label for="tab2-5">google證書</label>
+                    <input id="tab2-5" name="tabs-two" type="radio">
+                    <div>
+                        <!-- <h4>555</h4> -->
+                        <p>基礎數位行銷基礎知識認證</p>
+                    </div>
                 </div>
-              </div>
-             
+
             </div>
         </section>
         </section>
@@ -707,11 +707,20 @@
 
 
     </script>
+    <script>
+        $(function () {
+            if ($(window).width() < 576) { //當視窗小於480時才運作
+                $('.navbar a').on('click', function () {
+                    $('#toggle').click();
+                });
+            }
+        });
+    </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.js"
         integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.extensions.min.js"></script>
-
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.extensions.min.js"></script> -->
+<!-- 
     <script>
         // ---頁面視窗-fullpage--特效-----
         new fullpage('.fullpage', {
@@ -725,7 +734,7 @@
         });
 
 
-    </script>
+    </script> -->
     <script>
         // ------標題-關於我-特效-----------
         $(document).ready(function () {
@@ -750,7 +759,7 @@
         $(document).ready(function () {
             $(window).scroll(function () {
                 var scroll = $(window).scrollTop();
-                console.log(scroll);
+                // console.log(scroll);
 
                 if (scroll > 1460) {
                     $(".Portfolio-title").css("background", "rgb(58, 58, 58)");

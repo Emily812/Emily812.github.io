@@ -85,6 +85,7 @@ body{
     }
 
     h1{
+        
         width: 100%;
         font-size: 110px;
         text-align: center;
@@ -116,6 +117,7 @@ body{
 
 //main -----關於我 #aboutme---------
 section#aboutme {
+    
     .abme-title{
         background-color: rgb(58, 58, 58);
         width: 100%;
@@ -207,7 +209,7 @@ section#aboutme {
     .PC_window{
         display: block;
         position: relative;
-        
+        overflow: hidden;
         // a{ 
             
             .A_inbox{
@@ -254,6 +256,7 @@ section#aboutme {
     }
 
     .Phone_window{
+       
         display: none;
         margin: 0 auto;
         position: relative;
@@ -463,6 +466,7 @@ section#aboutme {
 
 // -------------作品集 #Portfolio--------------------
 section#Portfolio {
+    overflow: hidden;
     .Portfolio-title{
         background-color: rgb(58, 58, 58);
         width: 100%;
@@ -619,7 +623,7 @@ section#Portfolio {
                 }
             }
 
-            @media (max-width:568px) {
+            @media (max-width:576px) {
                 .hug{
                     min-height: 350px;
                 }
@@ -645,7 +649,7 @@ section#Portfolio {
 
             }
         }
-        @media(max-width:568px) {
+        @media(max-width:576px) {
             .container{
                 
                 padding: 0px 0px;
@@ -737,7 +741,7 @@ section#Portfolio-ps{
     
 
     .container-fluid{
-        
+        overflow: hidden;
         //PS-----展示圖1-------------------- 
         .row{
  
@@ -1175,6 +1179,7 @@ section#Portfolio-AI{
 
 // -------------(html/css/js)作品集 #Portfolio--------------------
 section#Portfolio-web{
+    
     // background-color: rgb(155, 136, 136);
     .bgc-web{
         // margin-top: 200px;
@@ -1366,17 +1371,12 @@ section#Portfolio-web{
         justify-content: center;
         align-items: center;
     }
-    @media (max-width:568px) {
+    @media (max-width:576px) {
         .title{
-            width: 100%;
-            height: 100vh;
-            background-color: rgba(0,0,0,0.4);
+          
     
             font-size: 36px;
-            color: rgb(240, 198, 198);
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        
         }
         
     }
@@ -1669,6 +1669,32 @@ $accent-color: #4a5062;
 
 // --------專業技能-特效-------
 section#professionalskill{
+    .title{
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(58, 58, 58);
+
+        font-size: 64px;
+        color: rgb(240, 198, 198);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+   
+    @media (max-width:576px) {
+        .title{
+            width: 100%;
+            height: 100vh;
+            
+    
+            font-size: 36px;
+            color: rgb(240, 198, 198);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+    }
     background-color: rgb(43, 43, 57);
     h1 {
         font-size: 40px;
@@ -1676,8 +1702,12 @@ section#professionalskill{
         color: rgba(255,255,255,0.2);
         padding: 10px;
     }
+    
+
     p{
+        text-align: center;
         color: white;
+
     }
 
   button:focus,
@@ -1701,10 +1731,11 @@ section#professionalskill{
       color: #efedef;
       cursor: pointer;
       display: block;
-      font-size: 1.1em;
+      font-size: 1.25em;
       font-weight: 300;
       line-height: 1em;
       padding: 2rem 0;
+
       text-align: center; }
     .tabs [class^="tab"] [type="radio"],
     .tabs [class*=" tab"] [type="radio"] {
@@ -1722,10 +1753,16 @@ section#professionalskill{
       .tabs [class^="tab"] [type="radio"]:hover, .tabs [class^="tab"] [type="radio"]:focus,
       .tabs [class*=" tab"] [type="radio"]:hover,
       .tabs [class*=" tab"] [type="radio"]:focus {
-        border-bottom: 1px solid #fd264f; }
+        // border-bottom: 1px solid #fd264f;
+        border-bottom: 1px solid rgb(255, 191, 14);
+
+     }
       .tabs [class^="tab"] [type="radio"]:checked,
       .tabs [class*=" tab"] [type="radio"]:checked {
-        border-bottom: 2px solid #fd264f; }
+        // border-bottom: 2px solid #fd264f; 
+        border-bottom: 2px solid rgb(255, 191, 14);
+    
+    }
       .tabs [class^="tab"] [type="radio"]:checked + div,
       .tabs [class*=" tab"] [type="radio"]:checked + div {
         opacity: 1; }
@@ -1752,7 +1789,7 @@ section#professionalskill{
         margin-left: -100%; }
         
 
-    @media (max-width:568px) {
+    @media (max-width:576px) {
         .tabs .tab-2 {
             width:33%; }
     }
