@@ -183,7 +183,7 @@
         <section id="Portfolio">
             <div id="Portfolio-all">
                 <!-- <div > -->
-                <h1 class="Portfolio-title">Portfolio</h1>
+                <h1 class="Portfolio-title porfolio_pic">Portfolio</h1>
                 <!-- </div> -->
 
                 <div class="container ">
@@ -192,9 +192,9 @@
                         <div class="col-12 col-lg-12">
                             <div class="hug">
                                 <div class="pic ps-pic">
-                                    <div class="mask">
+                                    <a class="mask" href="#Portfolio-ps">
                                         <p>Photoshop</p>
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -206,9 +206,9 @@
                         <div class="col-12 col-lg-12">
                             <div class="hug margint_30">
                                 <div class="pic ai-pic">
-                                    <div class="mask ">
+                                    <a class="mask " href="#Portfolio-AI">
                                         <p>Illustraor</p>
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
 
@@ -219,11 +219,11 @@
                         <div class="col-12 col-lg-12">
                             <div class="hug margint_30">
                                 <div class="pic html-pic">
-                                    <div class="mask ">
+                                    <a class="mask " href="#Portfolio-web">
                                         <p>HTML</p> <br>
                                         <p>CSS</p><br>
                                         <p>JaveScript</p>
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -325,17 +325,22 @@
                 <div class="container-fluid bgc-web">
                     <div class="row">
                         <h2>Frontend Engineer</h2>
+                        <span>運用bootstrap切版及JavaScript、jQuery等特效，設計新的網站頁面。</span>
                     </div>
                     <div class="row ">
-                        <div class="col-md-12 col-lg-6">
+                        <div class="col-md-12 col-lg-7">
+                            <a href="https://emily812.github.io/horse/" >
                             <div class="pic webpic1"></div>
                             <!-- <img src="./img/web-pic1.jpg" alt=""> -->
+                        </a>
                         </div>
                         <div class=" col-md-12 col-lg-5">
                             <div class="text">
                                 <h3> 后里馬場</h3>
                                 <!-- <p>設計理念</p> -->
-                                <p>這是一個大人、小孩的共同回憶，至今卻沒有一個專屬的網站來介紹它。所以在設計選用較為活潑的顏色，也添加許多互動的小設計，在瀏覽網頁的過程，不顯得枯燥無趣。</p>
+                                <p>運用多元的特效，感受UX的互動效果。在設計選用較為活潑的顏色，在瀏覽網頁的過程，不顯得枯燥無趣。
+                                    
+                                </p>
                                 <div class="QRcode">
                                     <div class="pic horseQR"></div>
                                     <!-- <img src="./img/horse-QRcode.png" alt="后里馬場"> -->
@@ -345,10 +350,11 @@
                     </div>
                     <div class="row ">
                         <div class="col-md-12 col-lg-12">
-                            <div class="pic webpic2"></div>
+                            <a href="https://rwdteam.github.io/" >
+                            <div class="pic webpic2"></div></a>
                             <!-- <img src="./img/web-pic1.jpg" alt=""> -->
                         </div>
-                        <div class=" col-md-12 col-lg-12">
+                        <div class=" col-md-12 col-lg-8">
                             <div class="text">
                                 <h3> 中華鯨豚協會</h3>
                                 <!-- <p>設計理念</p> -->
@@ -356,11 +362,15 @@
                                 <!-- <div class="QRcode">
                                     <img src="./img/horse-QRcode.png" alt="中華鯨豚協會">
                                 </div> -->
-                                <div class="QRcode">
+                                <!-- <div class="QRcode">
                                     <div class="pic teamQR"></div>
-                                    <!-- <img src="./img/horse-QRcode.png" alt="后里馬場"> -->
-                                </div>
+                                    <img src="./img/horse-QRcode.png" alt="后里馬場">
+                                </div> -->
                             </div>
+                        </div>
+                        <div class=" col-md-12 col-lg-4">
+                            <div class="QRcode">
+                            <div class="pic teamQR"><img src="./img/horse-QRcode.png" alt="中華鯨豚協會"></div>
                         </div>
                     </div>
                 </div>
@@ -410,7 +420,7 @@
 
         <section id="workexperiece">
             <!-- <div > -->
-            <h1 class="title ">work experience</h1>
+            <h1 class="workexperiece-title ">work experience</h1>
             <!-- </div> -->
             <div class="wrapper">
                 <div class="card">
@@ -620,7 +630,7 @@
 
         <section id="professionalskill">
             <!-- <div class="title ">  -->
-            <h1 class="title">professional skill</h1>
+            <h1 class="professionalskill-title">professional skill</h1>
             <!-- </div> -->
             <!-- <h1>
                 Be bold, make your choice.<br><br>
@@ -685,8 +695,15 @@
         <!-- </section> -->
     </main>
     <footer>
-
+      
     </footer>
+    
+    <a href="#">
+        <div class="top">
+            ▲
+        </div>
+    </a>
+  
 
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -749,7 +766,7 @@
                 var scroll = $(window).scrollTop();
                 // console.log(scroll);
 
-                if (scroll > 1460) {
+                if (scroll > 1500) {
                     $(".Portfolio-title").css("background", "rgb(58, 58, 58)");
                 }
 
@@ -760,6 +777,42 @@
                 }
             })
         }) 
+
+        // // ------標題-工作經驗-特效-----------
+        // $(document).ready(function () {
+        //     $(window).scroll(function () {
+        //         var scroll = $(window).scrollTop();
+        //         console.log(scroll);
+
+        //         if (scroll > 8600) {
+        //             $(".workexperiece-title").css("background", "rgb(58, 58, 58)");
+        //         }
+
+
+        //         else {
+
+        //             $(".workexperiece-title").css("background", "white");
+        //         }
+        //     })
+        // }) 
+
+        // // ------標題-專業技能-特效-----------
+        // $(document).ready(function () {
+        //     $(window).scroll(function () {
+        //         var scroll = $(window).scrollTop();
+        //         // console.log(scroll);
+
+        //         if (scroll > 10200) {
+        //             $(".professionalskill-title").css("background", "rgb(58, 58, 58)");
+        //         }
+
+
+        //         else {
+
+        //             $(".professionalskill-title").css("background", "white");
+        //         }
+        //     })
+        // }) 
     </script>
 
     <script>
@@ -871,7 +924,24 @@
                 delay: 1000
             }); 
     </script>
+<script>
+     $(document).ready(function () {
+            $(window).scroll(function () {
+                var scroll = $(window).scrollTop();
+                console.log(scroll);
 
+                if (scroll > 600) {
+                    $(".top").css("display", "block");
+                }
+
+
+                else {
+
+                    $(".top").css("display", "none");
+                }
+            })
+        }) 
+</script>
 
 </body>
 

@@ -409,6 +409,8 @@ section#Portfolio {
 
 section#Portfolio .Portfolio-title {
   background-color: #3a3a3a;
+  background-size: cover;
+  background-attachment: fixed;
   width: 100%;
   height: 100vh;
   -webkit-transition: 1s;
@@ -507,6 +509,10 @@ section#Portfolio #Portfolio-all .container .hug .mask:hover {
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.795);
   position: relative;
+}
+
+section#Portfolio #Portfolio-all .container .hug a:hover {
+  text-decoration: none;
 }
 
 @media (max-width: 768px) {
@@ -856,6 +862,7 @@ section#Portfolio-AI .swiper-container {
 
 section#Portfolio-AI .swiper-container .swiper-pagination-bullet-active {
   background-color: #1c7414;
+  background-color: #f8c41a;
 }
 
 section#Portfolio-AI .swiper-slide {
@@ -906,13 +913,26 @@ section#Portfolio-web .bgc-web h2 {
   margin-top: -50px;
 }
 
+section#Portfolio-web .bgc-web span {
+  color: #3e3838;
+  font-size: 26px;
+  padding: 0px 50px 30px 150px;
+  margin-top: -80px;
+}
+
 @media (max-width: 992px) {
   section#Portfolio-web .bgc-web h2 {
     width: 100%;
     text-align: center;
-    padding: 50px 0px 0px 50px;
+    padding: 50px 0px 0px 0px;
     margin: auto;
     margin-bottom: 30px;
+  }
+  section#Portfolio-web .bgc-web span {
+    color: #3e3838;
+    font-size: 18px;
+    padding: 0px 50px 30px 50px;
+    margin-top: 0px;
   }
 }
 
@@ -955,7 +975,7 @@ section#Portfolio-web .row .text {
 
 section#Portfolio-web .row .text h3 {
   color: #2a2a2a;
-  padding: 50px 0px 0px 50px;
+  padding: 0px 0px 0px 50px;
   font-size: 36px;
   font-weight: 600;
 }
@@ -966,7 +986,7 @@ section#Portfolio-web .row .text p {
   font-size: 24px;
 }
 
-section#Portfolio-web .row .text .QRcode {
+section#Portfolio-web .row .QRcode {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -975,14 +995,15 @@ section#Portfolio-web .row .text .QRcode {
   -webkit-justify-content: flex-end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  padding: 50px 50px 50px 50px;
 }
 
-section#Portfolio-web .row .text .QRcode .pic {
+section#Portfolio-web .row .QRcode .pic {
   width: 195px;
   height: 195px;
 }
 
-section#Portfolio-web .row .text .QRcode .horseQR {
+section#Portfolio-web .row .QRcode .horseQR {
   background-image: url(../img/horse-QRcode.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -1001,7 +1022,8 @@ section#Portfolio-web .row .text .QRcode .horseQR {
     font-size: 24px;
     padding: 10px 20px;
   }
-  section#Portfolio-web .row .text .QRcode {
+  section#Portfolio-web .row .QRcode {
+    padding: 0px 50px 0px 0px;
     text-align: end;
   }
 }
@@ -1067,7 +1089,7 @@ section#Portfolio-web .row .text .QRcode .teamQR {
   }
 }
 
-#workexperiece .title {
+#workexperiece .workexperiece-title {
   width: 100%;
   height: 100vh;
   background-color: #3a3a3a;
@@ -1426,10 +1448,10 @@ section#Portfolio-web .row .text .QRcode .teamQR {
 }
 
 section#professionalskill {
-  background-color: #2b2b39;
+  background-color: #4c4c64;
 }
 
-section#professionalskill .title {
+section#professionalskill .professionalskill-title {
   width: 100%;
   height: 100vh;
   background-color: #3a3a3a;
@@ -1534,7 +1556,7 @@ section#professionalskill .tabs [class*=" tab"] [type="radio"] {
 section#professionalskill .tabs [class^="tab"] [type="radio"]:hover, section#professionalskill .tabs [class^="tab"] [type="radio"]:focus,
 section#professionalskill .tabs [class*=" tab"] [type="radio"]:hover,
 section#professionalskill .tabs [class*=" tab"] [type="radio"]:focus {
-  border-bottom: 1px solid #ffbf0e;
+  border-bottom: 1px solid #e49c93;
 }
 
 section#professionalskill .tabs [class^="tab"] [type="radio"]:checked,
@@ -1583,5 +1605,35 @@ section#professionalskill .tabs .tab-2:nth-child(6n) [type="radio"]:checked + di
   section#professionalskill .tabs .tab-2 {
     width: 33%;
   }
+}
+
+.top {
+  display: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  /* background-color: rgba(184, 135, 11, 0.733); */
+  background-color: rgba(100, 100, 100, 0.438);
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 30px;
+  color: white;
+}
+
+.top a {
+  text-decoration: none;
+}
+
+.top:hover {
+  background-color: rgba(255, 245, 238, 0.815);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  color: rgba(250, 26, 26, 0.849);
+  font-weight: 900;
+  font-size: 40px;
 }
 /*# sourceMappingURL=index.css.map */
