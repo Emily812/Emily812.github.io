@@ -802,7 +802,7 @@ section#Portfolio-ps{
             }
 
             p{
-                
+                text-align: justify;
                 font-size: 30px;
                 color: white;
                 line-height: 60px;
@@ -1120,14 +1120,18 @@ section#Portfolio-web{
             padding: 0px 0px 100px 150px;
             font-size: 64px;
             font-weight: bolder;
+            margin: auto ;
             margin-top: -50px;
 
         }
         span{
+            width: 100%;
             color: rgb(62, 56, 56);
             font-size: 26px;
             padding: 0px 50px 30px 150px;
+            margin: auto ;
             margin-top: -80px;
+            
         }
         @media (max-width:992px) {
             h2{
@@ -1140,8 +1144,10 @@ section#Portfolio-web{
             }
             span{
                 color: rgb(62, 56, 56);
-                font-size: 18px;
-                padding: 0px 50px 30px 50px;
+                font-size: 22px;
+                padding: 0px 0px 30px 0px;
+                text-align: center;
+                margin: auto ;
                 margin-top: 0px;
             }
         }
@@ -1150,9 +1156,15 @@ section#Portfolio-web{
             h2{
                 // width: 100%;
                 font-size: 36px;
-                padding: 50px 0px 0px 50px;
+                padding: 50px 0px 0px 0px;
                 margin: auto ;
                 margin-bottom: 30px;
+            }
+            span{
+                color: rgb(62, 56, 56);
+                font-size: 16px;
+                padding: 0px 15px 30px 15px;
+                
             }
         }
 
@@ -1188,9 +1200,9 @@ section#Portfolio-web{
             }
             p{
                 color: white;
-                padding: 0px 0px;
+                padding: 0px 20px;
                 font-size: 24px;
-                
+                text-align: justify;
     
             }
             
@@ -1229,7 +1241,7 @@ section#Portfolio-web{
                 p{
                     
                     font-size: 24px;
-                    padding: 10px 20px;
+                    padding: 10px 30px;
                 }
                
             }
@@ -1242,6 +1254,16 @@ section#Portfolio-web{
             
 
         }
+        @media (max-width:576px) {
+            .text{
+                p{
+                    
+                    font-size: 20px;
+                    padding: 10px 20px;
+                }
+            }
+        }
+
     }
     @media (max-width:991px) {
        .row{  
@@ -1306,7 +1328,7 @@ section#Portfolio-web{
 #workexperiece{
    
         
-    .workexperiece-title{
+    h1.workexperiece-title{
         width: 100%;
         height: 100vh;
         background-color: rgb(58, 58, 58);
@@ -1315,18 +1337,20 @@ section#Portfolio-web{
         display: flex;
         justify-content: center;
         align-items: center;
-        
-    }
-    h1{
         font-size: 64px;
         color: rgb(240, 198, 198);
+        
     }
+    // h1{
+    //     font-size: 64px;
+    //     color: rgb(240, 198, 198);
+    // }
     @media (max-width:576px) {
         
           
-            h1{
-            font-size: 30px;
-            }
+        h1.workexperiece-title{
+            font-size: 36px;
+        }
         
         
     }
@@ -1343,13 +1367,7 @@ section#Portfolio-web{
 }
 
 // codepen 工作經驗--------------------------
-// $accent-color: #355cc9;
-$accent-color: #4a5062;
 
-
-* {
-	box-sizing: border-box;
-}
 
 // body {
 // 	margin: 0;
@@ -1631,17 +1649,17 @@ section#professionalskill{
         justify-content: center;
         align-items: center;
     }
-        h1 {
-            font-size: 64px;
-            line-height: 0.8em;
-            color: rgb(240, 198, 198);
-            padding: 10px;
-        }
+    h1 {
+        font-size: 64px;
+        line-height: 0.8em;
+        color: rgb(240, 198, 198);
+        padding: 10px;
+    }
         
     
    
     @media (max-width:576px) {
-        .title{
+        .professionalskill-title {
             width: 100%;
             height: 100vh;
             
@@ -1651,10 +1669,11 @@ section#professionalskill{
             display: flex;
             justify-content: center;
             align-items: center;
-            h1 {
-                font-size: 30px;
-                
-            }
+            
+        }
+        h1 {
+            font-size: 36px;
+            
         }
         
     }
