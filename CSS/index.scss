@@ -388,7 +388,7 @@ section#aboutme {
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 90%;
+    width: 95%;
     height: 85vh;
 
   
@@ -398,8 +398,17 @@ section#aboutme {
         margin:  auto;
         
         color: white;
-        line-height: 48px;
-        font-size: 24px;
+        line-height: 40px;
+        font-size: 20px;
+        h4{
+            padding:: 0px 0px 10px 0px;
+
+            font-size: 28px;
+            font-weight: bold;
+            color: brown;
+            border-bottom: solid 1.8px brown;
+        }
+
     }
 }
   
@@ -427,7 +436,7 @@ section#aboutme {
     margin: auto;
     padding: 15px;
     border: 1px solid #888;
-    width: 80%;
+    width: 90%;
     height: 85vh;
 
     .hug{
@@ -442,6 +451,14 @@ section#aboutme {
         align-content: center;
         flex-direction: column;
         justify-content: center;
+
+        span{
+            margin: 0px 0px 20px 0px;
+            font-size: 24px;
+            font-weight: bold;
+            color: brown;
+            border-bottom: solid 1.5px brown;
+        }
     }
 
    
@@ -476,22 +493,19 @@ section#Portfolio {
         width: 100%;
         height: 100vh;
         transition:1s;
+
+        font-size: 64px;
+        color: rgb(255, 236, 236);
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     // .porfolio_pic{
     //     background-image: url(../img/title-bgc.jpg);
     //     background-size: cover;;
     //     // background-attachment: fixed;
     // }
-        h1{
-            height: 100%;
-            // font-size: 100px;
-            font-size: 64px;
-
-            color: rgb(255, 236, 236);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+    
     
 
 
@@ -499,9 +513,10 @@ section#Portfolio {
 @media(max-width:720px){
     section#Portfolio {
         
-            h1{ 
-            font-size: 48px;
-            }
+        .Portfolio-title{ 
+        font-size: 48px;
+        
+        }
         
     
        
@@ -741,7 +756,7 @@ section#Portfolio-ps{
         h2{
             width: 100%;
             text-align: center;
-            // font-size: 36px;
+            font-size: 40px;
             padding: 50px 0px 0px 50px;
             margin: auto ;
             margin-bottom: 30px;
@@ -752,7 +767,7 @@ section#Portfolio-ps{
         h2{
             // width: 100%;
             font-size: 36px;
-            padding: 50px 0px 0px 50px;
+            padding: 40px 0px 0px 0px;
             margin: auto ;
             margin-bottom: 30px;
         }
@@ -1035,8 +1050,8 @@ section#Portfolio-AI{
             h2{
                 width: 100%;
                 text-align: center;
-                // font-size: 36px;
-                padding: 50px 0px 0px 50px;
+                font-size: 40px;
+                padding: 50px 0px 0px 0px;
                 margin: auto ;
                 margin-bottom: 30px;
             }
@@ -1046,7 +1061,7 @@ section#Portfolio-AI{
             h2{
                 // width: 100%;
                 font-size: 36px;
-                padding: 50px 0px 0px 50px;
+                padding: 40px 0px 0px 0px;
                 margin: auto ;
                 margin-bottom: 30px;
             }
@@ -1144,14 +1159,14 @@ section#Portfolio-web{
             h2{
                 width: 100%;
                 text-align: center;
-                // font-size: 36px;
+                font-size: 40px;
                 padding: 50px 0px 0px 0px;
                 margin: auto ;
                 margin-bottom: 30px;
             }
             span{
                 color: rgb(62, 56, 56);
-                font-size: 22px;
+                font-size: 20px;
                 padding: 0px 0px 30px 0px;
                 text-align: center;
                 margin: auto ;
@@ -1355,16 +1370,29 @@ section#Portfolio-web{
         // color: rgb(30, 159, 18);
 
     }
-    
+  
+
     @media (max-width:576px) {
-        
-          
-        h1.workexperiece-title{
-            font-size: 36px;
+        .workexperiece-title {
+            width: 100%;
+            height: 100vh;
+            
+
+            // font-size: 36px;
+            color: rgb(240, 198, 198);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
         }
-        
-        
+        h2 {
+            font-size: 36px;
+            margin-bottom:30px ;
+        }
     }
+}    
+        
+    
     // .text{
     //     width: 100%;
     //     height: 100vh;
@@ -1375,7 +1403,7 @@ section#Portfolio-web{
     //     display: flex;
     // }
     
-}
+
 
 // codepen 工作經驗--------------------------
 
@@ -1666,7 +1694,7 @@ section#professionalskill{
         justify-content: center;
         align-items: center;
     }
-    h1 {
+    h2 {
         font-size: 64px;
         line-height: 0.8em;
         color: rgb(240, 198, 198);
@@ -1689,7 +1717,7 @@ section#professionalskill{
             align-items: center;
             
         }
-        h1 {
+        h2 {
             font-size: 36px;
             margin-bottom:30px ;
         }

@@ -315,7 +315,7 @@ section#aboutme .Phone_window .A_inbox:hover:after {
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 90%;
+  width: 95%;
   height: 85vh;
 }
 
@@ -323,8 +323,16 @@ section#aboutme .Phone_window .A_inbox:hover:after {
   width: 50%;
   margin: auto;
   color: white;
-  line-height: 48px;
-  font-size: 24px;
+  line-height: 40px;
+  font-size: 20px;
+}
+
+.modal-content .hug h4 {
+  padding: 0px 0px 10px 0px;
+  font-size: 28px;
+  font-weight: bold;
+  color: brown;
+  border-bottom: solid 1.8px brown;
 }
 
 /* The Close Button */
@@ -356,7 +364,7 @@ section#aboutme .Phone_window .A_inbox:hover:after {
   margin: auto;
   padding: 15px;
   border: 1px solid #888;
-  width: 80%;
+  width: 90%;
   height: 85vh;
 }
 
@@ -383,6 +391,14 @@ section#aboutme .Phone_window .A_inbox:hover:after {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.modal-contentp .hug span {
+  margin: 0px 0px 20px 0px;
+  font-size: 24px;
+  font-weight: bold;
+  color: brown;
+  border-bottom: solid 1.5px brown;
 }
 
 /* The Close Button */
@@ -421,10 +437,6 @@ section#Portfolio .Portfolio-title {
   -webkit-transition: 1s;
   -o-transition: 1s;
   transition: 1s;
-}
-
-section#Portfolio h1 {
-  height: 100%;
   font-size: 64px;
   color: #ffecec;
   display: -webkit-box;
@@ -442,7 +454,7 @@ section#Portfolio h1 {
 }
 
 @media (max-width: 720px) {
-  section#Portfolio h1 {
+  section#Portfolio .Portfolio-title {
     font-size: 48px;
   }
 }
@@ -616,6 +628,7 @@ section#Portfolio-ps h2 {
   section#Portfolio-ps h2 {
     width: 100%;
     text-align: center;
+    font-size: 40px;
     padding: 50px 0px 0px 50px;
     margin: auto;
     margin-bottom: 30px;
@@ -625,7 +638,7 @@ section#Portfolio-ps h2 {
 @media (max-width: 576px) {
   section#Portfolio-ps h2 {
     font-size: 36px;
-    padding: 50px 0px 0px 50px;
+    padding: 40px 0px 0px 0px;
     margin: auto;
     margin-bottom: 30px;
   }
@@ -849,7 +862,8 @@ section#Portfolio-AI .bgc-ai h2 {
   section#Portfolio-AI .bgc-ai h2 {
     width: 100%;
     text-align: center;
-    padding: 50px 0px 0px 50px;
+    font-size: 40px;
+    padding: 50px 0px 0px 0px;
     margin: auto;
     margin-bottom: 30px;
   }
@@ -858,7 +872,7 @@ section#Portfolio-AI .bgc-ai h2 {
 @media (max-width: 576px) {
   section#Portfolio-AI .bgc-ai h2 {
     font-size: 36px;
-    padding: 50px 0px 0px 50px;
+    padding: 40px 0px 0px 0px;
     margin: auto;
     margin-bottom: 30px;
   }
@@ -936,13 +950,14 @@ section#Portfolio-web .bgc-web span {
   section#Portfolio-web .bgc-web h2 {
     width: 100%;
     text-align: center;
+    font-size: 40px;
     padding: 50px 0px 0px 0px;
     margin: auto;
     margin-bottom: 30px;
   }
   section#Portfolio-web .bgc-web span {
     color: #3e3838;
-    font-size: 22px;
+    font-size: 20px;
     padding: 0px 0px 30px 0px;
     text-align: center;
     margin: auto;
@@ -1144,8 +1159,26 @@ section#Portfolio-web .row .text .QRcode .teamQR {
 }
 
 @media (max-width: 576px) {
-  #workexperiece h1.workexperiece-title {
+  #workexperiece .workexperiece-title {
+    width: 100%;
+    height: 100vh;
+    color: #f0c6c6;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #workexperiece h2 {
     font-size: 36px;
+    margin-bottom: 30px;
   }
 }
 
@@ -1497,7 +1530,7 @@ section#professionalskill .professionalskill-title {
           align-items: center;
 }
 
-section#professionalskill h1 {
+section#professionalskill h2 {
   font-size: 64px;
   line-height: 0.8em;
   color: #f0c6c6;
@@ -1524,7 +1557,7 @@ section#professionalskill h1 {
         -ms-flex-align: center;
             align-items: center;
   }
-  section#professionalskill h1 {
+  section#professionalskill h2 {
     font-size: 36px;
     margin-bottom: 30px;
   }
