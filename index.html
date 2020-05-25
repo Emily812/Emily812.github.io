@@ -36,13 +36,6 @@
                                 <p>關於我</p>
                             </a>
                         </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link " href="#Portfolio">
-                                <p>作品集</p>
-                            </a>
-                        </li>
-
                         <li class="nav-item">
                             <a class="nav-link " href="#workexperiece">
                                 <p>工作經驗</p>
@@ -54,6 +47,14 @@
                                 <p>專業技能</p>
                             </a>
                         </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link " href="#Portfolio">
+                                <p>作品集</p>
+                            </a>
+                        </li>
+
+
 
                     </ul>
 
@@ -82,15 +83,17 @@
         <section id="aboutme">
 
             <!-- <div > -->
-            <h1 class="abme-title ">About me</h1>
-            <!-- </div> -->
-            <div class="pallax"></div>
+            <!-- <h1 class="abme-title ">About me</h1> -->
+            <!-- </div>
+            <div id="abme-title" class="pallax"></div>
+            <div id="abme-title" class="pallax"></div> -->
             <div class="container">
                 <div class="row ">
-                    <div id="me-pic" class="col-sm-12 col-lg-5">
+                    <div id="me-pic" class="col-sm-12 col-lg-5" data-aos="fade-up">
                         <!-- <img src="./img/aboutme.jpg" alt=""> -->
                     </div>
-                    <div id="me-text" class="col-sm-12  col-lg-7">
+                    <div id="me-text" class="col-sm-12  col-lg-7" data-aos="fade-up">
+                        <h2>About me</h2>
                         <p> 想從事前端工程師。從高中時期的程式課讓我第一次了解程式並小有天分，至此抱持極大的興趣。
                             曾參與過前端程式開發培訓課程，藉此提升自我的專業能力，以因應未來的社會趨勢。 在幾個月的密集培訓過程中，不僅學習到設計軟體的操作、
                             程式語言的撰寫及前端系統相關的知識外，也了解到技能永遠是學不盡的，唯有利用妥善的時間分配，及自主的學習態度積極進修， 以達到最大的收穫。 也為自己在職場及人生價值上努力。
@@ -103,29 +106,30 @@
 
                             </div>
 
-                            <div id="myModal" class="modal">
+                            
+                        </div>
 
-                                <!-- Modal content -->
-                                <div class="modal-content">
-                                    <span class="close">&times;</span>
-                                    <div class="hug">
-                                        <h4>
-                                            基本資料
-                                        </h4>
-                                        <p>姓名：邱鈺婷</p>
-                                        <p>生日：84年08月12日</p>
-                                        <!-- <p>手機：0928-543905</p> -->
-                                        <p>郵件：qwe123750000@gmail.com</p>
-                                        <br>
-                                        <h4>
-                                            教育程度
-                                        </h4>
-                                        <p>僑光科技大學 行銷與流通管理系 2012/9 - 2016/6</p>
-                                    </div>
+                    </div>
 
-                                </div>
+                </div>
+                <div id="myModal" class="modal">
 
-                            </div>
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <div class="hug">
+                            <h4>
+                                基本資料
+                            </h4>
+                            <p>姓名：邱鈺婷</p>
+                            <p>生日：84年08月12日</p>
+                            <!-- <p>手機：0928-543905</p> -->
+                            <p>郵件：qwe123750000@gmail.com</p>
+                            <br>
+                            <h4>
+                                教育程度
+                            </h4>
+                            <p>僑光科技大學 行銷與流通管理系 2012/9 - 2016/6</p>
                         </div>
 
                     </div>
@@ -178,6 +182,399 @@
 
             </div>
 
+        </section>
+
+        <section id="workexperiece">
+            <!-- <div > -->
+            <div class="workexperiece-title ">
+                <h2>work experience</h2>
+            </div>
+            <!-- </div> -->
+            <div class="wrapper">
+                <div class="card">
+                    <input type="checkbox" id="card1" class="more" aria-hidden="true">
+                    <div class="content">
+                        <div class="front WEcard1">
+                            <div class="inner">
+                                <h3>新加坡-無印良品MUJI</h3>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <label for="card1" class="button" aria-hidden="true">
+                                    Details
+                                </label>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner">
+
+                                <div class="description">
+                                    <p>
+                                        大四到新加坡實習，在語言溝通障礙及不懂當地人文及生活環境下，學習自己獨立自主，並提升自己的國際觀</p>
+                                    <ul>
+                                        <li>櫃檯銷售服務</li>
+                                        <li>顧客諮詢服務</li>
+                                        <li>了解進貨及存貨數量</li>
+                                        <li>商品擺設及如何吸引消費目光</li>
+                                        <li>環境衛生管理、商品品質管理、商品促銷</li>
+                                    </ul>
+                                </div>
+                                <div class="location">2016年09月-2017年06月</div>
+                                <div class="price">門市人員</div>
+                                <label for="card1" class="button return" aria-hidden="true">❮
+                                    <i class="fas fa-arrow-left"></i>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <input type="checkbox" id="card2" class="more">
+                    <div class="content">
+                        <div class="front WEcard2">
+                            <div class="inner">
+                                <h3>強登運動用品</h3>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <label for="card2" class="button" aria-hidden="true">
+                                    Details
+                                </label>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner">
+                                <div class="description">
+                                    <p>
+                                        從零開始學習，設計、修圖、banner等設計，至後端電商的經營，包裝出貨由獨立完成。</p>
+                                    <ul>
+                                        <li>商品抓圖、修圖上架、製作banner</li>
+                                        <li>解決顧客問題</li>
+                                        <li>撿貨、包貨，與平台業者做聯繫</li>
+                                        <li>定期舉辦相關商品促銷活動</li>
+                                        <li>獨力完成平台系統維護</li>
+                                    </ul>
+                                </div>
+                                <div class="location">2017年10月-2018年03月</div>
+                                <div class="price">電子商務專員</div>
+                                <label for="card2" class="button return" aria-hidden="true">❮
+                                    <i class="fas fa-arrow-left"></i>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <input type="checkbox" id="card3" class="more">
+                    <div class="content">
+                        <div class="front WEcard3">
+                            <div class="inner">
+                                <h3>台灣引興股份有限公司</h3>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <label for="card3" class="button" aria-hidden="true">
+                                    Details
+                                </label>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner">
+
+                                <div class="description">
+                                    <p>「瞻前顧後」於在職中給我最大的啟發。訂單到客戶端的處理，每件事皆環環相扣。</p>
+                                    <ul>
+                                        <li>協助業務人員完成銷售業務之行政後勤工作進出貨事宜</li>
+                                        <li>客戶端之溝通事宜</li>
+                                        <li>ERP系統處理客戶訂單資訊</li>
+                                        <li>銷售出口的文件作業流程</li>
+                                        <li>收發客戶信件</li>
+                                    </ul>
+                                </div>
+                                <div class="location">2018年04月-2018年12月</div>
+                                <div class="price">業務助理</div>
+                                <label for="card3" class="button return" aria-hidden="true">❮
+                                    <i class="fas fa-arrow-left"></i>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <input type="checkbox" id="card4" class="more">
+                    <div class="content">
+                        <div class="front WEcard4">
+                            <div class="inner">
+                                <h3>力新國際文教股份有限公司</h3>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <label for="card4" class="button" aria-hidden="true">
+                                    Details
+                                </label>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner">
+
+                                <div class="description">
+                                    <p>熟悉產品及理解顧客的需求是最為基本重要的。曾在入職的兩個禮拜內，獨立成交創造業績。</p>
+                                    <ul>
+                                        <li>至全台各地展點、賣場做銷售</li>
+                                        <li>陌生顧客開發</li>
+                                        <li>銷售商品</li>
+                                        <li>顧客售後服務</li>
+
+                                    </ul>
+                                </div>
+                                <div class="location">2019年04月-2019年07月</div>
+                                <div class="price">業務專員</div>
+                                <label for="card4" class="button return" aria-hidden="true">❮
+                                    <i class="fas fa-arrow-left"></i>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <input type="checkbox" id="card5" class="more">
+                    <div class="content">
+                        <div class="front WEcard5">
+                            <div class="inner">
+                                <h3>民眾技藝補習班</h3>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <label for="card5" class="button" aria-hidden="true">
+                                    Details
+                                </label>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner">
+
+
+                                <div class="description">
+                                    <p>經政府課程陪訓3個月中，不僅學習到以下軟體及程式操作，更多的是獨立解決問題及團隊合作及溝通重要性的能力。</p>
+                                    <ul>
+                                        <li>繪圖軟體: Adobe Photoshop / Adobe Illustraor / Xmind</li>
+                                        <li>程式軟體：HTML5 / CSS3 (SCSS) / JaveScript(jquery) / Bootstrap / Github</li>
+
+
+                                    </ul>
+                                </div>
+                                <div class="location">2020年02月-2020年05月</div>
+                                <div class="price">前端程式開發課程</div>
+                                <label for="card5" class="button return" aria-hidden="true">❮
+                                    <i class="fas fa-arrow-left"></i>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="professionalskill">
+            <!-- <div class="title ">  -->
+            <h1 class="professionalskill-title">professional skill</h1>
+            <!-- </div> -->
+
+            <div class="blog-card">
+                <div class="meta">
+                    <div class="photo pic1"
+                       >
+                    </div>
+                    <!-- <ul class="details">
+                        <li class="date">Aug. 24, 2015</li>
+                        <li class="tags">
+                            <ul>
+                                <li><a href="#">Learn</a></li>
+                                <li><a href="#">Code</a></li>
+                                <li><a href="#">HTML</a></li>
+                                <li><a href="#">CSS</a></li>
+                            </ul>
+                        </li>
+                    </ul> -->
+                </div>
+                <div class="description">
+                    <h3>程式語言</h3>
+                    <span>Programming language</span>
+                    <p>HTML5 / CSS / SCSS / JaveScript / jquery<br>
+                        bootstrap / swiper 、AOS 等特效軟件 <br>
+                        Github
+                    </p>
+                    
+                </div>
+            </div>
+            <div class="blog-card alt">
+                <div class="meta">
+                    <div class="photo pic2"
+                    >
+                    </div>
+                    <!-- <ul class="details">
+                        <li class="author"><a href="#">設計軟體</a></li>
+                        <li class="date">July. 15, 2015</li>
+                        <li class="tags">
+                            <ul>
+                                <li><a href="#">Learn</a></li>
+                                <li><a href="#">Code</a></li>
+                                <li><a href="#">JavaScript</a></li>
+                            </ul>
+                        </li>
+                    </ul> -->
+                </div>
+                <div class="description">
+                    <h3>繪圖軟體</h3>
+                    <span>Drawing software</span>
+                    <p>Adobe Photoship /
+                        Adobe Illustrator /
+                        Auto CAD</p>
+                 
+                </div>
+            </div>
+            <div class="blog-card">
+                <div class="meta">
+                    <div class="photo pic3"
+                       >
+                    </div>
+                    <!-- <ul class="details">
+                        <li class="author"><a href="#">John Doe</a></li>
+                        <li class="date">Aug. 24, 2015</li>
+                        <li class="tags">
+                            <ul>
+                                <li><a href="#">Learn</a></li>
+                                <li><a href="#">Code</a></li>
+                                <li><a href="#">HTML</a></li>
+                                <li><a href="#">CSS</a></li>
+                            </ul>
+                        </li>
+                    </ul> -->
+                </div>
+                <div class="description">
+                    <h3>文書軟體</h3>
+                    <span>Word processing</span>
+                    <p> Word /
+                        Excel /
+                        PowerPoint</p>
+                
+                </div>
+            </div>
+            <div class="blog-card alt">
+                <div class="meta">
+                    <div class="photo pic4"
+                       >
+                    </div>
+                    <!-- <ul class="details">
+                        <li class="author"><a href="#">Jane Doe</a></li>
+                        <li class="date">July. 15, 2015</li>
+                        <li class="tags">
+                            <ul>
+                                <li><a href="#">Learn</a></li>
+                                <li><a href="#">Code</a></li>
+                                <li><a href="#">JavaScript</a></li>
+                            </ul>
+                        </li>
+                    </ul> -->
+                </div>
+                <div class="description">
+                    <h3>專業證照</h3>
+                    <span>qualification</span>
+                    <p>技職證照：乙級-電腦軟體應用技術士 / 
+                        丙級-會計事務技術士 / 
+                        丙級-門市服務技術士 / 
+                        TQC-OA –網頁設計 / 
+                        TQC-OA –Excel / 
+                        TQC-OA –Word　<br>
+                        google證書：基礎數位行銷基礎知識認證
+
+                    </p>
+                  
+                </div>
+            </div>
+            
+
+
+
+            <!-- <div class="tabs">
+                <div class="tab-2">
+                    <label for="tab2-1">程式語言</label>
+                    <input id="tab2-1" name="tabs-two" type="radio" checked="checked">
+                    <div>
+                        
+                        <p>HTML / <br>
+                            CSS / <br>
+                            Javascript <br>
+                            Bootstrap <br>
+                            Github
+                        </p>
+                    </div>
+                </div>
+                <div class="tab-2">
+                    <label for="tab2-2">繪圖軟體</label>
+                    <input id="tab2-2" name="tabs-two" type="radio">
+                    <div>
+                  
+                        <p>Adobe Photoship / <br>
+                            Adobe Illustrator / <br>
+                            Auto CAD
+                        </p>
+                    </div>
+                </div>
+                <div class="tab-2">
+                    <label for="tab2-3">文書軟體</label>
+                    <input id="tab2-3" name="tabs-two" type="radio">
+                    <div>
+                    
+                        <p>Word / <br>
+                            Excel /<br>
+                            PowerPoint</p>
+                    </div>
+                </div>
+                <div class="tab-2">
+                    <label for="tab2-4">專業證照</label>
+                    <input id="tab2-4" name="tabs-two" type="radio">
+                    <div>
+                        
+                        <p>乙級-電腦軟體應用技術士<br>
+                            丙級會計事務技術士 <br>
+                            丙級門市服務技術士<br>
+                            TQC-OA –網頁設計 <br>
+                            TQC-OA –Excel <br>
+                            TQC-OA –Word </p>
+                    </div>
+                </div>
+                <div class="tab-2">
+                    <label for="tab2-5">google證書</label>
+                    <input id="tab2-5" name="tabs-two" type="radio">
+                    <div>
+                        
+                        <p>基礎數位行銷基礎知識認證</p>
+                    </div>
+                </div>
+
+            </div> -->
         </section>
 
         <section id="Portfolio">
@@ -329,17 +726,17 @@
                     </div>
                     <div class="row ">
                         <div class="col-md-12 col-lg-7">
-                            <a href="https://emily812.github.io/horse/" >
-                            <div class="pic webpic1"></div>
-                            <!-- <img src="./img/web-pic1.jpg" alt=""> -->
-                        </a>
+                            <a href="https://emily812.github.io/horse/">
+                                <div class="pic webpic1"></div>
+                                <!-- <img src="./img/web-pic1.jpg" alt=""> -->
+                            </a>
                         </div>
                         <div class=" col-md-12 col-lg-5">
                             <div class="text">
                                 <h3> 后里馬場</h3>
                                 <!-- <p>設計理念</p> -->
                                 <p>運用多元的特效，感受UX的互動效果。在設計選用較為活潑的顏色，在瀏覽網頁的過程，不顯得枯燥無趣。
-                                    
+
                                 </p>
                                 <div class="QRcode">
                                     <div class="pic horseQR"></div>
@@ -350,8 +747,9 @@
                     </div>
                     <div class="row ">
                         <div class="col-md-12 col-lg-12">
-                            <a href="https://rwdteam.github.io/" >
-                            <div class="pic webpic2"></div></a>
+                            <a href="https://rwdteam.github.io/">
+                                <div class="pic webpic2"></div>
+                            </a>
                             <!-- <img src="./img/web-pic1.jpg" alt=""> -->
                         </div>
                         <div class=" col-md-12 col-lg-8">
@@ -370,10 +768,10 @@
                         </div>
                         <div class=" col-md-12 col-lg-4">
                             <div class="QRcode">
-                            <div class="pic teamQR"><img src="./img/horse-QRcode.png" alt="中華鯨豚協會"></div>
+                                <div class="pic teamQR"><img src="./img/horse-QRcode.png" alt="中華鯨豚協會"></div>
+                            </div>
                         </div>
                     </div>
-                </div>
             </section>
         </section>
         <!-- <section id="workexperiece">
@@ -418,297 +816,20 @@
 
             </section> -->
 
-        <section id="workexperiece">
-            <!-- <div > -->
-            <h1 class="workexperiece-title ">work experience</h1>
-            <!-- </div> -->
-            <div class="wrapper">
-                <div class="card">
-                    <input type="checkbox" id="card1" class="more" aria-hidden="true">
-                    <div class="content">
-                        <div class="front WEcard1">
-                            <div class="inner">
-                                <h2>新加坡-無印良品MUJI</h2>
-                                <div class="rating">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
-                                    <i class="far fa-star"></i>
-                                </div>
-                                <label for="card1" class="button" aria-hidden="true">
-                                    Details
-                                </label>
-                            </div>
-                        </div>
-                        <div class="back">
-                            <div class="inner">
 
-                                <div class="description">
-                                    <p>
-                                        大四到新加坡實習，在語言溝通障礙及不懂當地人文及生活環境下，學習自己獨立自主，並提升自己的國際觀</p>
-                                    <ul>
-                                        <li>櫃檯銷售服務</li>
-                                        <li>顧客諮詢服務</li>
-                                        <li>了解進貨及存貨數量</li>
-                                        <li>商品擺設及如何吸引消費目光</li>
-                                        <li>環境衛生管理、商品品質管理、商品促銷</li>
-                                    </ul>
-                                </div>
-                                <div class="location">2016年09月-2017年06月</div>
-                                <div class="price">門市人員</div>
-                                <label for="card1" class="button return" aria-hidden="true">❮
-                                    <i class="fas fa-arrow-left"></i>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <input type="checkbox" id="card2" class="more">
-                    <div class="content">
-                        <div class="front WEcard2">
-                            <div class="inner">
-                                <h2>強登運動用品</h2>
-                                <div class="rating">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
-                                    <i class="far fa-star"></i>
-                                </div>
-                                <label for="card2" class="button" aria-hidden="true">
-                                    Details
-                                </label>
-                            </div>
-                        </div>
-                        <div class="back">
-                            <div class="inner">
-                                <div class="description">
-                                    <p>
-                                        從零開始學習，設計、修圖、banner等設計，至後端電商的經營，包裝出貨由獨立完成。</p>
-                                    <ul>
-                                        <li>商品抓圖、修圖上架、製作banner</li>
-                                        <li>解決顧客問題</li>
-                                        <li>撿貨、包貨，與平台業者做聯繫</li>
-                                        <li>定期舉辦相關商品促銷活動</li>
-                                        <li>獨力完成平台系統維護</li>
-                                    </ul>
-                                </div>
-                                <div class="location">2017年10月-2018年03月</div>
-                                <div class="price">電子商務專員</div>
-                                <label for="card2" class="button return" aria-hidden="true">❮
-                                    <i class="fas fa-arrow-left"></i>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <input type="checkbox" id="card3" class="more">
-                    <div class="content">
-                        <div class="front WEcard3">
-                            <div class="inner">
-                                <h2>台灣引興股份有限公司</h2>
-                                <div class="rating">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                                <label for="card3" class="button" aria-hidden="true">
-                                    Details
-                                </label>
-                            </div>
-                        </div>
-                        <div class="back">
-                            <div class="inner">
-
-                                <div class="description">
-                                    <p>「瞻前顧後」於在職中給我最大的啟發。訂單到客戶端的處理，每件事皆環環相扣。</p>
-                                    <ul>
-                                        <li>協助業務人員完成銷售業務之行政後勤工作進出貨事宜</li>
-                                        <li>客戶端之溝通事宜</li>
-                                        <li>ERP系統處理客戶訂單資訊</li>
-                                        <li>銷售出口的文件作業流程</li>
-                                        <li>收發客戶信件</li>
-                                    </ul>
-                                </div>
-                                <div class="location">2018年04月-2018年12月</div>
-                                <div class="price">業務助理</div>
-                                <label for="card3" class="button return" aria-hidden="true">❮
-                                    <i class="fas fa-arrow-left"></i>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <input type="checkbox" id="card4" class="more">
-                    <div class="content">
-                        <div class="front WEcard4">
-                            <div class="inner">
-                                <h2>力新國際文教股份有限公司</h2>
-                                <div class="rating">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                                <label for="card4" class="button" aria-hidden="true">
-                                    Details
-                                </label>
-                            </div>
-                        </div>
-                        <div class="back">
-                            <div class="inner">
-
-                                <div class="description">
-                                    <p>熟悉產品及理解顧客的需求是最為基本重要的。曾在入職的兩個禮拜內，獨立成交創造業績。</p>
-                                    <ul>
-                                        <li>至全台各地展點、賣場做銷售</li>
-                                        <li>陌生顧客開發</li>
-                                        <li>銷售商品</li>
-                                        <li>顧客售後服務</li>
-
-                                    </ul>
-                                </div>
-                                <div class="location">2019年04月-2019年07月</div>
-                                <div class="price">業務專員</div>
-                                <label for="card4" class="button return" aria-hidden="true">❮
-                                    <i class="fas fa-arrow-left"></i>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <input type="checkbox" id="card5" class="more">
-                    <div class="content">
-                        <div class="front WEcard5">
-                            <div class="inner">
-                                <h2>民眾技藝補習班</h2>
-                                <div class="rating">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                                <label for="card5" class="button" aria-hidden="true">
-                                    Details
-                                </label>
-                            </div>
-                        </div>
-                        <div class="back">
-                            <div class="inner">
-
-
-                                <div class="description">
-                                    <p>經政府課程陪訓3個月中，不僅學習到以下軟體及程式操作，更多的是獨立解決問題及團隊合作及溝通重要性的能力。</p>
-                                    <ul>
-                                        <li>繪圖軟體: Adobe Photoshop / Adobe Illustraor / Xmind</li>
-                                        <li>程式軟體：HTML5 / CSS3 (SCSS) / JaveScript(jquery) / Bootstrap / Github</li>
-
-
-                                    </ul>
-                                </div>
-                                <div class="location">2020年02月-2020年05月</div>
-                                <div class="price">前端程式開發課程</div>
-                                <label for="card5" class="button return" aria-hidden="true">❮
-                                    <i class="fas fa-arrow-left"></i>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <section id="professionalskill">
-            <!-- <div class="title ">  -->
-            <h1 class="professionalskill-title">professional skill</h1>
-            <!-- </div> -->
-            <!-- <h1>
-                Be bold, make your choice.<br><br>
-                一切的選擇都在於你
-            </h1> -->
-
-            <div class="tabs">
-                <div class="tab-2">
-                    <label for="tab2-1">程式語言</label>
-                    <input id="tab2-1" name="tabs-two" type="radio" checked="checked">
-                    <div>
-                        <!-- <h4>程式語言</h4> -->
-                        <p>HTML / <br>
-                            CSS / <br>
-                            Javascript <br>
-                            Bootstrap <br>
-                            Github
-                        </p>
-                    </div>
-                </div>
-                <div class="tab-2">
-                    <label for="tab2-2">繪圖軟體</label>
-                    <input id="tab2-2" name="tabs-two" type="radio">
-                    <div>
-                        <!-- <h4>Tab Two</h4> -->
-                        <p>Adobe Photoship / <br>
-                            Adobe Illustrator / <br>
-                            Auto CAD
-                        </p>
-                    </div>
-                </div>
-                <div class="tab-2">
-                    <label for="tab2-3">文書軟體</label>
-                    <input id="tab2-3" name="tabs-two" type="radio">
-                    <div>
-                        <!-- <h4>3</h4> -->
-                        <p>Word / <br>
-                            Excel /<br>
-                            PowerPoint</p>
-                    </div>
-                </div>
-                <div class="tab-2">
-                    <label for="tab2-4">專業證照</label>
-                    <input id="tab2-4" name="tabs-two" type="radio">
-                    <div>
-                        <!-- <h4>4</h4> -->
-                        <p>乙級-電腦軟體應用技術士<br>
-                            丙級會計事務技術士 <br>
-                            丙級門市服務技術士<br>
-                            TQC-OA –網頁設計 <br>
-                            TQC-OA –Excel <br>
-                            TQC-OA –Word </p>
-                    </div>
-                </div>
-                <div class="tab-2">
-                    <label for="tab2-5">google證書</label>
-                    <input id="tab2-5" name="tabs-two" type="radio">
-                    <div>
-                        <!-- <h4>555</h4> -->
-                        <p>基礎數位行銷基礎知識認證</p>
-                    </div>
-                </div>
-
-            </div>
-        </section>
 
         <!-- </section> -->
     </main>
     <footer>
-      
+
     </footer>
-    
+
     <a href="#">
         <div class="top">
             ▲
         </div>
     </a>
-  
+
 
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -753,35 +874,35 @@
                 // console.log(scroll);
 
                 if (scroll > 450) {
-                    $(".abme-title").css("background", "rgb(58, 58, 58)");
+                    $("#abme-title").css("background", "rgb(58, 58, 58)");
                 }
 
 
                 else {
 
-                    $(".abme-title").css("background", "white");
+                    $("#abme-title").css("background", "white");
                 }
             })
         })
 
 
-        // ------標題-作品集-特效-----------
+        // ------標題-工作經驗-特效-----------
         $(document).ready(function () {
             $(window).scroll(function () {
                 var scroll = $(window).scrollTop();
-                // console.log(scroll);
+                console.log(scroll);
 
-                if (scroll > 1500) {
-                    $(".Portfolio-title").css("background", "rgb(58, 58, 58)");
+                if (scroll > 1000) {
+                    $(".workexperiece-title").css("background", "rgb(58, 58, 58)");
                 }
 
 
                 else {
 
-                    $(".Portfolio-title").css("background", "white");
+                    $(".workexperiece-title").css("background", "white");
                 }
             })
-        }) 
+        })
 
         // // ------標題-工作經驗-特效-----------
         // $(document).ready(function () {
@@ -929,8 +1050,8 @@
                 delay: 1000
             }); 
     </script>
-<script>
-     $(document).ready(function () {
+    <script>
+        $(document).ready(function () {
             $(window).scroll(function () {
                 var scroll = $(window).scrollTop();
                 console.log(scroll);
@@ -946,7 +1067,7 @@
                 }
             })
         }) 
-</script>
+    </script>
 
 </body>
 
