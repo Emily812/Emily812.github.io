@@ -52,7 +52,7 @@ body {
 .banner {
   width: 100%;
   height: 100vh;
-  background-color: #A74B4B;
+  background-color: #E5A0B2;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -81,8 +81,8 @@ body {
   font-size: 110px;
   text-align: center;
   color: white;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 2px 2px 2px black;
-  text-shadow: 0.1em 0.1em 0.2em black;
+  text-shadow: -1px -1px 0 #d82653, 1px -1px 0 #d82653, -1px 1px 0 #d82653, 1px 1px 0 #d82653, 2px 2px 2px #d82653 k;
+  text-shadow: 0.1em 0.1em 0.2em #d82653;
 }
 
 @media (max-width: 720px) {
@@ -305,7 +305,7 @@ section#aboutme .Phone_window .A_inbox:hover:after {
   /* Enable scroll if needed */
   background-color: black;
   /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(255, 255, 255, 0.7);
   /* Black w/ opacity */
 }
 
@@ -331,8 +331,8 @@ section#aboutme .Phone_window .A_inbox:hover:after {
   padding: 0px 0px 10px 0px;
   font-size: 28px;
   font-weight: bold;
-  color: brown;
-  border-bottom: solid 1.8px brown;
+  color: #e48ea5;
+  border-bottom: solid 1.8px #e48ea5;
 }
 
 /* The Close Button */
@@ -353,7 +353,7 @@ section#aboutme .Phone_window .A_inbox:hover:after {
 
 .close:hover,
 .close:focus {
-  color: #ffbf0e;
+  color: #e48ea5;
   text-decoration: none;
   cursor: pointer;
 }
@@ -397,13 +397,13 @@ section#aboutme .Phone_window .A_inbox:hover:after {
   margin: 0px 0px 20px 0px;
   font-size: 24px;
   font-weight: bold;
-  color: brown;
-  border-bottom: solid 1.5px brown;
+  color: #e48ea5;
+  border-bottom: solid 1.8px #e48ea5;
 }
 
 /* The Close Button */
 .closep {
-  color: #fdfdfd;
+  color: #e48ea5;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -419,7 +419,7 @@ section#aboutme .Phone_window .A_inbox:hover:after {
 
 .closep:hover,
 .closep:focus {
-  color: #ffbf0e;
+  color: #F4DBA3;
   text-decoration: none;
   cursor: pointer;
 }
@@ -429,7 +429,7 @@ section#Portfolio {
 }
 
 section#Portfolio .Portfolio-title {
-  background-color: #3a3a3a;
+  background-color: #84C6C3;
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
@@ -451,6 +451,7 @@ section#Portfolio .Portfolio-title {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  text-shadow: 0.1em 0.1em 0.2em #26c0d8;
 }
 
 @media (max-width: 720px) {
@@ -840,89 +841,6 @@ section#Portfolio-ps .container-fluid .row #PS-text3 {
   }
 }
 
-section#Portfolio-AI {
-  padding-bottom: 100px;
-}
-
-section#Portfolio-AI .bgc-ai {
-  margin-top: 200px;
-  background-color: #e9b7b7;
-  padding-bottom: 100px;
-}
-
-section#Portfolio-AI .bgc-ai h2 {
-  width: 100%;
-  padding: -0px 0px 100px 200px;
-  font-size: 64px;
-  font-weight: bolder;
-  margin-top: -50px;
-}
-
-@media (max-width: 992px) {
-  section#Portfolio-AI .bgc-ai h2 {
-    width: 100%;
-    text-align: center;
-    font-size: 40px;
-    padding: 50px 0px 0px 0px;
-    margin: auto;
-    margin-bottom: 30px;
-  }
-}
-
-@media (max-width: 576px) {
-  section#Portfolio-AI .bgc-ai h2 {
-    font-size: 36px;
-    padding: 40px 0px 0px 0px;
-    margin: auto;
-    margin-bottom: 30px;
-  }
-}
-
-section#Portfolio-AI .swiper-container {
-  width: 100%;
-  height: 100%;
-}
-
-section#Portfolio-AI .swiper-container .swiper-pagination-bullet-active {
-  background-color: #1c7414;
-  background-color: #f8c41a;
-}
-
-section#Portfolio-AI .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #504d4d;
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-  margin: auto;
-}
-
-section#Portfolio-AI .swiper-slide img {
-  width: 100%;
-}
-
-@media (max-width: 576px) {
-  section#Portfolio-AI {
-    padding-bottom: 0px;
-  }
-  section#Portfolio-AI .bgc-ai {
-    margin-top: 0px;
-    background-color: #e9b7b7;
-    padding-bottom: 50px;
-  }
-}
-
 section#Portfolio-web .bgc-web {
   background-color: #9b8888;
   padding-bottom: 100px;
@@ -1134,7 +1052,6 @@ section#Portfolio-web .row .text .QRcode .teamQR {
 #workexperiece .workexperiece-title {
   width: 100%;
   height: 100vh;
-  background-color: #3a3a3a;
   -webkit-transition: 1s;
   -o-transition: 1s;
   transition: 1s;
@@ -1155,7 +1072,8 @@ section#Portfolio-web .row .text .QRcode .teamQR {
 
 #workexperiece h2 {
   font-size: 64px;
-  color: #f0c6c6;
+  color: #fdfdfd;
+  text-shadow: 0.1em 0.1em 0.2em #26c0d8;
 }
 
 @media (max-width: 576px) {
@@ -1271,9 +1189,9 @@ section#Portfolio-web .row .text .QRcode .teamQR {
   border-radius: 6px;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  background: -webkit-linear-gradient(50deg, rgba(12, 14, 13, 0.7), rgba(228, 61, 49, 0.7));
-  background: -o-linear-gradient(50deg, rgba(12, 14, 13, 0.7), rgba(228, 61, 49, 0.7));
-  background: linear-gradient(40deg, rgba(12, 14, 13, 0.7), rgba(228, 61, 49, 0.7));
+  background: -webkit-linear-gradient(50deg, rgba(220, 131, 247, 0.7), rgba(245, 92, 31, 0.7));
+  background: -o-linear-gradient(50deg, rgba(220, 131, 247, 0.7), rgba(245, 92, 31, 0.7));
+  background: linear-gradient(40deg, rgba(220, 131, 247, 0.7), rgba(245, 92, 31, 0.7));
 }
 
 .front .inner {
@@ -1288,9 +1206,9 @@ section#Portfolio-web .row .text .QRcode .teamQR {
   margin-bottom: 0.3em;
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: #fff;
+  color: #fffefe;
   font-weight: 500;
-  text-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.1);
 }
 
 .front .rating {
@@ -1508,15 +1426,15 @@ section#Portfolio-web .row .text .QRcode .teamQR {
 }
 
 section#professionalskill {
-  background-color: lightgray;
+  background-color: #f0eeee;
   padding-bottom: 30px;
 }
 
 section#professionalskill .professionalskill-title {
   width: 100%;
   height: 100vh;
-  background-color: #3a3a3a;
-  color: #f0c6c6;
+  background-color: #84C6C3;
+  color: white;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1534,9 +1452,10 @@ section#professionalskill .professionalskill-title {
 section#professionalskill h2 {
   font-size: 64px;
   line-height: 0.8em;
-  color: #f0c6c6;
+  color: white;
   padding: 10px;
   margin-bottom: 50px;
+  text-shadow: 0.1em 0.1em 0.2em #26c0d8;
 }
 
 @media (max-width: 576px) {
@@ -1544,7 +1463,7 @@ section#professionalskill h2 {
     width: 100%;
     height: 100vh;
     font-size: 36px;
-    color: #f0c6c6;
+    color: white;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1564,228 +1483,58 @@ section#professionalskill h2 {
   }
 }
 
-section#professionalskill .blog-card {
+section#professionalskill .container img {
+  width: 100px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin: 1rem auto;
-  -webkit-box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
-  margin-bottom: 1.6%;
-  background: #fff;
-  line-height: 1.4;
-  font-family: sans-serif;
-  border-radius: 5px;
-  overflow: hidden;
-  z-index: 0;
-  font-family: "微軟正黑體";
-}
-
-section#professionalskill .blog-card a {
-  color: inherit;
-}
-
-section#professionalskill .blog-card:hover .photo {
-  -webkit-transform: scale(1.3) rotate(3deg);
-      -ms-transform: scale(1.3) rotate(3deg);
-          transform: scale(1.3) rotate(3deg);
-}
-
-section#professionalskill .blog-card .meta {
-  position: relative;
-  z-index: 0;
-  height: 200px;
-}
-
-section#professionalskill .blog-card .photo {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-size: cover;
-  background-position: center;
-  -webkit-transition: -webkit-transform .2s;
-  transition: -webkit-transform .2s;
-  -o-transition: transform .2s;
-  transition: transform .2s;
-  transition: transform .2s, -webkit-transform .2s;
-}
-
-section#professionalskill .blog-card .pic1 {
-  background-image: url(../img/skill-1.jpg);
-}
-
-section#professionalskill .blog-card .pic2 {
-  background-image: url(../img/skill-2.jpg);
-}
-
-section#professionalskill .blog-card .pic3 {
-  background-image: url(../img/skill-3.jpg);
-}
-
-section#professionalskill .blog-card .pic4 {
-  background-image: url(../img/skill-4.jpg);
-}
-
-section#professionalskill .blog-card .details,
-section#professionalskill .blog-card .details ul {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: auto;
-  padding: 0;
-  list-style: none;
 }
 
-section#professionalskill .blog-card .details {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: -100%;
-  margin: auto;
-  -webkit-transition: left .2s;
-  -o-transition: left .2s;
-  transition: left .2s;
-  background: rgba(0, 0, 0, 0.6);
-  color: #fff;
-  padding: 10px;
+section#professionalskill .container .text {
+  padding: 5px 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+section#professionalskill .container .text h3 {
   width: 100%;
-  font-size: .9rem;
+  font-weight: bolder;
+  text-align: center;
 }
 
-section#professionalskill .blog-card .details a {
-  -webkit-text-decoration: dotted underline;
-          text-decoration: dotted underline;
+section#professionalskill .container .text span {
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+  color: cadetblue;
+  margin-bottom: 10px;
 }
 
-section#professionalskill .blog-card .details ul li {
-  display: inline-block;
+section#professionalskill .container .text p {
+  width: 100%;
+  font-weight: 500;
+  text-align: center;
 }
 
-section#professionalskill .blog-card .details .author:before {
-  font-family: FontAwesome;
-  margin-right: 10px;
-  content: "\f007";
+section#professionalskill .container .text .skill-4-1title::before {
+  content: "技職證照：";
+  font-weight: 700;
 }
 
-section#professionalskill .blog-card .details .date:before {
-  font-family: FontAwesome;
-  margin-right: 10px;
-  content: "\f133";
-}
-
-section#professionalskill .blog-card .details .tags ul:before {
-  font-family: FontAwesome;
-  content: "\f02b";
-  margin-right: 10px;
-}
-
-section#professionalskill .blog-card .details .tags li {
-  margin-right: 2px;
-}
-
-section#professionalskill .blog-card .details .tags li:first-child {
-  margin-left: -4px;
-}
-
-section#professionalskill .blog-card .description {
-  padding: 1rem;
-  background: #fff;
-  position: relative;
-  z-index: 1;
-}
-
-section#professionalskill .blog-card .description h3,
-section#professionalskill .blog-card .description span {
-  font-family: Poppins, sans-serif;
-}
-
-section#professionalskill .blog-card .description h3 {
-  line-height: 1;
-  margin: 0;
-  font-size: 1.7rem;
-  font-family: "微軟正黑體";
-}
-
-section#professionalskill .blog-card .description span {
-  font-size: 1rem;
-  font-weight: 300;
-  text-transform: uppercase;
-  color: #a2a2a2;
-  margin-top: 5px;
-}
-
-section#professionalskill .blog-card p {
-  position: relative;
-  margin: 0.3rem 0 0;
-}
-
-section#professionalskill .blog-card p:first-of-type:before {
-  content: "";
-  position: absolute;
-  width: 35px;
-  top: -0.75rem;
-  border-radius: 3px;
-}
-
-section#professionalskill .blog-card:hover .details {
-  left: 0%;
-}
-
-@media (min-width: 640px) {
-  section#professionalskill .blog-card {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    max-width: 700px;
-  }
-  section#professionalskill .blog-card .meta {
-    -webkit-flex-basis: 40%;
-        -ms-flex-preferred-size: 40%;
-            flex-basis: 40%;
-    height: auto;
-  }
-  section#professionalskill .blog-card .description {
-    -webkit-flex-basis: 60%;
-        -ms-flex-preferred-size: 60%;
-            flex-basis: 60%;
-  }
-  section#professionalskill .blog-card .description:before {
-    -webkit-transform: skewX(-3deg);
-        -ms-transform: skewX(-3deg);
-            transform: skewX(-3deg);
-    content: "";
-    background: #fff;
-    width: 30px;
-    position: absolute;
-    left: -10px;
-    top: 0;
-    bottom: 0;
-    z-index: -1;
-  }
-  section#professionalskill .blog-card.alt {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-    -webkit-flex-direction: row-reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-  }
-  section#professionalskill .blog-card.alt .description:before {
-    left: inherit;
-    right: -10px;
-    -webkit-transform: skew(3deg);
-        -ms-transform: skew(3deg);
-            transform: skew(3deg);
-  }
-  section#professionalskill .blog-card.alt .details {
-    padding-left: 25px;
-  }
+section#professionalskill .container .text .skill-4-2title::before {
+  content: "google證書：";
+  font-weight: 700;
 }
 
 .top {

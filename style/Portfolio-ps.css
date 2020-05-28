@@ -57,7 +57,7 @@ section#Portfolio-ps .container-fluid .row .pspic1 {
 section#Portfolio-ps .container-fluid .row #PS-text1 {
   width: 100%;
   min-height: 100vh;
-  background-color: #A74B4B;
+  background-color: #8EBCD2;
   padding: 100px;
   margin-top: -100px;
   display: -webkit-box;
@@ -73,7 +73,7 @@ section#Portfolio-ps .container-fluid .row #PS-text1 {
 section#Portfolio-ps .container-fluid .row .line {
   width: 3px;
   height: 450px;
-  background-color: yellow;
+  background-color: #F4DBA3;
   z-index: 1;
 }
 
@@ -95,7 +95,7 @@ section#Portfolio-ps .container-fluid .row p {
   section#Portfolio-ps .container-fluid .row #PS-text1 {
     width: 100%;
     min-height: 70vh;
-    background-color: #A74B4B;
+    background-color: #8EBCD2;
     padding: 50px;
     margin: auto;
     position: relative;
@@ -137,7 +137,7 @@ section#Portfolio-ps .container-fluid .row .pspic2 {
 section#Portfolio-ps .container-fluid .row #PS-text2 {
   width: 100%;
   min-height: 100vh;
-  background-color: #A74B4B;
+  background-color: #8EBCD2;
   padding: 100px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -193,7 +193,7 @@ section#Portfolio-ps .container-fluid .row .pspic3 {
 section#Portfolio-ps .container-fluid .row #PS-text3 {
   width: 100%;
   min-height: 100vh;
-  background-color: #A74B4B;
+  background-color: #8EBCD2;
   padding: 100px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -215,7 +215,7 @@ section#Portfolio-ps .container-fluid .row #PS-text3 {
   section#Portfolio-ps .container-fluid .row #PS-text3 {
     width: 100%;
     min-height: 70vh;
-    background-color: #A74B4B;
+    background-color: #8EBCD2;
     margin: auto;
     position: relative;
     padding: 80px;

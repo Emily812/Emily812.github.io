@@ -66,8 +66,8 @@ body{
 .banner{
     width: 100%;
     height: 100vh;
-    background-color: #A74B4B;
-    // background-color: rgb(12, 6, 93);
+    // background-color: #A74B4B;
+    background-color: #E5A0B2;
 
 
 
@@ -92,12 +92,12 @@ body{
         text-align: center;
         color: white;
         text-shadow:
-        -1px -1px 0 #000,
-        1px -1px 0 #000,
-        -1px 1px 0 #000,
-        1px 1px 0 #000,
-        2px 2px 2px black;
-        text-shadow: 0.1em 0.1em 0.2em black;
+        -1px -1px 0 rgb(216, 38, 83),
+        1px -1px 0 rgb(216, 38, 83),
+        -1px 1px 0 rgb(216, 38, 83),
+        1px 1px 0 rgb(216, 38, 83),
+        2px 2px 2px rgb(216, 38, 83)k;
+        text-shadow: 0.1em 0.1em 0.2em rgb(216, 38, 83);
     }
 }
 
@@ -380,7 +380,7 @@ section#aboutme {
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    background-color: rgba(255, 255, 255, 0.7); /* Black w/ opacity */
 }
   
 /* Modal Content */
@@ -406,8 +406,8 @@ section#aboutme {
 
             font-size: 28px;
             font-weight: bold;
-            color: brown;
-            border-bottom: solid 1.8px brown;
+            color:  rgb(228, 142, 165);
+            border-bottom: solid 1.8px rgb(228, 142, 165);
         }
 
     }
@@ -425,7 +425,7 @@ section#aboutme {
 }
 .close:hover,
 .close:focus {
-    color: rgb(255, 191, 14);
+    color: rgb(228, 142, 165);
     text-decoration: none;
     cursor: pointer;
 }
@@ -457,8 +457,8 @@ section#aboutme {
             margin: 0px 0px 20px 0px;
             font-size: 24px;
             font-weight: bold;
-            color: brown;
-            border-bottom: solid 1.5px brown;
+            color:  rgb(228, 142, 165);
+            border-bottom: solid 1.8px rgb(228, 142, 165);
         }
     }
 
@@ -467,7 +467,7 @@ section#aboutme {
 
 /* The Close Button */
 .closep {
-    color: #fdfdfd;
+    color: rgb(228, 142, 165);
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -478,7 +478,7 @@ section#aboutme {
 .closep:hover,
 .closep:focus {
     // color: rgb(206, 32, 32);
-    color: rgb(255, 191, 14);
+    color: #F4DBA3;
     text-decoration: none;
     cursor: pointer;
 }
@@ -487,7 +487,7 @@ section#aboutme {
 section#Portfolio {
     overflow: hidden;
     .Portfolio-title{
-        background-color: rgb(58, 58, 58);
+        background-color: #84C6C3;
         // background-image: url(../img/title-bgc.jpg);
         background-size: cover;;
         background-attachment: fixed;
@@ -500,6 +500,7 @@ section#Portfolio {
         display: flex;
         justify-content: center;
         align-items: center;
+        text-shadow: 0.1em 0.1em 0.2em rgb(38, 192, 216)
     }
     // .porfolio_pic{
     //     background-image: url(../img/title-bgc.jpg);
@@ -1027,107 +1028,6 @@ section#Portfolio-ps{
     }
 }
 
-// -------------(AI)作品集 #Portfolio--------------------
-section#Portfolio-AI{
-    padding-bottom: 100px;
-   
-    .bgc-ai{
-        margin-top: 200px;
-        // background-color: rgb(247, 133, 133);
-        background-color: rgb(233, 183, 183);
-        padding-bottom: 100px;
-        h2{
-            width: 100%;
-            padding: -0px 0px 100px 200px;
-            font-size: 64px;
-            font-weight: bolder;
-            margin-top: -50px;
-            // text-shadow: -1px -1px 0px rgb(91, 71, 71),
-            // 3px 3px 0px rgb(194, 176, 176),
-            // 6px 6px 0px rgb(91, 71, 71);
-
-        }
-        @media (max-width:992px) {
-            h2{
-                width: 100%;
-                text-align: center;
-                font-size: 40px;
-                padding: 50px 0px 0px 0px;
-                margin: auto ;
-                margin-bottom: 30px;
-            }
-        }
-
-        @media (max-width:576px) {
-            h2{
-                // width: 100%;
-                font-size: 36px;
-                padding: 40px 0px 0px 0px;
-                margin: auto ;
-                margin-bottom: 30px;
-            }
-        }
-    }
-    // @media (max-width:576px) {
-    //     .bgc-ai{
-    //         margin-top: 0px;
-    //         // background-color: rgb(247, 133, 133);
-    //         background-color: rgb(233, 183, 183);
-    //         padding-bottom: 0px;
-    //     }
-    // }
-    // swiper 圖片
-    .swiper-container {
-        width: 100%;
-        height: 100%;
-        .swiper-pagination-bullet-active{
-            background-color: rgb(28, 116, 20);
-            background-color: rgb(248, 196, 26);
-
-            
-               
-        }
-    }
-   
-    .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: rgb(80, 77, 77);
-
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-        margin: auto;
-        
-
-        img{
-            width: 100%;
-            // border: solid 30px rgb(247, 133, 133);
-        }
-    }
-
-}  
-@media (max-width:576px) {
-    section#Portfolio-AI{
-        padding-bottom: 0px;
-        .bgc-ai{
-            margin-top: 0px;
-            // background-color: rgb(247, 133, 133);
-            background-color: rgb(233, 183, 183);
-            padding-bottom: 50px;
-        }
-    }
-}
 
 
 // -------------(html/css/js)作品集 #Portfolio--------------------
@@ -1354,7 +1254,7 @@ section#Portfolio-web{
     .workexperiece-title{
         width: 100%;
         height: 100vh;
-        background-color: rgb(58, 58, 58);
+        // background-color: #F4DBA3;
         transition:1s;
        
         display: flex;
@@ -1367,7 +1267,8 @@ section#Portfolio-web{
     }
     h2{
         font-size:64px;
-        color: rgb(240, 198, 198);
+        color: rgb(253, 253, 253);
+        text-shadow: 0.1em 0.1em 0.2em rgb(38, 192, 216)
         // color: rgb(30, 159, 18);
 
     }
@@ -1391,9 +1292,12 @@ section#Portfolio-web{
             margin-bottom:30px ;
         }
     }
+
+   
 }    
+
         
-    
+//--------------------------------------------------- 
     // .text{
     //     width: 100%;
     //     height: 100vh;
@@ -1409,15 +1313,7 @@ section#Portfolio-web{
 // codepen 工作經驗--------------------------
 
 
-// body {
-// 	margin: 0;
-// 	display: flex;
-// 	flex-direction: column;
-// 	align-items: center;
-// 	justify-content: center;
-// 	height: 100vh;
-// 	font-family: 'Montserrat', sans-serif;
-// }
+// 
 
 $accent-color:rgb(61, 60, 55);
 
@@ -1488,8 +1384,8 @@ $accent-color:rgb(61, 60, 55);
 			40deg,
 			// rgba(67, 138, 243, 0.7),
             // rgba(255, 242, 166, 0.7)
-            rgba(12, 14, 13, 0.7),
-            rgba(228, 61, 49, 0.7)
+            rgba(220, 131, 247, 0.7),
+            rgba(245, 92, 31, 0.7)
 		);
 	}
 	.inner {
@@ -1502,9 +1398,9 @@ $accent-color:rgb(61, 60, 55);
 		margin-bottom: 0.3em;
 		text-transform: uppercase;
 		letter-spacing: 3px;
-		color: #fff;
+		color: rgb(255, 254, 254);
 		font-weight: 500;
-		text-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+		text-shadow: 0 0 6px rgba(255, 255, 255, 0.1);
 	}
 
 	.rating {
@@ -1683,16 +1579,16 @@ $accent-color:rgb(61, 60, 55);
 // --------專業技能-特效-------
 section#professionalskill{
     // background-color: rgb(81, 76, 100);
-    background-color: rgb(211, 211, 211);
+    background-color: rgb(240, 238, 238);
 
     padding-bottom: 30px;
     .professionalskill-title{
         width: 100%;
         height: 100vh;
-        background-color: rgb(58, 58, 58);
+        background-color: #84C6C3;
 
         // font-size: 64px;
-        color: rgb(240, 198, 198);
+        color: rgb(255, 255, 255);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1700,9 +1596,10 @@ section#professionalskill{
     h2 {
         font-size: 64px;
         line-height: 0.8em;
-        color: rgb(240, 198, 198);
+        color: rgb(255, 255, 255);
         padding: 10px;
         margin-bottom:50px ;
+        text-shadow: 0.1em 0.1em 0.2em rgb(38, 192, 216)
     }
         
     
@@ -1714,7 +1611,7 @@ section#professionalskill{
             
     
             font-size: 36px;
-            color: rgb(240, 198, 198);
+            color: rgb(255, 255, 255);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -1727,8 +1624,59 @@ section#professionalskill{
         
     }
  
-   
+    .container{
+        // .htmlpic{
+        //     width: 100%;
+        //     height: 600px;
+        //     background-color: cadetblue;
+        // }
+        img{
+            width: 100px;
+            display: flex;
+            justify-content: center;
+            margin: auto;
+
+        }
+
+        .text{
+            padding: 5px 20px;
+           display: flex;
+           flex-wrap: wrap;
+           
+           h3{
+               width: 100%;
+               font-weight: bolder;
+               text-align: center;
+               
+           }
+           span{
+               width: 100%;
+               font-size: 14px;
+               text-align: center;
+               color: cadetblue;
+               margin-bottom: 10px;
+           }
+           p{
+               
+               width: 100%;
+               font-weight: 500;
+            //    background-color: crimson;
+               text-align: center;
+           }
+           .skill-4-1title::before{
+               content: "技職證照：";
+               font-weight: 700;
+           }
+           .skill-4-2title::before{
+            content: "google證書：";
+            font-weight: 700;
+        }
+
+        }
+    }
+
     
+}
 
     // p{
     //     text-align: center;
@@ -1837,200 +1785,200 @@ section#professionalskill{
 
 
 //新 專業技能切版-----------------------------
-$color_white: #fff;
-$color_prime: #828c9d;
-$color_grey: #e2e2e2;
-$color_grey_dark: #a2a2a2;
+// $color_white: #fff;
+// $color_prime: #828c9d;
+// $color_grey: #e2e2e2;
+// $color_grey_dark: #a2a2a2;
 
-.blog-card {
-  display: flex;
-  flex-direction: column;
-  margin: 1rem auto;
-  box-shadow: 0 3px 7px -1px rgba(#000, .1);
-  margin-bottom: 1.6%;
-  background: $color_white;
-  line-height: 1.4;
-  font-family: sans-serif;
-  border-radius: 5px;
-  overflow: hidden;
-  z-index: 0;
-  font-family: "微軟正黑體";
+// .blog-card {
+//   display: flex;
+//   flex-direction: column;
+//   margin: 1rem auto;
+//   box-shadow: 0 3px 7px -1px rgba(#000, .1);
+//   margin-bottom: 1.6%;
+//   background: $color_white;
+//   line-height: 1.4;
+//   font-family: sans-serif;
+//   border-radius: 5px;
+//   overflow: hidden;
+//   z-index: 0;
+//   font-family: "微軟正黑體";
   
-  a {
-    color: inherit;
-    // &:hover {
-    //   color: $color_prime;
-    // }
-  }
-  &:hover {
-    .photo {
-      transform: scale(1.3) rotate(3deg);
-    }
-  }
-  .meta {
-    position: relative;
-    z-index: 0;
-    height: 200px;
-  }
-  .photo {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-size: cover;
-    background-position: center;
-    transition: transform .2s;
-  }
+//   a {
+//     color: inherit;
+//     // &:hover {
+//     //   color: $color_prime;
+//     // }
+//   }
+//   &:hover {
+//     .photo {
+//       transform: scale(1.3) rotate(3deg);
+//     }
+//   }
+//   .meta {
+//     position: relative;
+//     z-index: 0;
+//     height: 200px;
+//   }
+//   .photo {
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     bottom: 0;
+//     left: 0;
+//     background-size: cover;
+//     background-position: center;
+//     transition: transform .2s;
+//   }
 
-    .pic1{
-        background-image: url(../img/skill-1.jpg);
-    }
-    .pic2{
-    background-image: url(../img/skill-2.jpg);
-    }
-    .pic3{
-        background-image: url(../img/skill-3.jpg);
-    }
-    .pic4{
-        background-image: url(../img/skill-4.jpg);
-    }
-  .details,
-  .details ul {
-    margin: auto;
-    padding: 0;
-    list-style: none;
-  }
+//     .pic1{
+//         background-image: url(../img/skill-1.jpg);
+//     }
+//     .pic2{
+//     background-image: url(../img/skill-2.jpg);
+//     }
+//     .pic3{
+//         background-image: url(../img/skill-3.jpg);
+//     }
+//     .pic4{
+//         background-image: url(../img/skill-4.jpg);
+//     }
+//   .details,
+//   .details ul {
+//     margin: auto;
+//     padding: 0;
+//     list-style: none;
+//   }
 
-  .details {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: -100%;
-    margin: auto;
-    transition: left .2s;
-    background: rgba(#000, .6);
-    color: $color_white;
-    padding: 10px;
-    width: 100%;
-    font-size: .9rem;
-    a {
-      text-decoration: dotted underline
-    }
-    ul li {
-      display: inline-block;
-    }
-    .author:before {
-      font-family: FontAwesome;
-      margin-right: 10px;
-      content: "\f007";
-    }
+//   .details {
+//     position: absolute;
+//     top: 0;
+//     bottom: 0;
+//     left: -100%;
+//     margin: auto;
+//     transition: left .2s;
+//     background: rgba(#000, .6);
+//     color: $color_white;
+//     padding: 10px;
+//     width: 100%;
+//     font-size: .9rem;
+//     a {
+//       text-decoration: dotted underline
+//     }
+//     ul li {
+//       display: inline-block;
+//     }
+//     .author:before {
+//       font-family: FontAwesome;
+//       margin-right: 10px;
+//       content: "\f007";
+//     }
 
-    .date:before {
-      font-family: FontAwesome;
-      margin-right: 10px;
-      content: "\f133";
-    }
+//     .date:before {
+//       font-family: FontAwesome;
+//       margin-right: 10px;
+//       content: "\f133";
+//     }
 
-    .tags {
-      ul:before {
-        font-family: FontAwesome;
-        content: "\f02b";
-        margin-right: 10px;
-      }
-      li {
-        margin-right: 2px;
-        &:first-child {
-          margin-left: -4px;
-        }
-      }
-    }
-  }
-  .description {
-    padding: 1rem;
-    background: $color_white;
-    position: relative;
-    z-index: 1;
+//     .tags {
+//       ul:before {
+//         font-family: FontAwesome;
+//         content: "\f02b";
+//         margin-right: 10px;
+//       }
+//       li {
+//         margin-right: 2px;
+//         &:first-child {
+//           margin-left: -4px;
+//         }
+//       }
+//     }
+//   }
+//   .description {
+//     padding: 1rem;
+//     background: $color_white;
+//     position: relative;
+//     z-index: 1;
     
-    h3,
-    span {
-      font-family: Poppins, sans-serif;
-    }
-    h3 {
-      line-height: 1;
-      margin: 0;
-      font-size: 1.7rem;
-      font-family: "微軟正黑體";
-    }
-    span {
-      font-size: 1rem;
-      font-weight: 300;
-      text-transform: uppercase;
-      color: $color_grey_dark;
-      margin-top: 5px;
-    }
+//     h3,
+//     span {
+//       font-family: Poppins, sans-serif;
+//     }
+//     h3 {
+//       line-height: 1;
+//       margin: 0;
+//       font-size: 1.7rem;
+//       font-family: "微軟正黑體";
+//     }
+//     span {
+//       font-size: 1rem;
+//       font-weight: 300;
+//       text-transform: uppercase;
+//       color: $color_grey_dark;
+//       margin-top: 5px;
+//     }
 
-  }
-  p {
-    position: relative;
-    margin: 0.3rem 0 0;
-    &:first-of-type {
-    //   margin-top: 1.25rem;
-      &:before {
-        content: "";
-        position: absolute;
-        // height: 5px;
-        // background: $color_prime;
-        width: 35px;
-        top: -0.75rem;
-        border-radius: 3px;
-      }
-    }
-  }
-  &:hover {
-    .details {
-      left: 0%;
-    }
-  }
+//   }
+//   p {
+//     position: relative;
+//     margin: 0.3rem 0 0;
+//     &:first-of-type {
+//     //   margin-top: 1.25rem;
+//       &:before {
+//         content: "";
+//         position: absolute;
+//         // height: 5px;
+//         // background: $color_prime;
+//         width: 35px;
+//         top: -0.75rem;
+//         border-radius: 3px;
+//       }
+//     }
+//   }
+//   &:hover {
+//     .details {
+//       left: 0%;
+//     }
+//   }
 
 
-  @media (min-width: 640px) {
-    flex-direction: row;
-    max-width: 700px;
-    .meta {
-      flex-basis: 40%;
-      height: auto;
-    }
-    .description {
-      flex-basis: 60%;
-      &:before {
-        transform: skewX(-3deg);
-        content: "";
-        background: #fff;
-        width: 30px;
-        position: absolute;
-        left: -10px;
-        top: 0;
-        bottom: 0;
-        z-index: -1;
-      }
-    }
-    &.alt {
-      flex-direction: row-reverse;
-      .description {
-        &:before {
-          left: inherit;
-          right: -10px;
-          transform: skew(3deg)
-        }
-      }
-      .details {
-        padding-left: 25px;
-      }
-    }
-  }
-} 
-}
+//   @media (min-width: 640px) {
+//     flex-direction: row;
+//     max-width: 700px;
+//     .meta {
+//       flex-basis: 40%;
+//       height: auto;
+//     }
+//     .description {
+//       flex-basis: 60%;
+//       &:before {
+//         transform: skewX(-3deg);
+//         content: "";
+//         background: #fff;
+//         width: 30px;
+//         position: absolute;
+//         left: -10px;
+//         top: 0;
+//         bottom: 0;
+//         z-index: -1;
+//       }
+//     }
+//     &.alt {
+//       flex-direction: row-reverse;
+//       .description {
+//         &:before {
+//           left: inherit;
+//           right: -10px;
+//           transform: skew(3deg)
+//         }
+//       }
+//       .details {
+//         padding-left: 25px;
+//       }
+//     }
+//   }
+// } 
+// }
 
 // Top 鍵
 .top {
