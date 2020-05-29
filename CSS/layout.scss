@@ -186,7 +186,9 @@ opacity: 0;
             border-radius: 5px;;
             padding: 0px;
             margin-left: -10px;
-            background-color: rgb(27, 25, 25);
+            // background-color: rgb(54, 57, 57);
+            background-color: #343a40;
+
             .dropdown-item:hover{
                 color: rgb(255, 191, 14);
                 
@@ -213,7 +215,7 @@ opacity: 0;
             .here1{
             display: block;
             background-color: rgba(0, 0, 0, 0);
-            border-radius: 10%;;
+            border-radius: 10%;
             width: 100%;
             }
             .dropdown-item:hover{
