@@ -48,10 +48,33 @@
                             </a>
                         </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link " href="#Portfolio">
-                                <p>作品集</p>
-                            </a>
+                        <li class="nav-item ">
+                            <div class="touch">
+                                <a class="nav-link " href="#Portfolio">
+                                    <p>作品集</p>
+                                </a>
+                                <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">menuItem</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div> -->
+
+                                <ul class="here1"  aria-haspopup="true" aria-expanded="false">
+                                     <!-- active在視覺上設計底色不同,表示目前在這個位置,如果不需要則刪除  -->
+                                    <!-- <li > -->
+                                         <!-- 子選單的 div **********  -->
+                                        <a class="dropdown-item here" href="Portfolio-ps.html">
+                                            Photoshop
+                                        </a>
+                                        <a class="dropdown-item here" href="/Portfolio-ai.html">Illustraor</a>
+                                        <a class="dropdown-item here" href="Portfolio-web.html">web</a>
+
+
+
+                                    <!-- </li > -->
+                                </ul>
+                            </div>
                         </li>
 
 
@@ -929,7 +952,30 @@
                 delay: 1000
             }); 
     </script>
+
+    <!-- <script>
+    // nav在第一頁不顯示
+    
+    $(document).ready(function () {
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+            console.log(scroll);
+
+            if (scroll > 300) {
+                $(".navbar").css("display", "block");
+            }
+
+
+            else {
+
+                $(".top").css("display", "none");
+            }
+        })
+    }) 
+</script> -->
     <script>
+        // top鍵在第一頁不顯示
+
         $(document).ready(function () {
             $(window).scroll(function () {
                 var scroll = $(window).scrollTop();
