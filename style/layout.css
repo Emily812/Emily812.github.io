@@ -19,6 +19,7 @@ html {
   position: fixed;
   z-index: 9999999;
   width: 100%;
+  max-height: 15%;
 }
 
 #toggle {
@@ -59,6 +60,9 @@ html {
 }
 
 @media (max-width: 992px) {
+  .navbar {
+    max-height: none;
+  }
   #toggle {
     display: block;
   }
@@ -122,5 +126,72 @@ html {
 
 .navbar-nav li.nav-item a p:hover:after {
   width: 100%;
+}
+
+.navbar-nav .here1 {
+  display: none;
+}
+
+.navbar-nav .touch:hover .here1 {
+  display: block;
+  position: fixed;
+  border-radius: 5px;
+  padding: 0px;
+  margin-left: -10px;
+  background-color: #1b1919;
+}
+
+.navbar-nav .touch:hover .here1 .dropdown-item:hover {
+  color: #ffbf0e;
+  background-color: #6a6a67;
+}
+
+@media (max-width: 992px) {
+  .navbar-nav .here1 {
+    display: block;
+    margin-left: -10px;
+    padding: 0px;
+  }
+  .navbar-nav .touch:hover .here1 {
+    display: block;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 10%;
+    width: 100%;
+  }
+  .navbar-nav .touch:hover .dropdown-item:hover {
+    margin-left: 10px;
+    width: 90%;
+    color: #ffbf0e;
+  }
+}
+
+.top {
+  display: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  /* background-color: rgba(184, 135, 11, 0.733); */
+  background-color: rgba(100, 100, 100, 0.438);
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 30px;
+  color: white;
+}
+
+.top a {
+  text-decoration: none;
+}
+
+.top:hover {
+  background-color: rgba(255, 245, 238, 0.815);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  color: rgba(250, 26, 26, 0.849);
+  font-weight: 900;
+  font-size: 40px;
 }
 /*# sourceMappingURL=layout.css.map */
