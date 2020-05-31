@@ -15,7 +15,7 @@ html {
 }
 
 .navbar {
-  display: none;
+  display: block;
   padding: 0 8px 0 0;
   position: fixed;
   z-index: 9999999;
@@ -195,4 +195,4 @@ html {
   font-weight: 900;
   font-size: 40px;
 }
-/*# sourceMappingURL=layout.css.map */
+/*# sourceMappingURL=layout-portfolio.css.map */
