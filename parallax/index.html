@@ -7,6 +7,10 @@
     <link href="https://fonts.googleapis.com/css?family=Bellota|Caveat|Fredoka+One&display=swap" rel="stylesheet">
 
     <style>
+        html{
+            scroll-behavior: smooth;
+        }
+
         body{
             margin: 0px;
 
@@ -104,7 +108,7 @@
 
         .contentsame{
             background-color: #282E34;
-            
+            padding: 80px;
             color: white;
 
         }
@@ -133,36 +137,117 @@
             background-image: url("https://jediyuth.files.wordpress.com/2020/01/secret-zoo-dubbed-trailer.jpg");
 
         }
+        .navall{
+            width: 100%;
+            height: 100px;
+            background-color: #282E34;
+            text-align: center;
+            
+        }
 
+        .buttonall{
+            width: 80%;
+            height: 100px;
+            margin: 0px auto;
+            text-align: center;
+        }
         
+
+        .button{
+            width: 10%;
+            height: 60px;
+            background-color: cornflowerblue;
+            
+            margin-left: 7%;
+            /* margin-left: 150px; */
+            margin-top: 20px;
+            border-radius: 30px;
+            
+            float: left;
+            text-align: center;
+            line-height: 60px;
+            transition: 1s;
+
+            color: bisque;
+            font-size: 20px;
+            font-family: "微軟正黑體";
+            /* letter-spacing: 10px; */
+        }
+
+        .topbutton{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: rgba(36, 36, 36, 0.774);
+            position:fixed;
+            right: 30px;
+            bottom: 30px;
+            z-index: 50;
+            
+            text-align: center;
+            line-height: 80px;
+            color: coral;
+            font-size:25px;
+
+
+        }
+
+
+        .button:visited{
+            color: darkcyan;
+        }
+
+        .button:hover{
+            background-color: blue;
+            color: aquamarine;
+            width: 180px;
+        }
+
     </style>
 </head>
 <body>
-    <div class="banner1 banner1-image">
+    <div id="top" class="navall">
+        <div class="buttonall">
+            <a href="#s1">
+                <div class="button">首　　頁</div>
+           </a>
+           <a href="#s2 ">
+               <div class="button">簡　　介</div>
+           </a>
+           <a href="#s3"><div class="button">人物介紹</div></a>
+           <a href="#s4"><div class="button">扮演角色</div></a>
+           <a href="#s5"><div class="button">幕後花絮</div></a>
+        </div>
+       
+    </div>
+
+    <a href="#"><div class="topbutton">TOP</div></a>
+
+    <div id="s1" class="banner1 banner1-image">
         <span class="bannerword">SCROLL DOWN</span>
         
     </div>
-    <div class="content1">
-        <div class="c1-title">PARALLAX DEMO</div>
+    <div id="s2" class="content1">
+        <span class="c1-title">PARALLAX DEMO</span>
         <div class="c1-content">Parallax scrolling is a web site trend where the background content is moved at a different speed than the foreground content while scrolling. Nascetur per nec posuere turpis, lectus nec libero turpis nunc at, sed posuere mollis ullamcorper libero ante lectus, blandit pellentesque a, magna turpis est sapien duis blandit dignissim. Viverra interdum mi magna mi, morbi sociis. Condimentum dui ipsum consequat morbi, curabitur aliquam pede, nullam vitae eu placerat eget et vehicula. Varius quisque non molestie dolor, nunc nisl dapibus vestibulum at, sodales tincidunt mauris ullamcorper, dapibus pulvinar, in in neque risus odio. Accumsan fringilla vulputate at quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula lorem mattis, ratione interdum sociis ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante augue etiam maecenas, porta porttitor placerat leo.</div>
        
     </div>
 
-    <div class="bannersamesize banner2-image">
+    <div id="s3" class="bannersamesize banner2-image">
         <span class="banner2word">LESS HEIGHT</span>
     </div>
     <div class="contentsame">
-        <div class="cs-title"> Scroll up and down to really get the feeling of how Parallax Scrolling works.</div>
+        <saan class="cs-title"> Scroll up and down to really get the feeling of how Parallax Scrolling works.</span>
     </div>
 
-    <div class="bannersamesize banner3-image">
+    <div id="s4" class="bannersamesize banner3-image">
         <span class="banner2word">SCROLL UP</span>
     </div>
     <div class="contentsame">
-        <div class="cs-title"> Scroll up and down to really get the feeling of how Parallax Scrolling works. </div> 
+        <span class="cs-title"> Scroll up and down to really get the feeling of how Parallax Scrolling works. </span> 
     </div>
 
-    <div class="banner1 banner4-image">
+    <div id="s5" class="banner1 banner4-image">
         <span class="bannerwordend">cool!</span>
     </div>
     
