@@ -1,4 +1,4 @@
-section#Portfolio-ps h2 {
+section#Portfolio-ps h1 {
   width: 100%;
   padding: 100px 0px 50px 200px;
   font-size: 60px;
@@ -7,7 +7,7 @@ section#Portfolio-ps h2 {
 }
 
 @media (max-width: 992px) {
-  section#Portfolio-ps h2 {
+  section#Portfolio-ps h1 {
     width: 100%;
     text-align: center;
     font-size: 40px;
@@ -18,7 +18,7 @@ section#Portfolio-ps h2 {
 }
 
 @media (max-width: 576px) {
-  section#Portfolio-ps h2 {
+  section#Portfolio-ps h1 {
     font-size: 36px;
     padding: 40px 0px 0px 0px;
     margin: auto;

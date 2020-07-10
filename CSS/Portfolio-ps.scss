@@ -1,5 +1,5 @@
 section#Portfolio-ps{
-    h2{
+    h1{
         width: 100%;
         padding: 100px 0px 50px 200px;
         font-size:60px;
@@ -11,12 +11,12 @@ section#Portfolio-ps{
         // 6px 6px 0px rgb(91, 71, 71);
     }
 
-    // h2.animate_fadeInUp{
+    // h1.animate_fadeInUp{
     //     animation: forwards;
     //     animation-duration: 2s;
     // }
     @media (max-width:992px) {
-        h2{
+        h1{
             width: 100%;
             text-align: center;
             font-size: 40px;
@@ -27,7 +27,7 @@ section#Portfolio-ps{
     }
 
     @media (max-width:576px) {
-        h2{
+        h1{
             // width: 100%;
             font-size: 36px;
             padding: 40px 0px 0px 0px;

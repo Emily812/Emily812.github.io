@@ -180,9 +180,12 @@ html {
   line-height: 60px;
   font-size: 30px;
   color: white;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 
-.top a {
+a.top {
   text-decoration: none;
 }
 
@@ -194,5 +197,10 @@ html {
   color: rgba(250, 26, 26, 0.849);
   font-weight: 900;
   font-size: 40px;
+  text-decoration: none;
 }
+
+/* 40px */
+/* 48px */
+/* 56px */
 /*# sourceMappingURL=layout.css.map */
